@@ -51,7 +51,7 @@ def main():
 
     for obs in records:
         try:
-            res = client.index(index="weather", body=obs)
+            res = client.index(index="weather", id=f'{obs["Date"]}', body=obs)
             logging.info("A new observation has been added.")
         except Exception as e:
             print(f"Failed to add observation, {e}")
