@@ -13,6 +13,7 @@ def main():
 
     # Send HTTP request
     response = requests.get(url)
+    print("=============1==========")
 
     # Check if the request was successful
     if response.status_code == 200:
@@ -31,6 +32,7 @@ def main():
         ]  # Clean headers from empty spaces and remove blanks
         # print("Headers:", headers)  # Debug print to confirm headers
 
+        print("=============2==========")
         records = []
 
         # Read each row in the CSV file, skipping the first empty item in each row
@@ -48,27 +50,26 @@ def main():
                     )  # Debug print to check any mismatched row
 
         # Convert the list of dictionaries to a JSON string
-        # json_data = json.dumps(records)
+        json_data = json.dumps(records)
         # print(json_data)
-        res = requests.post(
-            url="http://localhost:9200/addobservations",
-            headers={"Content-Type": "application/json"},
-            data=records,
-        )
-        return res
+        # logging.info("=============3==========")
+        # res = requests.post(
+        #     url="http://localhost:9200/addobservations",
+        #     headers={"Content-Type": "application/json"},
+        #     json=records,
+        # )
 
         # if res.status_code == 200:
         #     print("Data successfully posted.")
-        #     return json.dumps({"state": "200"})
+        #     return "YES"
         # else:
-        #     return json.dumps(
-        #         {"state": "400", "message": "Failed to post data"}
-        #     )
+        #     print(f"Failed to post data: {response.text}")
+        #     return f"Failed to post data: {response.text}"
 
-        # return json_data
+        return json_data
     else:
         # Return error message if the request failed
-        return json.dumps({"state": "400", "message": "Failed to retrieve data"})
+        return f"Failed to retrieve data: {response.status_code}"
 
 
 # Running the function for testing
