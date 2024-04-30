@@ -21,28 +21,16 @@ def extract_data(url):
         print("Failed to fetch data, status code:", response.status_code)
 
 def main():
-    #index_name = os.getenv('ELASTICSEARCH_INDEX')
-
     url = 'https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/ACCIDENT.csv'
     # Extract data and print
     data = extract_data(url)
 
     client = Elasticsearch (
         'https://elasticsearch-master.elastic.svc.cluster.local:9200',
-        #'https://127.0.0.1:9200',
-        verify_certs = False,
+        verify_certs=False,
         basic_auth=('elastic', 'elastic')
     )
-    # current_app.logger.info(f'Observations to add:  {request.get_json(force=True)}')
-    # print(type(data))
     json_data = json.loads(data)
-    # print(type(json_data))
-    # print(len(json_data))
-    # print(json_data[0])
-    # print(type(json_data[0]))
-    # json1 = json.dump(json_data[0])
-    # print(json1)
-    # print(type(json1))
     for obs in json_data:
         print("here")
         res = client.index(
@@ -55,4 +43,3 @@ def main():
 
     return 'ok'
 
-main()
