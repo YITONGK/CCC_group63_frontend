@@ -12,7 +12,7 @@ def get_weather_data(year, month):
 
     # Check if the request was successful
     if response.status_code != 200:
-        return json.dumps({"state": "400", "message": "Failed to retrieve data"})
+        return json.dumps({"state": "500", "message": "Failed to retrieve data"})
 
     # Read the content into memory from the response
     content = StringIO(response.text)
@@ -60,24 +60,28 @@ def get_weather_data(year, month):
     return records 
 
 def main():
-    records = get_weather_data(2024, 3)
-    # print(records)
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
         verify_certs=False,
         basic_auth=("elastic", "elastic"),
     )
-
+    years = range(2019, 2025)
+    months = range(1, 13)
     count = 0
-    for obs in records:
-        try:
-            res = client.index(index="weather", id=f'{obs["Date"]}', body=obs)
-            count += 1
-            logging.info("A new observation has been added.")
-        except Exception as e:
-            print(f"Failed to add observation, {e}")
-            continue
-            # return json.dumps({"status_code": 400, "text": f"Failed to add observation, {e}"})
+    for year in years:
+        for month in months:
+            records = get_weather_data(year, month)
+            # print(records)
+
+            for obs in records:
+                try:
+                    res = client.index(index="weather", id=f'{obs["Date"]}', body=obs)
+                    count += 1
+                    logging.info("A new observation has been added.")
+                except Exception as e:
+                    print(f"Failed to add observation, {e}")
+                    continue
+                    # return json.dumps({"status_code": 400, "text": f"Failed to add observation, {e}"})
 
     return json.dumps({"status_code": 200, "message": f"Successfully added {count} records"})
 
