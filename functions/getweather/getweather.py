@@ -3,6 +3,7 @@ from io import StringIO
 from flask import current_app, request
 from elasticsearch8 import Elasticsearch
 
+
 def main():
     url = "https://reg.bom.gov.au/climate/dwo/202403/text/IDCJDW3050.202403.csv"
 
@@ -53,6 +54,8 @@ def main():
             res = client.index(index="weather", body=obs)
             logging.info("A new observation has been added.")
         except Exception as e:
-            return json.dumps({"status_code": 200, "text": f"Failed to add observation, {e}"})
+            print(f"Failed to add observation, {e}")
+            continue
+            # return json.dumps({"status_code": 400, "text": f"Failed to add observation, {e}"})
 
     return json.dumps({"status_code": 200, "text": "OK"})
