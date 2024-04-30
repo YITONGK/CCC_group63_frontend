@@ -4,6 +4,7 @@ from flask import current_app, request
 from elasticsearch8 import Elasticsearch
 from string import Template
 import traceback
+from flask import Flask, request
 
 query_template = Template("""{
     "query": {
@@ -19,10 +20,11 @@ query_template = Template("""{
 
 
 def main():
-    # try:
-    #     date= request.headers['X-Fission-Params-Date']
-    # except KeyError:
-    #      date= None
+    try:
+        start_date = request.headers["X-Fission-Params-Startdate"]
+        end_date = request.headers["X-Fission-Params-Enddate"]
+    except KeyError as e:
+        return {"status": 400, "message": f"Missing date parameter: {str(e)}"}
 
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
@@ -31,9 +33,7 @@ def main():
     )
 
     # query = query_template.substitute(date=date)
-    query_string = query_template.substitute(
-        start_date="2024-03-01", end_date="2024-03-15"
-    )
+    query_string = query_template.substitute(start_date=start_date, end_date=end_date)
     query = json.loads(query_string)
     # print(query)
 
