@@ -54,17 +54,18 @@ def get_weather_data(year, month):
                 print(
                     "Mismatched row:", cleaned_row
                 )  # Debug print to check any mismatched row
-    
-    with open(f"filtered_data_{year}_{month}.json", "w") as f:
-        f.write(json.dumps(records))
-    return records 
+
+    # with open(f"filtered_data_{year}_{month}.json", "w") as f:
+    #     f.write(json.dumps(records))
+    return records
+
 
 def main():
-    # client = Elasticsearch(
-    #     "https://elasticsearch-master.elastic.svc.cluster.local:9200",
-    #     verify_certs=False,
-    #     basic_auth=("elastic", "elastic"),
-    # )
+    client = Elasticsearch(
+        "https://elasticsearch-master.elastic.svc.cluster.local:9200",
+        verify_certs=False,
+        basic_auth=("elastic", "elastic"),
+    )
     years = range(2019, 2025)
     months = range(1, 13)
     count = 0
@@ -75,7 +76,7 @@ def main():
 
             for obs in records:
                 try:
-                    # res = client.index(index="weather", id=f'{obs["Date"]}', body=obs)
+                    res = client.index(index="weather", id=f'{obs["Date"]}', body=obs)
                     count += 1
                     logging.info("A new observation has been added.")
                 except Exception as e:
@@ -83,8 +84,10 @@ def main():
                     continue
                     # return json.dumps({"status_code": 400, "text": f"Failed to add observation, {e}"})
 
-    return json.dumps({"status_code": 200, "message": f"Successfully added {count} records"})
+    return json.dumps(
+        {"status_code": 200, "message": f"Successfully added {count} records"}
+    )
+
 
 if __name__ == "__main__":
     main()
-
