@@ -82,7 +82,7 @@ def main():
     end_point = 167110
     all_records = []
 
-    while offset <= 167110:
+    while offset <= 155766:
         params = {
             'resource_id': resource_id,
             'limit': limit,
@@ -91,7 +91,12 @@ def main():
         response = requests.get(url, params=params)
         if response.status_code == 200:
             data = response.json()
+            print(data)
             records = data['result']['records']
+            for obs in records:
+                id = obs["_id"]
+                print(id)
+
             all_records.extend(records)
             if len(records) < limit:
                 break
@@ -102,7 +107,4 @@ def main():
 
     json_data = json.dumps(all_records)
     return json_data
-
-
-
 
