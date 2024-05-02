@@ -1,11 +1,11 @@
 # CCC-Project
 
-## ElasticSearch
 
+## ElasticSearch
 ### Accessing the ElasticSearch API and the Kibana User Interface
 
 - Prequisite:
-  - Before accessing Kubernetes services, an SSH tunnel to the bastion node has to be opened in a different shell and kept open. In addition, the `openrc` file has to be source and the kubeconfig file put under the `~/.kube` directory (see the READM in the `installation` folder for more details).
+	- Before accessing Kubernetes services, an SSH tunnel to the bastion node has to be opened in a different shell and kept open. In addition, the `openrc` file has to be source and the kubeconfig file put under the `~/.kube` directory (see the READM in the `installation` folder for more details).
 
 To access services on the cluster, one has to use the `port-forward` command of `kubectl` in a new terminal window.
 
@@ -27,20 +27,20 @@ curl -k 'https://127.0.0.1:9200/_cluster/health' --user 'elastic:elastic' | jq '
 
 Test the Kibana user interface by pointing the browser to: `http://127.0.0.1:5601/` (the default credentials are `elastic:elastic`).
 
+
 ### Operations
 
 #### Search
 
 ```bash
-curl -XGET -k "https://127.0.0.1:9200/weather/_search"\
+curl -XGET -k "https://127.0.0.1:9200/accidents/_search"\
   --header 'Content-Type: application/json'\
   --data '{
     "query": {
         "range": {
-			"Date": {
-			"gte": "20240301",
-			"lte": "20240303",
-			"format": "yyyyMMdd"
+			"_id": {
+			"gte": "140650",
+			"lte": "140655",
 			}
 		}
 	}
@@ -49,20 +49,18 @@ curl -XGET -k "https://127.0.0.1:9200/weather/_search"\
 ```
 
 ```bash
-curl -XGET -k "https://127.0.0.1:9200/weather/_search"\
+curl -XGET -k "https://127.0.0.1:9200/test/_search"\
   --header 'Content-Type: application/json'\
   --data '{
     "query": {
-        "match_all": {
-
-		}
+        "match_all": {}
 	}
 	}'\
   --user 'elastic:elastic' | jq '.'
 ```
 
 ```bash
-curl -XGET -k "https://127.0.0.1:9200/weather/_search" \
+curl -XGET -k "https://127.0.0.1:9200/accidents/_search" \
   --header 'Content-Type: application/json' \
   --user 'elastic:elastic' \
   --data '{
@@ -81,7 +79,123 @@ curl -XGET -k "https://127.0.0.1:9200/weather/_search" \
 
 ```
 
+#### Insert Doc
+
+```bash
+curl -XPOST -k "https://127.0.0.1:9200/test/_doc/"\
+  --header 'Content-Type: application/json'\
+  --data '{
+        "a": "2",
+        "b": "3",
+        "c": "3"
+    }'\
+  --user 'elastic:elastic' | jq '.'
+```
+
+```bash
+curl -XPUT -k "https://127.0.0.1:9200/test/_doc/_YX4M48Bx6f91pQDqVKV"\
+  --header 'Content-Type: application/json'\
+  --data '{
+        "e": "10"
+    }'\
+  --user 'elastic:elastic' | jq '.'
+```
 #### Create Index
+
+```bash
+curl -XPUT -k 'https://127.0.0.1:9200/test' \
+   --user 'elastic:elastic' \
+   --header 'Content-Type: application/json' \
+   --data '{
+  "settings": {
+    "index": {
+            "number_of_shards": 3,
+            "number_of_replicas": 1
+        }
+  },
+  "mappings": {
+    "properties": {
+      "a": {
+        "type": "text"
+      }, 
+      "b": {
+	      "type": "text"
+      }
+    }
+  }
+}'  | jq '.'
+```
+
+```bash
+curl -XPUT -k 'https://127.0.0.1:9200/accidents' \
+   --user 'elastic:elastic' \
+   --header 'Content-Type: application/json' \
+   --data '{
+  "settings": {
+    "index": {
+            "number_of_shards": 3,
+            "number_of_replicas": 1
+        }
+  },
+  "mappings": {
+    "properties": {
+      "ACCIDENT_NO": {
+        "type": "keyword"
+      },
+      "ACCIDENT_DATE": {
+        "type": "date",
+        "format": "yyyy-MM-dd"
+      },
+      "ACCIDENT_TIME": {
+        "type": "text"
+      },
+      "ACCIDENT_TYPE": {
+        "type": "integer"
+      },
+      "ACCIDENT_TYPE_DESC": {
+        "type": "text"
+      },
+      "DAY_OF_WEEK": {
+	     "type": "integer"
+	  },
+      "NODE_ID": {
+        "type": "integer"
+      },
+      "NO_OF_VEHICLES": {
+        "type": "integer"
+      },
+      "NO_PERSONS_KILLED": {
+        "type": "integer"
+      },
+      "NO_PERSONS_INJ_2": {
+        "type": "integer"
+      },
+      "NO_PERSONS_INJ_3": {
+        "type": "integer"
+      },
+      "NO_PERSONS_NOT_INJ": {
+        "type": "integer"
+      },
+      "NO_PERSONS": {
+        "type": "integer"
+      },
+      "ROAD_GEOMETRY": {
+        "type": "integer"
+      },
+      "ROAD_GEOMETRY_DESC": {
+        "type": "text"
+      },
+      "SEVERITY": {
+        "type": "integer"
+      },
+      "SPEED_ZONE": {
+        "type": "integer"
+      }
+    }
+  }
+}'  | jq '.'
+
+```
 
 ```
 curl -XPUT -k 'https://127.0.0.1:9200/weather' \
@@ -152,11 +266,9 @@ curl -XPUT -k 'https://127.0.0.1:9200/weather' \
 ```
 
 #### Delete Index
-
 ```
-curl -XDELETE -k 'https://127.0.0.1:9200/weather' --user 'elastic:elastic' | jq '.'
+curl -XDELETE -k 'https://127.0.0.1:9200/accidents' --user 'elastic:elastic' | jq '.'
 ```
-
 ## Fission
 
 ### Function
@@ -197,12 +309,12 @@ fission package create --sourcearchive ./functions/addobservations.zip\
   --env python\
   --name addobservations\
   --buildcmd './build.sh'
-
+  
 fission fn create --name addobservations\
   --pkg addobservations\
   --env python\
   --entrypoint "addobservations.main"
-
+  
 fission route create --url /addobservations --function addobservations --name addobservations --createingress
 
 
@@ -225,10 +337,10 @@ We start by using the fission commands to create the YAML files defining the rou
 fission route create --name avgtempday --function avgtemp \
     --method GET \
     --url '/temperature/days/{date:[0-9][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]}'
-
+    
 fission route create --name searchweatherdate --method GET --url "/searchweather/dates/{start_date}/{end_date}" --function searchweather
 
-
+    
 ```
 
 ### 删除三件套
@@ -247,7 +359,6 @@ fission pkg delete --name addobservations
 #### getweather
 
 - Create
-
 ```
 cd functions/getweather
 zip -r getweather.zip .
@@ -259,20 +370,18 @@ fission package create --sourcearchive ./functions/getweather.zip\
   --env python\
   --name getweather\
   --buildcmd './build.sh'
-
+  
 fission fn create --name getweather\
   --pkg getweather\
   --env python\
   --entrypoint "getweather.main"
-
+  
 fission route create --url /getweather --function getweather --name getweather --createingress
 
 
 curl "http://127.0.0.1:9090/getweather" | jq '.'
 ```
-
 - Delete
-
 ```
 fission function delete --name getweather
 fission route delete --name getweather
@@ -282,7 +391,6 @@ fission pkg delete --name getweather
 #### searchweather
 
 - Create
-
 ```bash
 cd functions/searchweather
 zip -r searchweather.zip .
@@ -313,8 +421,8 @@ curl "http://127.0.0.1:9090/searchweather" | jq '.'
 
 fission route create --name searchweatherdate --method GET --url "/searchweather/{start_date}/{end_date}" --function searchweather
 
-- Delete
 
+- Delete
 ```
 fission function delete --name searchweather
 fission pkg delete --name searchweather
@@ -326,7 +434,6 @@ fission route delete --name searchweather
 #### getaccidents
 
 - Create
-
 ```bash
 cd functions/getaccidents
 zip -r getaccidents.zip .
@@ -348,19 +455,18 @@ fission route create --url /getaccidents --function getaccidents --name getaccid
 
 curl "http://127.0.0.1:9090/getaccidents" | jq '.'
 ```
-
 - Delete
-
 ```bash
 fission function delete --name getaccidents
 fission route delete --name getaccidents
 fission pkg delete --name getaccidents
 ```
 
+
+
 #### extractdata
 
 - Create
-
 ```
 cd functions/extractdata
 zip -r extractdata.zip .
@@ -372,20 +478,18 @@ fission package create --sourcearchive ./functions/extractdata.zip\
   --env python\
   --name extractdata\
   --buildcmd './build.sh'
-
+  
 fission fn create --name extractdata\
   --pkg extractdata\
   --env python\
   --entrypoint "extractdata.main"
-
+  
 fission route create --url /extractdata --function extractdata --name extractdata --createingress
 
 
 curl "http://127.0.0.1:9090/extractdata" | jq '.'
 ```
-
 - Delete
-
 ```
 fission function delete --name extractdata
 fission route delete --name extractdata
@@ -396,7 +500,7 @@ fission pkg delete --name extractdata
 
 ```
 cd functions/storeweather
-zip -r storeweather.zip .
+zip -r storeweather.zip . -v
 mv storeweather.zip ../
 
 cd ../..
@@ -405,20 +509,18 @@ fission package create --sourcearchive ./functions/storeweather.zip\
   --env python\
   --name storeweather\
   --buildcmd './build.sh'
-
+  
 fission fn create --name storeweather\
   --pkg storeweather\
   --env python\
   --entrypoint "storeweather.main"
-
+  
 fission route create --url /storeweather --function storeweather --name storeweather --createingress
 
 
-curl "http://127.0.0.1:9090/storeweather" | jq '.'
+curl "http://127.0.0.1:9090/storeweather" 
 ```
-
 - Delete
-
 ```
 fission function delete --name storeweather
 fission route delete --name storeweather
@@ -438,22 +540,52 @@ fission package create --sourcearchive ./functions/combo.zip\
   --env python\
   --name combo\
   --buildcmd './build.sh'
-
+  
 fission fn create --name combo\
   --pkg combo\
   --env python\
   --entrypoint "combo.main"
-
+  
 fission route create --url /combo --function combo --name combo --createingress
 
 
-curl "http://127.0.0.1:9090/combo" | jq '.'
+curl "http://127.0.0.1:9090/combo" 
 ```
-
 - Delete
-
 ```
 fission function delete --name combo
 fission route delete --name combo
 fission pkg delete --name combo
+```
+
+
+#### getlocations
+```
+cd functions/getlocations
+zip -r getlocations.zip .
+mv getlocations.zip ../
+
+cd ../..
+
+fission package create --sourcearchive ./functions/getlocations.zip\
+  --env python\
+  --name getlocations\
+  --buildcmd './build.sh'
+  
+fission fn create --name getlocations\
+  --pkg getlocations\
+  --env python\
+  --entrypoint "getlocations.main"\
+  --configmap myconfig
+  
+fission route create --url /getlocations --function getlocations --name getlocations --createingress
+
+
+curl "http://127.0.0.1:9090/getlocations" 
+```
+- Delete
+```
+fission function delete --name getlocations
+fission route delete --name getlocations
+fission pkg delete --name getlocations
 ```
