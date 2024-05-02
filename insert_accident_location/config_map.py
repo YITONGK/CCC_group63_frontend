@@ -1,32 +1,19 @@
-import csv
 import json
-import os.path
 from elasticsearch8 import Elasticsearch, helpers
 
 
-def get_absolut_path(file_name):
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    abs_file_path = os.path.join(dir_path, file_name)
-    return abs_file_path
-
-
-def get_data(file_path):
+def get_json_data(file_path):
     try:
-        with open(file_path, 'r', encoding='utf-8-sig') as f:
-            datalist = []
-            csv_dict = csv.DictReader(f)
-            for row in csv_dict:
-                row['LATITUDE'] = float(row['LATITUDE'])
-                row['LONGITUDE'] = float(row['LONGITUDE'])
-                datalist.append(row)
-        # output = json.dumps(datalist, indent=4)
-        # print(output)
-        return datalist
-    except FileNotFoundError as e:
-        print("error: ", e)
+        with open(file_path, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("FileNotFoundError: The file was not found.")
         return None
-    except ValueError as e:
-        print("Error in converting LATITUDE or LONGITUDE to float: ", e)
+    except json.JSONDecodeError:
+        print("JSONDecodeError: The file is not in a proper JSON format.")
+        return None
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
         return None
 
 
@@ -37,11 +24,10 @@ def main():
         basic_auth=("elastic", "elastic"),
     )
     count = 0
-    records = get_data(get_absolut_path("accident_location.csv"))
+    records = get_json_data("/configs/accident_location.json")
 
     if records is None:
         return json.dumps({"status_code": 500, "message": "File not found"})
-
     actions = []
 
     for obs in records:
