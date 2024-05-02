@@ -55,9 +55,11 @@ def main():
         if len(actions) == 500:
             helpers.bulk(client, actions)
             actions = []
+            count += 500
 
     if actions:
         helpers.bulk(client, actions)
+        count += len(actions)
 
     return json.dumps(
         {"status_code": 200, "message": f"Successfully added {count} records"}
