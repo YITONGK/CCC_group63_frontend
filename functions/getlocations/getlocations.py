@@ -1,74 +1,58 @@
 import csv
 import json
-import os.path
+import os
 from elasticsearch8 import Elasticsearch, helpers
 
 
-def get_absolut_path(file_name):
+def get_absolute_path(file_name):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     abs_file_path = os.path.join(dir_path, file_name)
     return abs_file_path
 
 
-def get_data(file_path):
-    try:
-        with open(file_path, "r", encoding="utf-8-sig") as f:
-            datalist = []
-            csv_dict = csv.DictReader(f)
-            for row in csv_dict:
-                row["LATITUDE"] = float(row["LATITUDE"])
-                row["LONGITUDE"] = float(row["LONGITUDE"])
-                datalist.append(row)
-        # output = json.dumps(datalist, indent=4)
-        # print(output)
-        return datalist
-    except FileNotFoundError as e:
-        print("error: ", e)
-        return None
-    except ValueError as e:
-        print("Error in converting LATITUDE or LONGITUDE to float: ", e)
-        return None
+def read_all_rows(file_path):
+    with open(file_path, newline="") as file:
+        reader = csv.DictReader(file)
+        next(reader)
+        return [row for row in reader]
 
 
 def main():
-    # return json.dumps({"status_code": 500, "message": "File not found"})
-    # client = Elasticsearch(
-    #     "https://elasticsearch-master.elastic.svc.cluster.local:9200",
-    #     verify_certs=False,
-    #     basic_auth=("elastic", "elastic"),
+    # return json.dumps(
+    #     {"status": 200, "message": "Successfully inserted records" }
     # )
-    count = 0
-    # file_path = get_absolut_path("accident_location.csv")
-    # return json.dumps({"status_code": 200, "message": file_path})
-    # return json.dumps({"status_code": 200, "message" :"Available files at /configs: "+ str(os.listdir("/configs"))})
-    records = get_data("/accident_location.csv")
-
-    if records is None:
-        return json.dumps({"status_code": 500, "message": "File not found"})
-
+    file_path = get_absolute_path("accident_location.csv")
+    client = Elasticsearch(
+        "https://elasticsearch-master.elastic.svc.cluster.local:9200",
+        verify_certs=False,
+        basic_auth=("elastic", "elastic"),
+    )
     actions = []
-
+    count = 0
+    records = read_all_rows(file_path)
     for obs in records:
+        # print(obs)
+
         action = {
             "_index": "accident_locations",
             "_id": obs["ACCIDENT_NO"],
             "_op_type": "index",
+            # "_source": {
+            #     key: obs[key] for key in obs
+            # }
             "_source": obs,
         }
+        # print(action)
+        # break
         actions.append(action)
+        count += 1
         if len(actions) == 500:
-            # helpers.bulk(client, actions)
+            helpers.bulk(client, actions)
             actions = []
-            count += 500
 
     if actions:
-        # helpers.bulk(client, actions)
-        count += len(actions)
+        helpers.bulk(client, actions)
 
     return json.dumps(
-        {"status_code": 200, "message": f"Successfully added {count} records"}
+        {"status": 200, "message": "Successfully inserted records: " + str(count)}
     )
-
-
-if __name__ == "__main__":
-    print(main())
