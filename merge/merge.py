@@ -40,7 +40,7 @@ def write_csv(filepath, data):
 
 
 accidents_filtered = read_accidents(
-    "ACCIDENT.csv", datetime(2022, 9, 29), datetime(2023, 9, 30)
+    "ACCIDENT.csv", datetime(2022, 9, 1), datetime(2023, 9, 30)
 )
 nodes_data = read_nodes("NODE.csv")
 merged_results = merge_data(accidents_filtered, nodes_data)
