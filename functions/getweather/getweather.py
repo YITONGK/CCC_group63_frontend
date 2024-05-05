@@ -68,7 +68,7 @@ def main():
         verify_certs=False,
         basic_auth=("elastic", "elastic"),
     )
-    years = range(2019, 2025)
+    years = range(2023, 2025)
     months = range(1, 13)
     count = 0
     all_records = []
