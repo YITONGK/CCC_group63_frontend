@@ -35,19 +35,14 @@ def main():
             "_index": "roadcondition",
             "_id": obs["ACCIDENT_NO"],
             "_op_type": "index",
-            # "_source": {
-            #     key: obs[key] for key in obs
-            # }
             "_source": obs
         }
-        # print(action)
-        # break
         actions.append(action)
         count += 1
         if len(actions) == 500:
             helpers.bulk(client, actions)
             actions = []
-    
+
     if actions:
         helpers.bulk(client, actions)
 

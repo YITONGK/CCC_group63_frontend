@@ -33,7 +33,7 @@ def write_csv(filepath, data):
         writer.writerow(['ACCIDENT_NO', 'SURFACE_COND', 'SURFACE_COND_DESC', 'SURFACE_COND_SEQ'])
         writer.writerows(data)
 
-accidents_filtered = read_accidents('ACCIDENT.csv', datetime(2022, 1, 1), datetime(2023, 9, 30))
+accidents_filtered = read_accidents('../ACCIDENT.csv', datetime(2022, 1, 1), datetime(2023, 9, 30))
 road_surface_data = read_road_surface('ROAD_SURFACE_COND.csv')
 merged_results = merge_data(accidents_filtered, road_surface_data)
 write_csv('accident_road_surface.csv', merged_results)
