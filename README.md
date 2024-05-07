@@ -717,3 +717,38 @@ curl --max-time 300 "http://127.0.0.1:9090/getgeoinfo" | jq '.'
 fission function delete --name getgeoinfo
 fission route delete --name getgeoinfo
 fission pkg delete --name getgeoinfo
+
+
+#### getpopulation
+
+- Create
+
+```
+cd functions/getpopulation
+zip -r getpopulation.zip .
+mv getpopulation.zip ../
+
+cd ../..
+
+fission package create --sourcearchive getpopulation.zip\
+  --env python\
+  --name getpopulation\
+  --buildcmd './build.sh'
+
+fission fn create --name getpopulation\
+  --pkg getpopulation\
+  --env python\
+  --entrypoint "getpopulation.main"
+
+fission route create --url /getpopulation --function getpopulation --name getpopulation --createingress
+
+
+curl "http://127.0.0.1:9090/getpopulation" | jq '.'
+```
+
+- Delete
+
+```
+fission function delete --name getpopulation
+fission route delete --name getpopulation
+fission pkg delete --name getpopulation
