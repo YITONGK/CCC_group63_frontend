@@ -695,7 +695,7 @@ mv getgeoinfo.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/geoinfo.zip\
+fission package create --sourcearchive getgeoinfo.zip\
   --env python\
   --name getgeoinfo\
   --buildcmd './build.sh'
@@ -708,7 +708,7 @@ fission fn create --name getgeoinfo\
 fission route create --url /getgeoinfo --function getgeoinfo --name getgeoinfo --createingress
 
 
-curl "http://127.0.0.1:9090/getgeoinfo" | jq '.'
+curl --max-time 300 "http://127.0.0.1:9090/getgeoinfo" | jq '.'
 ```
 
 - Delete
