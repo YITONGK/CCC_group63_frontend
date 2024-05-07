@@ -67,7 +67,7 @@ def main():
         basic_auth=("elastic", "elastic"),
     )
     count = 0
-    records = get_json_data(get_absolut_path("accident_location.json"))
+    records = get_csv_data(get_absolut_path("accident_location.csv"))
 
     if records is None:
         return json.dumps({"status_code": 500, "message": "File not found"})
@@ -93,6 +93,10 @@ def main():
     return json.dumps(
         {"status_code": 200, "message": f"Successfully added {count} records"}
     )
+
+
+# def test():
+#     print(get_csv_data("accident_location.csv"))
 
 
 if __name__ == '__main__':

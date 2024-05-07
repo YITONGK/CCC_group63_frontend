@@ -39,8 +39,9 @@ def main():
         {"status_code": 200, "message": f"Successfully added {count} records"}
     )
 
+
 def test():
-    url = 'https://119a-128-250-28-162.ngrok-free.app/insert_accident_location/accident_location.json'
+    url = 'https://2596-128-250-28-162.ngrok-free.app/insert_accident_location/accident_location.json'
     response = requests.get(url)
 
     if response.status_code == 200:
@@ -57,4 +58,4 @@ def test():
 
 
 if __name__ == '__main__':
-    main()
+    test()
