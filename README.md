@@ -691,21 +691,21 @@ fission pkg delete --name getcsv
 ```
 cd functions/getgeoinfo
 zip -r getgeoinfo.zip .
-mv geoinfo.zip ../
+mv getgeoinfo.zip ../
 
 cd ../..
 
 fission package create --sourcearchive ./functions/geoinfo.zip\
   --env python\
-  --name geoinfo\
+  --name getgeoinfo\
   --buildcmd './build.sh'
 
 fission fn create --name getgeoinfo\
-  --pkg geoinfo\
+  --pkg getgeoinfo\
   --env python\
   --entrypoint "getgeoinfo.main"
 
-fission route create --url /getweather --function getgeoinfo --name getgeoinfo --createingress
+fission route create --url /getgeoinfo --function getgeoinfo --name getgeoinfo --createingress
 
 
 curl "http://127.0.0.1:9090/getgeoinfo" | jq '.'
