@@ -7,9 +7,13 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 
-# supposed to have 1347269 points
+big_polygons = ['MOIRA', 'MORNINGTON PENINSULA', 'SOUTHERN GRAMPIANS', 'MILDURA', 'GOLDEN PLAINS', 'SWAN HILL',
+                'GLENELG', 'CAMPASPE', 'GANNAWARRA', 'GREATER GEELONG', 'WELLINGTON', 'EAST GIPPSLAND', 'LATROBE',
+                'INDIGO', 'COLAC OTWAY', 'CORANGAMITE', 'MOYNE', 'TOWONG', 'MANSFIELD']
+
+
 def main():
-    filepath = "https://810e-128-250-0-203.ngrok-free.app/output_geo.json"
+    filepath = "https://bb125090596d.ngrok.app/0.99_output_geo.json"
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
         verify_certs=False,
@@ -24,6 +28,8 @@ def main():
         if response.status_code == 200:
             geo_data = response.json()
             for lga_data in geo_data:
+                if lga_data['LGA_NAME'] in big_polygons:
+                    continue
                 nested_coordinates = [{"lat": float(coord[0]), "lon": float(coord[1])} for coord in lga_data['coordinates']]
                 action = {
                     "_index": "geoinfo",
@@ -34,14 +40,18 @@ def main():
                 }
                 actions.append(action)
                 count += 1
-                if len(actions) == 10:
-                    helpers.bulk(client, actions)
-                    for action in actions:
-                        lga_added.append(action["_source"]["LGA_NAME"])
-                        points_added += len(action["_source"]["coordinates"])
-                    actions = []
-            if actions:
                 helpers.bulk(client, actions)
+                lga_added.append(action["_source"]["LGA_NAME"])
+                points_added += len(action["_source"]["coordinates"])
+                actions = []
+            #     if len(actions) == 10:
+            #         helpers.bulk(client, actions)
+            #         for action in actions:
+            #             lga_added.append(action["_source"]["LGA_NAME"])
+            #             points_added += len(action["_source"]["coordinates"])
+            #         actions = []
+            # if actions:
+            #     helpers.bulk(client, actions)
             return json.dumps({"status": 200, "message": "success"})
         else:
             logging.error(f"Failed to fetch data: HTTP {response.status_code}")
@@ -51,7 +61,8 @@ def main():
         return json.dumps({"status": 500,
                            "message": str(e),
                            "points added": str(points_added),
-                           "lga added": str(len(lga_added))})
+                           "lga added": str(len(lga_added)),
+                           "failed lga": action["_source"]["LGA_NAME"]})
 
 
 if __name__ == "__main__":
@@ -110,7 +121,7 @@ if __name__ == "__main__":
 
 # def validate():
 #     total_points = 0
-#     with open('../../data/output_geo.json', 'r', encoding='utf-8') as f:
+#     with open('../../data/0.99_output_geo.json', 'r', encoding='utf-8') as f:
 #         d = json.load(f)
 #         for lga in d:
 #             print(lga["LGA_NAME"], len(lga['coordinates']))
