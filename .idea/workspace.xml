@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="166fb754-1cdd-4313-8308-86250e99c5f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/getgeoinfo/getgeoinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/getgeoinfo/getgeoinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_processing/shp_to_geojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/pre_processing/shp_to_geojson.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,16 +151,28 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/processCSV_py$python_server.coverage" NAME="python_server Coverage Results" MODIFIED="1714656840518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/insert_accident_location" />
     <SUITE FILE_PATH="coverage/processCSV_py$insert_accident_locations.coverage" NAME="abs_path Coverage Results" MODIFIED="1714656979625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/insert_accident_location" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$getpopulation.coverage" NAME="getpopulation Coverage Results" MODIFIED="1715089340592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getpopulation" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$debug.coverage" NAME="debug Coverage Results" MODIFIED="1715096766125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getgeoinfo" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$shp_to_geojson.coverage" NAME="shp_to_geojson Coverage Results" MODIFIED="1715139630206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$locate_accident.coverage" NAME="locate_accident Coverage Results" MODIFIED="1715148462726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
     <SUITE FILE_PATH="coverage/processCSV_py$merge_node_accident.coverage" NAME="merge_node_accident Coverage Results" MODIFIED="1714657214256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$getgeoinfo.coverage" NAME="getgeoinfo Coverage Results" MODIFIED="1715139584257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getgeoinfo" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$simplify_polygon.coverage" NAME="simplify_polygon Coverage Results" MODIFIED="1715079336378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$simplify_json.coverage" NAME="simplify_json Coverage Results" MODIFIED="1715096727580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
-    <SUITE FILE_PATH="coverage/CCC_group63_project2$merge_node_accident.coverage" NAME="merge_node_accident Coverage Results" MODIFIED="1715139543577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$merge_node_accident.coverage" NAME="merge_node_accident Coverage Results" MODIFIED="1715148062928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
