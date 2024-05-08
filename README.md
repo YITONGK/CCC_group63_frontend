@@ -695,17 +695,17 @@ mv getgeoinfo.zip ../
 
 cd ../..
 
-fission package create --sourcearchive getgeoinfo.zip\
+fission package create --spec --sourcearchive getgeoinfo.zip\
   --env python\
   --name getgeoinfo\
   --buildcmd './build.sh'
 
-fission fn create --name getgeoinfo\
+fission fn create --spec --name getgeoinfo\
   --pkg getgeoinfo\
   --env python\
   --entrypoint "getgeoinfo.main"
 
-fission route create --url /getgeoinfo --function getgeoinfo --name getgeoinfo --createingress
+fission route create --spec --url /getgeoinfo --function getgeoinfo --name getgeoinfo --createingress
 
 
 curl --max-time 300 "http://127.0.0.1:9090/getgeoinfo" | jq '.'
@@ -730,17 +730,17 @@ mv getpopulation.zip ../
 
 cd ../..
 
-fission package create --sourcearchive getpopulation.zip\
+fission package create --spec --sourcearchive getpopulation.zip\
   --env python\
   --name getpopulation\
   --buildcmd './build.sh'
 
-fission fn create --name getpopulation\
+fission fn create --spec --name getpopulation\
   --pkg getpopulation\
   --env python\
   --entrypoint "getpopulation.main"
 
-fission route create --url /getpopulation --function getpopulation --name getpopulation --createingress
+fission route create --spec --url /getpopulation --function getpopulation --name getpopulation --createingress
 
 
 curl "http://127.0.0.1:9090/getpopulation" | jq '.'
