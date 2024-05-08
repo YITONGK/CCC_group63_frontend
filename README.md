@@ -683,3 +683,72 @@ fission function delete --name readcsv
 fission route delete --name readcsv
 fission pkg delete --name getcsv
 ```
+
+#### getgeoinfo
+
+- Create
+
+```
+cd functions/getgeoinfo
+zip -r getgeoinfo.zip .
+mv getgeoinfo.zip ../
+
+cd ../..
+
+fission package create --spec --sourcearchive getgeoinfo.zip\
+  --env python\
+  --name getgeoinfo\
+  --buildcmd './build.sh'
+
+fission fn create --spec --name getgeoinfo\
+  --pkg getgeoinfo\
+  --env python\
+  --entrypoint "getgeoinfo.main"
+
+fission route create --spec --url /getgeoinfo --function getgeoinfo --name getgeoinfo --createingress
+
+
+curl --max-time 300 "http://127.0.0.1:9090/getgeoinfo" | jq '.'
+```
+
+- Delete
+
+```
+fission function delete --name getgeoinfo
+fission route delete --name getgeoinfo
+fission pkg delete --name getgeoinfo
+
+
+#### getpopulation
+
+- Create
+
+```
+cd functions/getpopulation
+zip -r getpopulation.zip .
+mv getpopulation.zip ../
+
+cd ../..
+
+fission package create --spec --sourcearchive getpopulation.zip\
+  --env python\
+  --name getpopulation\
+  --buildcmd './build.sh'
+
+fission fn create --spec --name getpopulation\
+  --pkg getpopulation\
+  --env python\
+  --entrypoint "getpopulation.main"
+
+fission route create --spec --url /getpopulation --function getpopulation --name getpopulation --createingress
+
+
+curl "http://127.0.0.1:9090/getpopulation" | jq '.'
+```
+
+- Delete
+
+```
+fission function delete --name getpopulation
+fission route delete --name getpopulation
+fission pkg delete --name getpopulation
