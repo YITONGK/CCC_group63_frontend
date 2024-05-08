@@ -65,8 +65,8 @@ def main():
                            "failed lga": action["_source"]["LGA_NAME"]})
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 
 
@@ -119,18 +119,19 @@ def main():
 #     print(f"An error occurred: {e}")
 
 
-def validate():
-    total_points = 0
-    with open('../../data/simplified_0.99_output_geo.json', 'r', encoding='utf-8') as f:
-        d = json.load(f)
-        for lga in d:
-            print(lga["LGA_NAME"], len(lga['coordinates']))
-            total_points += len(lga['coordinates'])
-        print(len(d))
-        print(total_points)
-
-
-validate()
+# def validate():
+#     total_points = 0
+#     with open('../../data/0.99_output_geo.json', 'r', encoding='utf-8') as f:
+#     # with open('../../data/simplified_0.99_output_geo.json', 'r', encoding='utf-8') as f:
+#         d = json.load(f)
+#         for lga in d:
+#             print(lga["LGA_NAME"], len(lga['coordinates']))
+#             total_points += len(lga['coordinates'])
+#         print(len(d))
+#         print(total_points)
+#
+#
+# validate()
 
 
 

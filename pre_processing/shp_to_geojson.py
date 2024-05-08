@@ -47,16 +47,16 @@ def geojson_to_json():
 
 
 def generate_test_case():
-    with open('../data/0.99_output_geo.json', 'r', encoding='utf-8') as file:
+    with open('../data/simplified_0.99_output_geo.json', 'r', encoding='utf-8') as file:
         localities = json.load(file)
         for lga in localities:
-            if lga['LGA_NAME'] == 'MELBOURNE':
-                mel = {"LGA_NAME": "MELBOURNE", "coordinates": lga["coordinates"]}
-            if lga['LGA_NAME'] == 'YARRA':
-                yarra = {"LGA_NAME": "YARRA", "coordinates": lga["coordinates"]}
-        with open('../data/0.99_comb.json', 'w', encoding='utf-8') as f:
+            if lga['LGA_NAME'] == 'WELLINGTON':
+                mel = {"LGA_NAME": "WELLINGTON", "coordinates": lga["coordinates"]}
+            if lga['LGA_NAME'] == 'CORANGAMITE':
+                yarra = {"LGA_NAME": "CORANGAMITE", "coordinates": lga["coordinates"]}
+        with open('../data/simplified_0.99_comb.json', 'w', encoding='utf-8') as f:
             json.dump([mel, yarra], f)
 
 
-geojson_to_json()
-generate_test_case()
+# geojson_to_json()
+# generate_test_case()
