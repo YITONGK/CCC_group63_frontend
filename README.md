@@ -1,35 +1,69 @@
-# CCC-project
+# CCC Project
 
-## ElasticSearch
+## Restful API
 
-### Accessing the ElasticSearch API and the Kibana User Interface
+- `search/roadcondition`
+- `search/accidents`
+- `search/weather`
+- `search/population`
+- `search/accident_locations`
+- `search/geoinfo`
 
-- Prequisite:
-  - Before accessing Kubernetes services, an SSH tunnel to the bastion node has to be opened in a different shell and kept open. In addition, the `openrc` file has to be source and the kubeconfig file put under the `~/.kube` directory (see the READM in the `installation` folder for more details).
+## Setup
 
-To access services on the cluster, one has to use the `port-forward` command of `kubectl` in a new terminal window.
+1. Connect to VPN
+2.
+
+```
+source <path/to/openrc.sh>
+```
+
+3. ssh
+
+```
+ssh -i <path/to/.pem> -L 6443:$(openstack coe cluster show elastic -f json | jq -r '.master_addresses[]'):6443 ubuntu@$(openstack server show bastion -c addresses -f json | jq -r '.addresses["qh2-uom-internal"][]')
+```
+
+4. ES
 
 ```
 kubectl port-forward service/elasticsearch-master -n elastic 9200:9200
 ```
 
-To access the Kibana user interface, one has to use the `port-forward` command of `kubectl` (another terminal window):
+5. kibana
 
 ```
 kubectl port-forward service/kibana-kibana -n elastic 5601:5601
 ```
 
-Test the ElasticSearch API:
+6. Fission
 
 ```
-curl -k 'https://127.0.0.1:9200/_cluster/health' --user 'elastic:elastic' | jq '.'
+kubectl port-forward service/router -n fission 9090:80
 ```
 
-Test the Kibana user interface by pointing the browser to: `http://127.0.0.1:5601/` (the default credentials are `elastic:elastic`).
+## ElasticSearch
 
 ### Operations
 
 #### Search
+
+```bash
+
+curl -XGET -k "https://127.0.0.1:9200/accidents/_search"\
+  --header 'Content-Type: application/json'\
+  --data '{
+  "query": {
+    "nested": {
+      "path": "nodes",
+      "query": {
+        "match_all": {}
+      }
+    }
+  }
+}'\
+  --user 'elastic:elastic' | jq '.'
+```
 
 ```bash
 curl -XGET -k "https://127.0.0.1:9200/accident_locations/_search"\
@@ -150,15 +184,18 @@ curl -XPUT -k 'https://127.0.0.1:9200/accidents' \
   },
   "mappings": {
     "properties": {
+    "relation_type": {
+	    "type": "join",
+	    "relations": {
+		    "accident": "node"
+		    }
+		},
       "ACCIDENT_NO": {
         "type": "keyword"
       },
       "ACCIDENT_DATE": {
         "type": "date",
         "format": "yyyy-MM-dd"
-      },
-      "ACCIDENT_TIME": {
-        "type": "text"
       },
       "ACCIDENT_TYPE": {
         "type": "integer"
@@ -237,35 +274,7 @@ curl -XPUT -k 'https://127.0.0.1:9200/weather' \
 
 "Maximum temperature (°C)": {"type": "float"},
 
-"Rainfall (mm)": {"type": "float"},
-
-"Evaporation (mm)": {"type": "float"},
-
-"Sunshine (hours)": {"type": "float"},
-
-"Speed of maximum wind gust (km/h)": {"type": "float"},
-
-"Time of maximum wind gust": {"type": "text"},
-
-"9am Temperature (°C)": {"type": "float"},
-
-"9am relative humidity (%)": {"type": "integer"},
-
-"9am cloud amount (oktas)": {"type": "integer"},
-
-"9am wind speed (km/h)": {"type": "integer"},
-
-"9am MSL pressure (hPa)": {"type": "float"},
-
-"3pm Temperature (°C)": {"type": "float"},
-
-"3pm relative humidity (%)": {"type": "integer"},
-
-"3pm cloud amount (oktas)": {"type": "integer"},
-
-"3pm wind speed (km/h)": {"type": "integer"},
-
-"3pm MSL pressure (hPa)": {"type": "float"}
+"Rainfall (mm)": {"type": "float"}
 
 }
 
@@ -361,6 +370,13 @@ fission route create --name searchweatherdate --method GET --url "/searchweather
 chmod +x build.sh
 
 ```
+fission specs init
+< after creation of env/pkg/fn/route>
+fission spec validate
+fission spec apply --specdir specs --wait
+```
+
+```
 fission function delete --name weather
 fission route delete --name weather
 fission pkg list
@@ -377,23 +393,24 @@ fission pkg delete --name addobservations
 
 ```
 cd functions/getweather
-zip -r getweather.zip .
+zip -r getweather.zip . -x "*.DS_Store"
 mv getweather.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/getweather.zip\
+fission package create --spec --sourcearchive ./functions/getweather.zip\
   --env python\
   --name getweather\
   --buildcmd './build.sh'
 
-fission fn create --name getweather\
+fission fn create --spec --name getweather\
   --pkg getweather\
   --env python\
   --entrypoint "getweather.main"
 
-fission route create --url /getweather --function getweather --name getweather --createingress
+fission route create --spec --url /getweather --function getweather --name getweather --createingress
 
+fission spec apply --specdir specs --wait
 
 curl "http://127.0.0.1:9090/getweather" | jq '.'
 ```
@@ -412,26 +429,28 @@ fission pkg delete --name getweather
 
 ```bash
 cd functions/searchweather
-zip -r searchweather.zip .
+zip -r searchweather.zip . -x "*.DS_Store"
 mv searchweather.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/searchweather.zip\
+fission package create --spec --sourcearchive ./functions/searchweather.zip\
   --env python\
   --name searchweather\
   --buildcmd './build.sh'
 
-fission fn create --name searchweather\
+fission fn create --spec --name searchweather\
   --pkg searchweather\
   --env python\
   --entrypoint "searchweather.main"
 
-fission httptrigger create --method GET \
-    --url "/searchweather/{StartDate}/{EndDate}" --function searchweather --name searchweatherdates
+fission httptrigger create --spec --method GET \
+    --url "/searchweather/{StartDate}/{EndDate}" --function searchweather --name searchweather
+
+fission httptrigger create --spec --method GET \
+    --url "/searchweather?sdate={StartDate}&edate={EndDate}" --function searchweather --name searchweather
 
 curl "http://127.0.0.1:9090/searchweather/2024-03-01/2024-03-11" | jq '.'
-
 ```
 
 fission route create --url /searchweather --function searchweather --name searchweather --createingress
@@ -445,10 +464,8 @@ fission route create --name searchweatherdate --method GET --url "/searchweather
 ```
 fission function delete --name searchweather
 fission pkg delete --name searchweather
-fission route delete --name searchweatherdates
-```
-
 fission route delete --name searchweather
+```
 
 #### getaccidents
 
@@ -456,22 +473,22 @@ fission route delete --name searchweather
 
 ```bash
 cd functions/getaccidents
-zip -r getaccidents.zip .
+zip -r getaccidents.zip . -x "*.DS_Store"
 mv getaccidents.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/getaccidents.zip\
+fission package create --spec --sourcearchive ./functions/getaccidents.zip\
   --env python\
   --name getaccidents\
   --buildcmd './build.sh'
 
-fission fn create --name getaccidents\
+fission fn create --spec --name getaccidents\
   --pkg getaccidents\
   --env python\
   --entrypoint "getaccidents.main"
 
-fission route create --url /getaccidents --function getaccidents --name getaccidents --createingress
+fission route create --spec --url /getaccidents --function getaccidents --name getaccidents --createingress
 
 curl "http://127.0.0.1:9090/getaccidents" | jq '.'
 ```
@@ -484,61 +501,26 @@ fission route delete --name getaccidents
 fission pkg delete --name getaccidents
 ```
 
-#### extractdata
-
-- Create
-
-```
-cd functions/extractdata
-zip -r extractdata.zip .
-mv extractdata.zip ../
-
-cd ../..
-
-fission package create --sourcearchive ./functions/extractdata.zip\
-  --env python\
-  --name extractdata\
-  --buildcmd './build.sh'
-
-fission fn create --name extractdata\
-  --pkg extractdata\
-  --env python\
-  --entrypoint "extractdata.main"
-
-fission route create --url /extractdata --function extractdata --name extractdata --createingress
-
-
-curl "http://127.0.0.1:9090/extractdata" | jq '.'
-```
-
-- Delete
-
-```
-fission function delete --name extractdata
-fission route delete --name extractdata
-fission pkg delete --name extractdata
-```
-
 #### storeweather
 
-```
+```bash
 cd functions/storeweather
-zip -r storeweather.zip . -v
+zip -r storeweather.zip . -x "*.DS_Store"
 mv storeweather.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/storeweather.zip\
+fission package create --spec --sourcearchive ./functions/storeweather.zip\
   --env python\
   --name storeweather\
   --buildcmd './build.sh'
 
-fission fn create --name storeweather\
+fission fn create --spec --name storeweather\
   --pkg storeweather\
   --env python\
   --entrypoint "storeweather.main"
 
-fission route create --url /storeweather --function storeweather --name storeweather --createingress
+fission route create --spec --url /storeweather --function storeweather --name storeweather --createingress
 
 
 curl "http://127.0.0.1:9090/storeweather"
@@ -552,39 +534,6 @@ fission route delete --name storeweather
 fission pkg delete --name storeweather
 ```
 
-#### combo
-
-```
-cd functions/combo
-zip -r combo.zip .
-mv combo.zip ../
-
-cd ../..
-
-fission package create --sourcearchive ./functions/combo.zip\
-  --env python\
-  --name combo\
-  --buildcmd './build.sh'
-
-fission fn create --name combo\
-  --pkg combo\
-  --env python\
-  --entrypoint "combo.main"
-
-fission route create --url /combo --function combo --name combo --createingress
-
-
-curl "http://127.0.0.1:9090/combo"
-```
-
-- Delete
-
-```
-fission function delete --name combo
-fission route delete --name combo
-fission pkg delete --name combo
-```
-
 #### getlocations
 
 ```
@@ -594,17 +543,17 @@ mv getlocations.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/getlocations.zip\
+fission package create --spec --sourcearchive ./functions/getlocations.zip\
   --env python\
   --name getlocations\
   --buildcmd './build.sh'
 
-fission fn create --name getlocations\
+fission fn create --spec --name getlocations\
   --pkg getlocations\
   --env python\
   --entrypoint "getlocations.main"\
 
-fission route create --url /getlocations --function getlocations --name getlocations --createingress
+fission route create --spec --url /getlocations --function getlocations --name getlocations --createingress
 
 
 curl "http://127.0.0.1:9090/getlocations"
@@ -620,25 +569,26 @@ fission pkg delete --name getlocations
 
 #### getroadcondition
 
-```
+```bash
 cd functions/getroadcondition
-zip -r getroadcondition.zip .
+zip -r getroadcondition.zip . -x "*.DS_Store"
 mv getroadcondition.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/getroadcondition.zip\
+fission package create --spec --sourcearchive ./functions/getroadcondition.zip\
   --env python\
   --name getroadcondition\
   --buildcmd './build.sh'
 
-fission fn create --name getroadcondition\
+fission fn create --spec --name getroadcondition\
   --pkg getroadcondition\
   --env python\
   --entrypoint "getroadcondition.main"\
 
-fission route create --url /getroadcondition --function getroadcondition --name getroadcondition --createingress
+fission route create --spec --url /getroadcondition --function getroadcondition --name getroadcondition --createingress
 
+fission spec apply --specdir specs --wait
 
 curl "http://127.0.0.1:9090/getroadcondition"
 ```
@@ -651,35 +601,36 @@ fission route delete --name getroadcondition
 fission pkg delete --name getroadcondition
 ```
 
-#### getcsv
+#### search
 
-```
-cd functions/getcsv
-zip -r getcsv.zip . -x "*.DS_Store"
-mv getcsv.zip ../
+```bash
+cd functions/search
+zip -r search.zip . -x "*.DS_Store"
+mv search.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/getcsv.zip\
+fission package create --spec --sourcearchive ./functions/search.zip\
   --env python\
-  --name getcsv\
+  --name search\
   --buildcmd './build.sh'
 
-fission fn create --name getcsv\
-  --pkg getcsv\
+fission fn create --spec --name search\
+  --pkg search\
   --env python\
-  --entrypoint "getcsv.main"\
+  --entrypoint "search.main"\
 
-fission route create --url /readcsv --function readcsv --name readcsv --createingress
+fission route create --spec --url /search/{Indexname} --function search --name search --createingress
 
+fission spec apply --specdir specs --wait
 
-curl "http://127.0.0.1:9090/readcsv"
+curl "http://127.0.0.1:9090/search/accidents"
 ```
 
 - Delete
 
 ```
-fission function delete --name readcsv
-fission route delete --name readcsv
-fission pkg delete --name getcsv
+fission function delete --name search
+fission route delete --name search
+fission pkg delete --name search
 ```

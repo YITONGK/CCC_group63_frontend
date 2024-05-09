@@ -9,7 +9,7 @@ spec:
     container:
       name: ""
       resources: {}
-    image: fission/python-builder
+    image: fission/python-builder-3.9
   imagepullsecret: ""
   keeparchive: false
   poolsize: 3
@@ -18,5 +18,5 @@ spec:
     container:
       name: ""
       resources: {}
-    image: fission/python-env
+    image: fission/python-env-3.9
   version: 2

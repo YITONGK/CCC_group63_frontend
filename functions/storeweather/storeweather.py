@@ -22,7 +22,7 @@ def get_weather_data():
     # Specify the path to the file relative to the current working directory if needed
     # file_path = os.path.join(cwd, "storeweather/filtered_data_2023_3.json")
 
-    file_path = get_absolute_path("weather.csv")
+    file_path = get_absolute_path("weather2023.csv")
     # file_path = "filtered_data_2023_3.json"
     try:
         with open(file_path, newline="") as file:

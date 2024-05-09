@@ -4,4 +4,4 @@
 apiVersion: fission.io/v1
 kind: DeploymentConfig
 name: ccc-group63-frontend
-uid: 9e463008-3f4f-49d2-977a-93af1b4070a6
+uid: 0c73dd0c-7d43-467d-9df3-5aa7bf4e6e2c

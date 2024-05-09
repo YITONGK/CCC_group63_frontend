@@ -1,7 +1,7 @@
 include:
 - ./functions/getweather.zip
 kind: ArchiveUploadSpec
-name: functions-getweather-zip-16MZ
+name: functions-getweather-zip-rzvp
 
 ---
 apiVersion: fission.io/v1
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://functions-getweather-zip-16MZ
+    url: archive://functions-getweather-zip-rzvp
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-05T05:56:36Z"
+  lastUpdateTimestamp: "2024-05-09T00:50:22Z"

@@ -12,7 +12,7 @@ query_template = Template("""{
             "Date": {
                 "gte": "${start_date}",
                 "lte": "${end_date}",
-                "format": "yyyy-MM-dd"
+                "format": "yyyyMMdd"
             }
         }
     }
