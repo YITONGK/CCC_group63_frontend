@@ -2,6 +2,13 @@ import logging, json, requests, csv
 from io import StringIO
 from elasticsearch8 import Elasticsearch, helpers
 import os
+from datetime import datetime
+
+
+def format_date(date_str):
+    date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+    formatted_date = date_obj.strftime("%Y%m%d")  # Convert to 'yyyyMMdd'
+    return formatted_date
 
 
 def get_absolute_path(file_name):
@@ -35,11 +42,13 @@ def main():
     actions = []
     for obs in records:
         # print(obs)
+        date = format_date(obs["Date"])
+        obs["Date"] = date
 
         action = {
             "_index": "weather",
-            "_id": obs["Date"],
-            "_op_type": "index",
+            "_id": date,
+            # "_op_type": "index",
             # "_source": {
             #     key: obs[key] for key in obs
             # }
@@ -57,7 +66,11 @@ def main():
         helpers.bulk(client, actions)
 
     return json.dumps(
-        {"status_code": 200, "message": f"Successfully added {count} records"}
+        {
+            "status_code": 200,
+            "message": f"Successfully added {count} records",
+            "count": count,
+        }
     )
 
 

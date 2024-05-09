@@ -48,7 +48,7 @@ def main():
     except Exception as e:
         response = {
             "status": 500,
-            "response": f"Failed to search in roadcondition: {str(e)}",
+            "response": f"Failed to search in {index_name}: {str(e)}",
         }
 
     return json.dumps(response)

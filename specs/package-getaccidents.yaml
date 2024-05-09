@@ -1,14 +1,14 @@
 include:
-- ./functions/getweather.zip
+- ./functions/getaccidents.zip
 kind: ArchiveUploadSpec
-name: functions-getweather-zip-0zBG
+name: functions-getaccidents-zip-tsI4
 
 ---
 apiVersion: fission.io/v1
 kind: Package
 metadata:
   creationTimestamp: null
-  name: getweather
+  name: getaccidents
 spec:
   buildcmd: ./build.sh
   deployment:
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://functions-getweather-zip-0zBG
+    url: archive://functions-getaccidents-zip-tsI4
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-09T08:39:10Z"
+  lastUpdateTimestamp: "2024-05-09T08:40:11Z"

@@ -1,14 +1,14 @@
 include:
-- ./functions/getweather.zip
+- ./functions/searchweather.zip
 kind: ArchiveUploadSpec
-name: functions-getweather-zip-0zBG
+name: functions-searchweather-zip-Aohs
 
 ---
 apiVersion: fission.io/v1
 kind: Package
 metadata:
   creationTimestamp: null
-  name: getweather
+  name: searchweather
 spec:
   buildcmd: ./build.sh
   deployment:
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://functions-getweather-zip-0zBG
+    url: archive://functions-searchweather-zip-Aohs
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-09T08:39:10Z"
+  lastUpdateTimestamp: "2024-05-09T08:39:57Z"

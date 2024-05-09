@@ -18,7 +18,6 @@ def read_all_rows(file_path):
 
 
 def main():
-
     file_path = get_absolute_path("road_surface.csv")
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
@@ -38,7 +37,7 @@ def main():
             # "_source": {
             #     key: obs[key] for key in obs
             # }
-            "_source": obs
+            "_source": obs,
         }
         # print(action)
         # break
@@ -47,10 +46,14 @@ def main():
         if len(actions) == 500:
             helpers.bulk(client, actions)
             actions = []
-    
+
     if actions:
         helpers.bulk(client, actions)
 
     return json.dumps(
-        {"status": 200, "message": "Successfully inserted records: " + str(count)}
+        {
+            "status": 200,
+            "message": "Successfully inserted records: " + str(count),
+            "count": count,
+        }
     )

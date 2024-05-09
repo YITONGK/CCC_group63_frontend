@@ -74,7 +74,11 @@ def main():
         helpers.bulk(client, actions)
 
     return json.dumps(
-        {"status": 200, "message": "Successfully inserted records: " + str(count)}
+        {
+            "status": 200,
+            "message": "Successfully inserted records: " + str(count),
+            "count": count,
+        }
     )
 
 
