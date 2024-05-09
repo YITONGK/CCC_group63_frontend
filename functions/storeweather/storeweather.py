@@ -7,23 +7,13 @@ import os
 def get_absolute_path(file_name):
     # Get the absolute path of the current script
     dir_path = os.path.dirname(os.path.realpath(__file__))
-
-    # Combine the directory path with the filename to get the absolute path
     abs_file_path = os.path.join(dir_path, file_name)
 
     return abs_file_path
 
 
 def get_weather_data():
-    # Print current working directory to understand where the function is running
-    # cwd = os.getcwd()
-    # print("Current working directory: " + cwd)
-
-    # Specify the path to the file relative to the current working directory if needed
-    # file_path = os.path.join(cwd, "storeweather/filtered_data_2023_3.json")
-
     file_path = get_absolute_path("weather2023.csv")
-    # file_path = "filtered_data_2023_3.json"
     try:
         with open(file_path, newline="") as file:
             reader = csv.DictReader(file)

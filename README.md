@@ -9,6 +9,12 @@
 - `search/accident_locations`
 - `search/geoinfo`
 
+### Run Test
+
+```
+python -m unittest tests.test_api.TestAPIEndpoints.<function_name>
+```
+
 ## Setup
 
 1. Connect to VPN
