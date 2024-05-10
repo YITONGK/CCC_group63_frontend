@@ -1,0 +1,22 @@
+apiVersion: fission.io/v1
+kind: HTTPTrigger
+metadata:
+  creationTimestamp: null
+  name: put
+spec:
+  createingress: true
+  functionref:
+    functionweights: null
+    name: put
+    type: name
+  host: ""
+  ingressconfig:
+    annotations: null
+    host: '*'
+    path: /put/{Indexname}
+    tls: ""
+  method: ""
+  methods:
+  - PUT
+  prefix: ""
+  relativeurl: /put/{Indexname}

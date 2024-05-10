@@ -48,10 +48,6 @@ def main():
         action = {
             "_index": "weather",
             "_id": date,
-            # "_op_type": "index",
-            # "_source": {
-            #     key: obs[key] for key in obs
-            # }
             "_source": obs,
         }
         # print(action)
