@@ -34,6 +34,7 @@ def get_weather_data():
 def main():
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
+        # "https://127.0.0.1:9200",
         verify_certs=False,
         basic_auth=("elastic", "elastic"),
     )
@@ -48,6 +49,7 @@ def main():
         action = {
             "_index": "weather",
             "_id": date,
+            "_op_type": "index",  # Use 'index' to create or replace a document
             "_source": obs,
         }
         # print(action)

@@ -60,7 +60,19 @@ def get_weather_data(year, month):
                 record["Date"] = formatted_date
 
                 records.append(
-                    {"_index": "weather", "_id": formatted_date, "_source": record}
+                    {"_index": "weather", "_id": formatted_date, 
+                     "_op_type": "index",  # Use 'index' to create or replace a document
+                        "_source": {
+                            key: record[key]
+                            for key in record
+                            if key
+                            in [
+                                "Date",
+                                "Rainfall (mm)",
+                                "Maximum temperature (°C)",
+                                "Minimum temperature (°C)"
+                            ]
+                        },}
                 )
             else:
                 print("Mismatched row:", cleaned_row)

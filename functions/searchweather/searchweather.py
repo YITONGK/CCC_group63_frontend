@@ -26,8 +26,12 @@ def main():
     except KeyError as e:
         return {"status": 400, "message": f"Missing date parameter: {str(e)}"}
 
+    # start_date = "20230301"
+    # end_date = "20230930"
+
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
+        # "https://127.0.0.1:9200",
         verify_certs=False,
         basic_auth=("elastic", "elastic"),
     )
@@ -35,16 +39,18 @@ def main():
     # query = query_template.substitute(date=date)
     query_string = query_template.substitute(start_date=start_date, end_date=end_date)
     query = json.loads(query_string)
-    # print(query)
+    print(query)
 
     try:
         # Execute the search query in Elasticsearch
         res = client.search(
             index="weather",
             body=query,
+            size=5000,
             # query={"match_all": {}}
         )
-        response = {"status": 200, "response": str(res["hits"]["hits"])}
+        print(len(res["hits"]["hits"]))
+        response = {"status": 200, "response": res["hits"]["hits"]}
     except Exception as e:
         logging.error(f"Error executing search: {str(e)}")
         logging.error(traceback.format_exc())

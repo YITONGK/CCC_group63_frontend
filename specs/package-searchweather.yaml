@@ -1,7 +1,7 @@
 include:
 - ./functions/searchweather.zip
 kind: ArchiveUploadSpec
-name: functions-searchweather-zip-Aohs
+name: functions-searchweather-zip-fgjt
 
 ---
 apiVersion: fission.io/v1
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://functions-searchweather-zip-Aohs
+    url: archive://functions-searchweather-zip-fgjt
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-09T08:39:57Z"
+  lastUpdateTimestamp: "2024-05-11T07:34:40Z"

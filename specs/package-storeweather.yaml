@@ -1,7 +1,7 @@
 include:
 - ./functions/storeweather.zip
 kind: ArchiveUploadSpec
-name: functions-storeweather-zip-uC0p
+name: functions-storeweather-zip-gPMZ
 
 ---
 apiVersion: fission.io/v1
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://functions-storeweather-zip-uC0p
+    url: archive://functions-storeweather-zip-gPMZ
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-09T08:40:19Z"
+  lastUpdateTimestamp: "2024-05-11T06:39:30Z"
