@@ -1,43 +1,92 @@
 import requests
+import json
 
 def fetch_and_process_data():
-    # 定义URLs
+    # URLs definition
     urls = {
         'population': "http://127.0.0.1:9090/search/population",
         'accidents': "http://127.0.0.1:9090/search/accidents",
         'accident_locations': "http://127.0.0.1:9090/search/accident_locations",
-        'geoinfo': "http://127.0.0.1:9090/search/geoinfo"
+        'geoinfo': "http://127.0.0.1:9090/search/geoinfo",
+        'roadcondition': "http://127.0.0.1:9090/search/roadcondition"
     }
 
-    # 发送请求并获取数据
+    # Fetch data from URLs
     data = {key: requests.get(url).json() for key, url in urls.items()}
 
-    # 检查所有数据的状态是否为200
+    # Initialize processed_data with an empty accident_counts
+    processed_data = {
+        'population_lookup': {},
+        'accident_details': [],
+        'geo_data': [],
+        'accident_counts': {}  # Initialize empty dictionary for accident counts
+    }
+
+    # Check if all data are successfully retrieved and have status 200
     if all(d['status'] == 200 for d in data.values()):
-        processed_data = {
-            'population_lookup': {item['LGA_NAME']: item['persons_num'] for item in data['population']['response']},
-            'accident_counts': {},
-            'severities': [],  # 存储所有事故的 SEVERITY
-            'geo_data': data['geoinfo']['response']
-        }
+        processed_data['population_lookup'] = {item['LGA_NAME']: item['persons_num'] for item in data['population']['response']}
+        processed_data['geo_data'] = data['geoinfo']['response']
 
-        # 从事故位置响应中建立事故详细信息
-        for item in data['accident_locations']['response']:
-            lga_name = item['LOCATION']
-            accident_no = item['ACCIDENT_NO']
+        # Create a dictionary for road conditions for quick lookup
+        road_condition_map = {cond['ACCIDENT_NO']: cond for cond in data['roadcondition']['response']}
 
-            # 从事故数据中查找相应的事故详细信息
-            accident_info = next((acc for acc in data['accidents']['response'] if acc['ACCIDENT_NO'] == accident_no), None)
-            if accident_info:
-                # 将 SEVERITY 信息添加到列表
-                processed_data['severities'].append(accident_info.get('SEVERITY'))
+        # Create a dictionary for accident locations for quick lookup
+        accident_location_map = {acc['ACCIDENT_NO']: acc for acc in data['accident_locations']['response']}
 
-                # 计数该 LGA 的事故总数
-                if lga_name in processed_data['accident_counts']:
-                    processed_data['accident_counts'][lga_name] += 1
-                else:
-                    processed_data['accident_counts'][lga_name] = 1
+        # Merge accident details with locations and road conditions
+        for accident in data['accidents']['response']:
+            location = accident_location_map.get(accident['ACCIDENT_NO'])
+            road_condition = road_condition_map.get(accident['ACCIDENT_NO'])
+            if location and road_condition:
+                # Append detailed accident information including latitude, longitude, and road conditions
+                processed_data['accident_details'].append({
+                    'ACCIDENT_NO': accident['ACCIDENT_NO'],
+                    'ACCIDENT_DATE': accident['ACCIDENT_DATE'],
+                    'SPEED_ZONE': accident['SPEED_ZONE'],
+                    'SEVERITY': accident['SEVERITY'],
+                    'LATITUDE': location['LATITUDE'],
+                    'LONGITUDE': location['LONGITUDE'],
+                    'LOCATION': location['LOCATION'],
+                    'SURFACE_COND': road_condition['SURFACE_COND'],
+                    'SURFACE_COND_DESC': road_condition['SURFACE_COND_DESC']
+                })
+
+        # 统计每个 LGA 的事故数量
+        for detail in processed_data['accident_details']:
+            lga = detail['LOCATION']
+            if lga in processed_data['accident_counts']:
+                processed_data['accident_counts'][lga] += 1
+            else:
+                processed_data['accident_counts'][lga] = 1
 
         return processed_data
     else:
         return None
+
+
+def fetch_weather_data(start_date, end_date):
+    # 构建获取天气数据的 URL
+    weather_url = f"http://127.0.0.1:9090/searchweather/{start_date}/{end_date}"
+    
+    # 尝试获取天气数据
+    try:
+        response = requests.get(weather_url)
+        if response.status_code == 200:
+            weather_data = response.json()
+            # 解析天气数据中的 'response' 字段，并将其从字符串转换为Python对象
+            if 'response' in weather_data:
+                # 替换单引号为双引号，因为 JSON 标准只接受双引号
+                json_string = weather_data['response'].replace("'", '"')
+                # 解析 JSON 字符串
+                weather_list = json.loads(json_string)
+                # 提取每日的日期和降雨量
+                rainfall_data = {item['_source']['Date']: item['_source']['Rainfall (mm)'] for item in weather_list}
+                return rainfall_data
+            else:
+                return {'error': 'Weather data format is incorrect'}
+        else:
+            return {'error': 'Failed to fetch weather data, status code: {}'.format(response.status_code)}
+    except requests.RequestException as e:
+        return {'error': 'Failed to fetch weather data, error: {}'.format(str(e))}
+    except json.JSONDecodeError as e:
+        return {'error': 'JSON decoding failed, error: {}'.format(str(e))}
