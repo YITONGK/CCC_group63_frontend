@@ -23,3 +23,9 @@ spec:
 status:
   buildstatus: pending
   lastUpdateTimestamp: "2024-05-10T11:17:22Z"
+
+---
+include:
+- ./functions/put.zip
+kind: ArchiveUploadSpec
+name: functions-put-zip-gfHz

@@ -13,12 +13,18 @@ client = Elasticsearch(
 
 def get_index_name_and_validate():
     index_name = request.headers["X-Fission-Params-Indexname"]
-    data = request.get_json()
-
+    if index_name == "accidents" or index_name == "weather":
+        url = "http://router.fission.svc.cluster.local/extract/" + index_name 
+        response = requests.get(url, verify=False)
+        data = json.loads(response.text)["message"]
+    else:
+        data = request.get_json()
     return index_name, data
 
 
 def upload_data(index_name, actions):
+    if index_name == "weather2022":
+        index_name = "weather"
     try:
         # Prepare a single document for bulk API
         # Perform bulk indexing
