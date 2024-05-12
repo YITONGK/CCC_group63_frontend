@@ -6,7 +6,6 @@ import json
 
 
 no_pop_list = ['FRENCH-ELIZABETH-SANDSTONE ISLANDS (UNINC)',
-                'MERRI-BEK',
                 'MOUNT BULLER ALPINE RESORT (UNINC)',
                 'MOUNT HOTHAM ALPINE RESORT (UNINC)',
                 'FALLS CREEK ALPINE RESORT (UNINC)',
@@ -14,6 +13,8 @@ no_pop_list = ['FRENCH-ELIZABETH-SANDSTONE ISLANDS (UNINC)',
                 'GABO ISLAND (UNINC)',
                 'MOUNT BAW BAW ALPINE RESORT (UNINC)',
                 'LAKE MOUNTAIN ALPINE RESORT (UNINC)']
+
+
 def geojson_to_json():
     gdf = gpd.read_file("../data/0.99_LGA_POLYGON.shp")
     gdf.to_file("../data/0.99_LGA_POLYGON.geojson", driver='GeoJSON')
@@ -58,5 +59,5 @@ def generate_test_case():
             json.dump([mel, yarra], f)
 
 
-# geojson_to_json()
+geojson_to_json()
 # generate_test_case()
