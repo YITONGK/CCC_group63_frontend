@@ -51,7 +51,6 @@ def fetch_and_process_data():
                     'SURFACE_COND_DESC': road_condition['SURFACE_COND_DESC']
                 })
 
-        # 统计每个 LGA 的事故数量
         for detail in processed_data['accident_details']:
             lga = detail['LOCATION']
             if lga in processed_data['accident_counts']:
@@ -65,21 +64,13 @@ def fetch_and_process_data():
 
 
 def fetch_weather_data(start_date, end_date):
-    # 构建获取天气数据的 URL
     weather_url = f"http://127.0.0.1:9090/searchweather/{start_date}/{end_date}"
-    
-    # 尝试获取天气数据
     try:
         response = requests.get(weather_url)
         if response.status_code == 200:
             weather_data = response.json()
-            # 解析天气数据中的 'response' 字段，并将其从字符串转换为Python对象
             if 'response' in weather_data:
-                # 替换单引号为双引号，因为 JSON 标准只接受双引号
-                json_string = weather_data['response'].replace("'", '"')
-                # 解析 JSON 字符串
-                weather_list = json.loads(json_string)
-                # 提取每日的日期和降雨量
+                weather_list = weather_data['response']
                 rainfall_data = {item['_source']['Date']: item['_source']['Rainfall (mm)'] for item in weather_list}
                 return rainfall_data
             else:
