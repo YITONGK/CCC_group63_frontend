@@ -1,5 +1,32 @@
 # CCC-project
 
+# Report
+[Analysis of Potential Factors-affected Car Accidents in Victoria](https://www.overleaf.com/4751181365djrvrfzzxqrt#c886a0)
+
+# Data
+- geo VIC
+- Victoria Road Crash Data
+	[Metadata](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
+
+# Scenarios and figs (main.ipynb)
+
+- **Analysis of LGA areas and the number/severity of accidents**
+	- LGA & number of accidents & population (done)
+	- LGA & number of accidents dot map (done)
+		- Cluster of num accidents in geo
+		- Subplot of LGA & number of accidents & population, [illustration](https://plotly.com/python/mixed-subplots/)
+
+- **Analysis of population and the number of car accidents**
+	- bar chart (population increase with LGA name) + line (num of accidents), [illustration](https://plotly.com/python/figurewidget/) (ing)
+
+- **Analysis of rainfall & speed on the number of accidents**
+
+- **Pie chart analysis of the severity of the car accident**
+	- Full Severity Statistics for 2023
+
+- **Analysis of road conditions and the number of car accidents**
+
+
 ## ElasticSearch
 
 ### Accessing the ElasticSearch API and the Kibana User Interface
@@ -683,72 +710,3 @@ fission function delete --name readcsv
 fission route delete --name readcsv
 fission pkg delete --name getcsv
 ```
-
-#### getgeoinfo
-
-- Create
-
-```
-cd functions/getgeoinfo
-zip -r getgeoinfo.zip .
-mv getgeoinfo.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive getgeoinfo.zip\
-  --env python\
-  --name getgeoinfo\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name getgeoinfo\
-  --pkg getgeoinfo\
-  --env python\
-  --entrypoint "getgeoinfo.main"
-
-fission route create --spec --url /getgeoinfo --function getgeoinfo --name getgeoinfo --createingress
-
-
-curl --max-time 300 "http://127.0.0.1:9090/getgeoinfo" | jq '.'
-```
-
-- Delete
-
-```
-fission function delete --name getgeoinfo
-fission route delete --name getgeoinfo
-fission pkg delete --name getgeoinfo
-
-
-#### getpopulation
-
-- Create
-
-```
-cd functions/getpopulation
-zip -r getpopulation.zip .
-mv getpopulation.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive getpopulation.zip\
-  --env python\
-  --name getpopulation\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name getpopulation\
-  --pkg getpopulation\
-  --env python\
-  --entrypoint "getpopulation.main"
-
-fission route create --spec --url /getpopulation --function getpopulation --name getpopulation --createingress
-
-
-curl "http://127.0.0.1:9090/getpopulation" | jq '.'
-```
-
-- Delete
-
-```
-fission function delete --name getpopulation
-fission route delete --name getpopulation
-fission pkg delete --name getpopulation
