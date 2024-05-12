@@ -14,7 +14,7 @@ client = Elasticsearch(
 def get_index_name_and_validate():
     index_name = request.headers["X-Fission-Params-Indexname"]
     if index_name == "accidents" or index_name == "weather":
-        url = "http://router.fission.svc.cluster.local/extract/" + index_name 
+        url = "http://router.fission.svc.cluster.local/extract/" + index_name
         response = requests.get(url, verify=False)
         data = json.loads(response.text)["message"]
     else:
