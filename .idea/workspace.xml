@@ -6,13 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="166fb754-1cdd-4313-8308-86250e99c5f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/getgeoinfo/getgeoinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/getgeoinfo/getgeoinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/0.99_output_geo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/0.99_output_geo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/simplified_0.99_output_geo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/simplified_0.99_output_geo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/getpopulation/population.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/getpopulation/population.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pre_processing/shp_to_geojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/pre_processing/shp_to_geojson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pre_processing/simplify_polygon.py" beforeDir="false" afterPath="$PROJECT_DIR$/pre_processing/simplify_polygon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -38,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/felikskong/Desktop/CCC_group63_project2/functions/getpopulation&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/felikskong/Desktop/CCC_group63_project2/functions/searchpopulation&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,6 +60,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/functions/searchpopulation" />
+      <recent name="$PROJECT_DIR$/functions/searchgeoinfo" />
       <recent name="$PROJECT_DIR$/functions/getpopulation" />
       <recent name="$PROJECT_DIR$/functions/get_geoinfo" />
       <recent name="$PROJECT_DIR$/insert_accident_location" />
@@ -127,8 +139,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="searchweather" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CCC_group63_project2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions/searchweather" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions/searchweather/searchweather.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.searchweather" />
         <item itemvalue="Python.abs_path" />
         <item itemvalue="Python.python_server" />
       </list>
@@ -147,22 +182,41 @@
       <workItem from="1715051323138" duration="23517000" />
       <workItem from="1715085435702" duration="10656000" />
       <workItem from="1715139449446" duration="1433000" />
+      <workItem from="1715222403182" duration="3219000" />
+      <workItem from="1715390582691" duration="4288000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$local_upload.coverage" NAME="local_upload Coverage Results" MODIFIED="1715394473946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getgeoinfo" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$searchgeoinfo.coverage" NAME="searchgeoinfo Coverage Results" MODIFIED="1715223451148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/searchgeoinfo" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$debug.coverage" NAME="debug Coverage Results" MODIFIED="1715096766125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getgeoinfo" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$getlocations.coverage" NAME="getlocations Coverage Results" MODIFIED="1715151856716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getlocations" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$searchweather.coverage" NAME="searchweather Coverage Results" MODIFIED="1715225292365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/searchweather" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$locate_accident.coverage" NAME="locate_accident Coverage Results" MODIFIED="1715148462726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$simplify_geojson.coverage" NAME="simplify_geojson Coverage Results" MODIFIED="1715394138465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$simplify_json.coverage" NAME="simplify_json Coverage Results" MODIFIED="1715096727580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
     <SUITE FILE_PATH="coverage/processCSV_py$python_server.coverage" NAME="python_server Coverage Results" MODIFIED="1714656840518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/insert_accident_location" />
     <SUITE FILE_PATH="coverage/processCSV_py$insert_accident_locations.coverage" NAME="abs_path Coverage Results" MODIFIED="1714656979625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/insert_accident_location" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$getpopulation.coverage" NAME="getpopulation Coverage Results" MODIFIED="1715089340592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getpopulation" />
-    <SUITE FILE_PATH="coverage/CCC_group63_project2$debug.coverage" NAME="debug Coverage Results" MODIFIED="1715096766125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getgeoinfo" />
-    <SUITE FILE_PATH="coverage/CCC_group63_project2$shp_to_geojson.coverage" NAME="shp_to_geojson Coverage Results" MODIFIED="1715139630206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$shp_to_geojson.coverage" NAME="shp_to_geojson Coverage Results" MODIFIED="1715394041250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
     <SUITE FILE_PATH="coverage/processCSV_py$merge_node_accident.coverage" NAME="merge_node_accident Coverage Results" MODIFIED="1714657214256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$getgeoinfo.coverage" NAME="getgeoinfo Coverage Results" MODIFIED="1715139584257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions/getgeoinfo" />
     <SUITE FILE_PATH="coverage/CCC_group63_project2$simplify_polygon.coverage" NAME="simplify_polygon Coverage Results" MODIFIED="1715079336378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
-    <SUITE FILE_PATH="coverage/CCC_group63_project2$simplify_json.coverage" NAME="simplify_json Coverage Results" MODIFIED="1715096727580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pre_processing" />
-    <SUITE FILE_PATH="coverage/CCC_group63_project2$merge_node_accident.coverage" NAME="merge_node_accident Coverage Results" MODIFIED="1715139543577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CCC_group63_project2$merge_node_accident.coverage" NAME="merge_node_accident Coverage Results" MODIFIED="1715148062928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
