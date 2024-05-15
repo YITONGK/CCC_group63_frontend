@@ -1,0 +1,10 @@
+curl -XGET -k "https://127.0.0.1:9200/geoinfo/_search"\
+  --header 'Content-Type: application/json'\
+  --data '{
+    "query": {
+        "match": {
+            "LGA_NAME": "MERRI-BEK"
+        }
+      }
+  }'\
+  --user 'elastic:elastic' | jq '.'

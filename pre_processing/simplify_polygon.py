@@ -1,8 +1,10 @@
+"""
+Author: Yitong Kong
+"""
+
 import fiona
 from shapely.geometry import shape, mapping
-from fiona.crs import from_epsg
 
-# 路径设置
 input_file = "../data/LGA_POLYGON.shp"
 output_file = "../data/0.99_LGA_POLYGON.shp"
 

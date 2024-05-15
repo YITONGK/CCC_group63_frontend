@@ -1,3 +1,7 @@
+"""
+Author: Yitong Kong
+"""
+
 import json
 import pandas as pd
 from shapely.geometry import Point, Polygon
@@ -36,32 +40,3 @@ accidents.to_csv("location_with_name.csv", index=False)
 for name, poly in polygons:
     if not poly.is_valid:
         print(f"invalid polygon: {name}")
-
-
-# curl -XPUT -k 'https://127.0.0.1:9200/accident_locations' \
-#    --user 'elastic:elastic' \
-#    --header 'Content-Type: application/json' \
-#    --data '{
-#   "settings": {
-#     "index": {
-#       "number_of_shards": 3,
-#       "number_of_replicas": 1
-#     }
-#   },
-#   "mappings": {
-#     "properties": {
-#       "ACCIDENT_NO": {
-#         "type": "keyword"
-#       },
-#       "LATITUDE": {
-#         "type": "float"
-#       },
-#       "LONGTITUDE": {
-#         "type": "float"
-#       },
-#       "LOCATION": {
-#         "type": "text"
-#       }
-#     }
-#   }
-# }' | jq '.'

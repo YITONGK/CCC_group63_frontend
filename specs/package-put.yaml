@@ -1,7 +1,7 @@
 include:
-- ./functions/put.zip
+- ./backend/put.zip
 kind: ArchiveUploadSpec
-name: functions-put-zip-8mJs
+name: backend-put-zip-8mJs
 
 ---
 apiVersion: fission.io/v1
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://functions-put-zip-8mJs
+    url: archive://backend-put-zip-8mJs
 status:
   buildstatus: pending
   lastUpdateTimestamp: "2024-05-15T06:06:47Z"

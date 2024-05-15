@@ -1,5 +1,8 @@
+"""
+Author: Kexin Chen
+"""
+
 import csv
-import datetime
 
 
 def read_weather(filepath, keyname):

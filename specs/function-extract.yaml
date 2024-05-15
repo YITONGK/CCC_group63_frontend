@@ -1,7 +1,7 @@
 include:
-- ./functions/extract/extract.py
+- ./backend/extract/extract.py
 kind: ArchiveUploadSpec
-name: functions-extract-extract-py-dAoL
+name: backend-extract-extract-py-dAoL
 
 ---
 apiVersion: fission.io/v1
@@ -13,7 +13,7 @@ spec:
   deployment:
     checksum: {}
     type: url
-    url: archive://functions-extract-extract-py-dAoL
+    url: archive://backend-extract-extract-py-dAoL
   environment:
     name: python
     namespace: ""

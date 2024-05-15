@@ -418,13 +418,13 @@ fission pkg delete --name addobservations
 - Create
 
 ```bash
-cd functions/getweather
+cd backend/getweather
 zip -r getweather.zip . -x "*.DS_Store"
 mv getweather.zip ../
 
 cd ../..
 
-fission package create --spec --sourcearchive ./functions/getweather.zip\
+fission package create --spec --sourcearchive ./backend/getweather.zip\
   --env python\
   --name getweather\
   --buildcmd './build.sh'
@@ -454,13 +454,13 @@ fission pkg delete --name getweather
 - Create
 
 ```bash
-cd functions/searchweather
+cd backend/searchweather
 zip -r searchweather.zip . -x "*.DS_Store"
 mv searchweather.zip ../
 
 cd ../..
 
-fission package create --spec --sourcearchive ./functions/searchweather.zip\
+fission package create --spec --sourcearchive ./backend/searchweather.zip\
   --env python\
   --name searchweather\
   --buildcmd './build.sh'
@@ -498,13 +498,13 @@ fission route delete --name searchweather
 - Create
 
 ```bash
-cd functions/getaccidents
+cd backend/getaccidents
 zip -r getaccidents.zip . -x "*.DS_Store"
 mv getaccidents.zip ../
 
 cd ../..
 
-fission package create --spec --sourcearchive ./functions/getaccidents.zip\
+fission package create --spec --sourcearchive ./backend/getaccidents.zip\
   --env python\
   --name getaccidents\
   --buildcmd './build.sh'
@@ -530,13 +530,13 @@ fission pkg delete --name getaccidents
 #### storeweather
 
 ```bash
-cd functions/storeweather
+cd backend/storeweather
 zip -r storeweather.zip . -x "*.DS_Store"
 mv storeweather.zip ../
 
 cd ../..
 
-fission package create --spec --sourcearchive ./functions/storeweather.zip\
+fission package create --spec --sourcearchive ./backend/storeweather.zip\
   --env python\
   --name storeweather\
   --buildcmd './build.sh'
@@ -596,13 +596,13 @@ fission pkg delete --name getlocations
 #### getroadcondition
 
 ```bash
-cd functions/getroadcondition
+cd backend/getroadcondition
 zip -r getroadcondition.zip . -x "*.DS_Store"
 mv getroadcondition.zip ../
 
 cd ../..
 
-fission package create --spec --sourcearchive ./functions/getroadcondition.zip\
+fission package create --spec --sourcearchive ./backend/getroadcondition.zip\
   --env python\
   --name getroadcondition\
   --buildcmd './build.sh'
@@ -630,13 +630,13 @@ fission pkg delete --name getroadcondition
 #### search
 
 ```bash
-cd functions/search
+cd backend/search
 zip -r search.zip . -x "*.DS_Store"
 mv search.zip ../
 
 cd ../..
 
-fission package create --spec --sourcearchive ./functions/search.zip\
+fission package create --spec --sourcearchive ./backend/search.zip\
   --env python\
   --name search\
   --buildcmd './build.sh'
