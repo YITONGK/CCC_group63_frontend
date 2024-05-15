@@ -1,0 +1,22 @@
+apiVersion: fission.io/v1
+kind: HTTPTrigger
+metadata:
+  creationTimestamp: null
+  name: extract
+spec:
+  createingress: true
+  functionref:
+    functionweights: null
+    name: extract
+    type: name
+  host: ""
+  ingressconfig:
+    annotations: null
+    host: '*'
+    path: /extract/{Indexname}
+    tls: ""
+  method: ""
+  methods:
+  - GET
+  prefix: ""
+  relativeurl: /extract/{Indexname}

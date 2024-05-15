@@ -160,7 +160,5 @@ def main():
     if index_name == "accidents":
         return get_accidents()
     elif index_name == "weather":
-        
         return get_weather()
-
-
+    return {"status_code": 404, "message": "No such index."}
