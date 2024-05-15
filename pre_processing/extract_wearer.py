@@ -38,8 +38,8 @@ def write_csv(filepath, data):
         writer.writerows(data)
 
 
-rainfall = read_weather("RAINFALL2023.csv", "Rainfall amount (millimetres)")
-maxtemp = read_weather("MAXTEMP2023.csv", "Maximum temperature (Degree C)")
-mintemp = read_weather("MINTEMP2023.csv", "Minimum temperature (Degree C)")
+rainfall = read_weather("../data/RAINFALL2023.csv", "Rainfall amount (millimetres)")
+maxtemp = read_weather("../data/MAXTEMP2023.csv", "Maximum temperature (Degree C)")
+mintemp = read_weather("../data/MINTEMP2023.csv", "Minimum temperature (Degree C)")
 merged_data = merge_data(rainfall, maxtemp, mintemp)
-write_csv("weather2023.csv", merged_data)
+write_csv("../data/weather2023.csv", merged_data)

@@ -40,11 +40,11 @@ def write_csv(filepath, data):
 
 
 accidents_filtered = read_accidents(
-    "ACCIDENT.csv", datetime(2022, 9, 1), datetime(2023, 9, 30)
+    "../data/ACCIDENT.csv", datetime(2022, 9, 1), datetime(2023, 9, 30)
 )
-nodes_data = read_nodes("NODE.csv")
+nodes_data = read_nodes("../data/NODE.csv")
 merged_results = merge_data(accidents_filtered, nodes_data)
-write_csv("accident_location.csv", merged_results)
+write_csv("../data/accident_location.csv", merged_results)
 
 
 # def print_csv_headers(filepath):
