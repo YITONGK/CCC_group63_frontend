@@ -2,7 +2,7 @@ apiVersion: fission.io/v1
 kind: Function
 metadata:
   creationTimestamp: null
-  name: getweather
+  name: put
 spec:
   InvokeStrategy:
     ExecutionStrategy:
@@ -13,18 +13,15 @@ spec:
       TargetCPUPercent: 0
     StrategyType: execution
   concurrency: 500
-  configmaps:
-  - name: shared-data
-    namespace: ""
   environment:
     name: python
     namespace: ""
   functionTimeout: 60
   idletimeout: 120
   package:
-    functionName: getweather.main
+    functionName: put.main
     packageref:
-      name: getweather
+      name: put
       namespace: ""
   requestsPerPod: 1
   resources: {}
