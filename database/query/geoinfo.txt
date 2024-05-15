@@ -3,7 +3,7 @@ curl -XGET -k "https://127.0.0.1:9200/geoinfo/_search"\
   --data '{
     "query": {
         "match": {
-            "LGA_NAME": "MERRI-BEK"
+            "LGA_NAME": "${LGA_NAME}"
         }
       }
   }'\
