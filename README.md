@@ -73,7 +73,7 @@ kubectl port-forward service/router -n fission 9090:80
 
 ```bash
 
-curl -XGET -k "https://127.0.0.1:9200/accidents/_search"\
+curl -XGET -k "https://127.0.0.1:9200/${index_name}/_search"\
   --header 'Content-Type: application/json'\
   --data '{
   "query": {
@@ -88,224 +88,54 @@ curl -XGET -k "https://127.0.0.1:9200/accidents/_search"\
   --user 'elastic:elastic' | jq '.'
 ```
 
-```bash
-curl -XGET -k "https://127.0.0.1:9200/accident_locations/_search"\
-  --header 'Content-Type: application/json'\
-  --data '{
-    "query": {
-        "range": {
-			"_id": {
-			"gte": "140650",
-			"lte": "140655",
-			}
-		}
-	}
-	}'\
-  --user 'elastic:elastic' | jq '.'
-```
-
-```bash
-curl -XGET -k "https://127.0.0.1:9200/accident_locations/_search"\
-  --header 'Content-Type: application/json'\
-  --data '{
-    "query": {
-        "match_all": {}
-	}
-	}'\
-  --user 'elastic:elastic' | jq '.'
-```
-
-```bash
-curl -XGET -k "https://127.0.0.1:9200/accident_locations/_count"\
-  --header 'Content-Type: application/json'\
-  --data '{
-    "query": {
-        "match_all": {}
-	}
-	}'\
-  --user 'elastic:elastic' | jq '.'
-```
-
-```bash
-curl -XGET -k "https://127.0.0.1:9200/accidents/_search" \
-  --header 'Content-Type: application/json' \
-  --user 'elastic:elastic' \
-  --data '{
-    "query": {
-        "bool": {
-            "must_not": [
-                {
-                    "exists": {
-                        "field": "Date"
-                    }
-                }
-            ]
-        }
-    }
-  }' | jq '.'
-
-```
-
 #### Insert Doc
 
 ```bash
-curl -XPOST -k "https://127.0.0.1:9200/test/_doc/"\
+curl -XPOST -k "https://127.0.0.1:9200/${index_name}/_doc/"\
   --header 'Content-Type: application/json'\
   --data '{
-        "a": "2",
-        "b": "3",
-        "c": "3"
-    }'\
+    "attr1": "value1",
+    "attr2": "value2",
+    "attr3": "value3"
+  }'\
   --user 'elastic:elastic' | jq '.'
 ```
 
 ```bash
-curl -XPUT -k "https://127.0.0.1:9200/test/_doc/_YX4M48Bx6f91pQDqVKV"\
+curl -XPUT -k "https://127.0.0.1:9200/${index_name}/_doc/"\
   --header 'Content-Type: application/json'\
   --data '{
-        "e": "10"
-    }'\
+    "attr1": "value1",
+    "attr2": "value2",
+    "attr3": "value3"
+  }'\
   --user 'elastic:elastic' | jq '.'
 ```
 
 #### Create Index
 
 ```bash
-curl -XPUT -k 'https://127.0.0.1:9200/test' \
+curl -XPUT -k 'https://127.0.0.1:9200/${index_name}' \
    --user 'elastic:elastic' \
    --header 'Content-Type: application/json' \
    --data '{
   "settings": {
     "index": {
-            "number_of_shards": 3,
-            "number_of_replicas": 1
-        }
-  },
-  "mappings": {
-    "properties": {
-      "a": {
-        "type": "text"
-      },
-      "b": {
-	      "type": "text"
-      }
+      "number_of_shards": 3,
+      "number_of_replicas": 1
     }
-  }
-}'  | jq '.'
-```
-
-```bash
-curl -XPUT -k 'https://127.0.0.1:9200/accidents' \
-   --user 'elastic:elastic' \
-   --header 'Content-Type: application/json' \
-   --data '{
-  "settings": {
-    "index": {
-            "number_of_shards": 3,
-            "number_of_replicas": 1
-        }
   },
   "mappings": {
     "properties": {
-    "relation_type": {
-	    "type": "join",
-	    "relations": {
-		    "accident": "node"
-		    }
-		},
-      "ACCIDENT_NO": {
+      "attr1": {
         "type": "keyword"
       },
-      "ACCIDENT_DATE": {
-        "type": "date",
-        "format": "yyyy-MM-dd"
-      },
-      "ACCIDENT_TYPE": {
-        "type": "integer"
-      },
-      "ACCIDENT_TYPE_DESC": {
-        "type": "text"
-      },
-      "DAY_OF_WEEK": {
-	     "type": "integer"
-	  },
-      "NODE_ID": {
-        "type": "integer"
-      },
-      "NO_OF_VEHICLES": {
-        "type": "integer"
-      },
-      "NO_PERSONS_KILLED": {
-        "type": "integer"
-      },
-      "NO_PERSONS_INJ_2": {
-        "type": "integer"
-      },
-      "NO_PERSONS_INJ_3": {
-        "type": "integer"
-      },
-      "NO_PERSONS_NOT_INJ": {
-        "type": "integer"
-      },
-      "NO_PERSONS": {
-        "type": "integer"
-      },
-      "ROAD_GEOMETRY": {
-        "type": "integer"
-      },
-      "ROAD_GEOMETRY_DESC": {
-        "type": "text"
-      },
-      "SEVERITY": {
-        "type": "integer"
-      },
-      "SPEED_ZONE": {
-        "type": "integer"
+      "attr2": {
+        "type": "${type}"
       }
     }
   }
-}'  | jq '.'
-
-```
-
-```
-curl -XPUT -k 'https://127.0.0.1:9200/weather' \
-
---header 'Content-Type: application/json' \
-
---data '{
-
-"settings": {
-
-"index": {
-
-"number_of_shards": 3,
-
-"number_of_replicas": 1
-
-}
-
-},
-
-"mappings": {
-
-"properties": {
-
-"Date": {"type": "date", "format": "yyyy-MM-d"},
-
-"Minimum temperature (°C)": {"type": "float"},
-
-"Maximum temperature (°C)": {"type": "float"},
-
-"Rainfall (mm)": {"type": "float"}
-
-}
-
-}
-
-}' \
-
---user 'elastic:elastic' | jq '.'
+}' | jq '.'
 ```
 
 #### Delete Index
