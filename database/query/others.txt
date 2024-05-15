@@ -1,0 +1,19 @@
+# get all the entries under index_name
+curl -XGET -k "https://127.0.0.1:9200/${index_name}/_search"\
+  --header 'Content-Type: application/json'\
+  --data '{
+    "query": {
+      "match_all": {}
+	}
+  }'\
+  --user 'elastic:elastic' | jq '.'
+
+# count the total amount of docs under index_name
+curl -XGET -k "https://127.0.0.1:9200/${index_name}/_count"\
+  --header 'Content-Type: application/json'\
+  --data '{
+    "query": {
+      "match_all": {}
+	}
+  }'\
+  --user 'elastic:elastic' | jq '.'

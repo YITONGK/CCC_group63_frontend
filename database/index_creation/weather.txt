@@ -1,0 +1,142 @@
+curl -XPUT -k 'https://127.0.0.1:9200/weather' \
+   --user 'elastic:elastic' \
+   --header 'Content-Type: application/json' \
+   --data '{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "3pm MSL pressure (hPa)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "3pm Temperature (°C)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "3pm cloud amount (oktas)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "3pm relative humidity (%)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "3pm wind speed (km/h)": {
+        "type": "long"
+      },
+      "9am MSL pressure (hPa)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "9am Temperature (°C)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "9am cloud amount (oktas)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "9am relative humidity (%)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "9am wind speed (km/h)": {
+        "type": "long"
+      },
+      "Date": {
+        "type": "date",
+        "format": "yyyyMMdd"
+      },
+      "Evaporation (mm)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Maximum temperature (°C)": {
+        "type": "float"
+      },
+      "Minimum temperature (°C)": {
+        "type": "float"
+      },
+      "Rainfall (mm)": {
+        "type": "float"
+      },
+      "Speed of maximum wind gust (km/h)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Sunshine (hours)": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Time of maximum wind gust": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}' | jq '.'

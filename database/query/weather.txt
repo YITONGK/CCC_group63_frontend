@@ -1,0 +1,14 @@
+curl -XGET -k "https://127.0.0.1:9200/weather/_search"\
+  --header 'Content-Type: application/json'\
+  --data '{
+    "query": {
+      "range": {
+        "Date": {
+          "gte": "${start_date}",
+          "lte": "${end_date}",
+          "format": "yyyyMMdd"
+        }
+      }
+    }
+  }'\
+  --user 'elastic:elastic' | jq '.'

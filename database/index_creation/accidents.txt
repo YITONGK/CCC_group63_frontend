@@ -1,0 +1,67 @@
+curl -XPUT -k 'https://127.0.0.1:9200/accidents' \
+   --user 'elastic:elastic' \
+   --header 'Content-Type: application/json' \
+   --data '{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "ACCIDENT_DATE": {
+        "type": "date",
+        "format": "yyyy-MM-dd"
+      },
+      "ACCIDENT_NO": {
+        "type": "keyword"
+      },
+      "ACCIDENT_TIME": {
+        "type": "text"
+      },
+      "ACCIDENT_TYPE": {
+        "type": "integer"
+      },
+      "ACCIDENT_TYPE_DESC": {
+        "type": "text"
+      },
+      "DAY_OF_WEEK": {
+        "type": "integer"
+      },
+      "NODE_ID": {
+        "type": "integer"
+      },
+      "NO_OF_VEHICLES": {
+        "type": "integer"
+      },
+      "NO_PERSONS": {
+        "type": "integer"
+      },
+      "NO_PERSONS_INJ_2": {
+        "type": "integer"
+      },
+      "NO_PERSONS_INJ_3": {
+        "type": "integer"
+      },
+      "NO_PERSONS_KILLED": {
+        "type": "integer"
+      },
+      "NO_PERSONS_NOT_INJ": {
+        "type": "integer"
+      },
+      "ROAD_GEOMETRY": {
+        "type": "integer"
+      },
+      "ROAD_GEOMETRY_DESC": {
+        "type": "text"
+      },
+      "SEVERITY": {
+        "type": "integer"
+      },
+      "SPEED_ZONE": {
+        "type": "integer"
+      }
+    }
+  }
+}' | jq '.'

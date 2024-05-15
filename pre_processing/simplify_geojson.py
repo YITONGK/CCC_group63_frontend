@@ -1,3 +1,7 @@
+"""
+Author: Yitong Kong
+"""
+
 import json
 
 big_polygons = ['MOIRA', 'MORNINGTON PENINSULA', 'SOUTHERN GRAMPIANS', 'MILDURA', 'GOLDEN PLAINS', 'SWAN HILL',
@@ -6,8 +10,6 @@ big_polygons = ['MOIRA', 'MORNINGTON PENINSULA', 'SOUTHERN GRAMPIANS', 'MILDURA'
 
 
 def cut_down(polygon):
-    # total = len(polygon)
-    # step = ceil(10000 / (total - 10000))
     while len(polygon) > 10000:
         polygon = [point for index, point in enumerate(polygon) if (index % 2 != 0)]
     return polygon

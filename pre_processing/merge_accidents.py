@@ -1,3 +1,7 @@
+"""
+Author: Yitong Kong
+"""
+
 import csv
 from datetime import datetime
 
@@ -45,9 +49,3 @@ accidents_filtered = read_accidents(
 nodes_data = read_nodes("../data/NODE.csv")
 merged_results = merge_data(accidents_filtered, nodes_data)
 write_csv("../data/accident_location.csv", merged_results)
-
-
-# def print_csv_headers(filepath):
-#     with open(filepath, mode='r', newline='') as file:
-#         reader = csv.DictReader(file)
-#         print(reader.fieldnames)

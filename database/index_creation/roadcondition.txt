@@ -1,0 +1,27 @@
+curl -XPUT -k 'https://127.0.0.1:9200/roadcondition' \
+   --user 'elastic:elastic' \
+   --header 'Content-Type: application/json' \
+   --data '{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "ACCIDENT_NO": {
+        "type": "keyword"
+      },
+      "SURFACE_COND": {
+        "type": "integer"
+      },
+      "SURFACE_COND_DESC": {
+        "type": "text"
+      },
+      "SURFACE_COND_SEQ": {
+        "type": "integer"
+      }
+    }
+  }
+}' | jq '.'
