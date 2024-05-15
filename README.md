@@ -1,40 +1,53 @@
 # CCC-project
 
 # Report
+
 [Analysis of Potential Factors-affected Car Accidents in Victoria](https://www.overleaf.com/4751181365djrvrfzzxqrt#c886a0)
 
 # Data
+
 - geo VIC
 - Victoria Road Crash Data
-	[Metadata](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
+  [Metadata](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
 
 # Scenarios and figs (main.ipynb)
 
 - **Analysis of LGA areas and the number/severity of accidents**
-	- LGA & number of accidents & population (done)
-	- LGA & number of accidents dot map (done)
-		- Cluster of num accidents in geo
-		- Subplot of LGA & number of accidents & population, [illustration](https://plotly.com/python/mixed-subplots/)
+
+  - LGA & number of accidents & population (done)
+  - LGA & number of accidents dot map (done)
+    - Cluster of num accidents in geo
+    - Subplot of LGA & number of accidents & population, [illustration](https://plotly.com/python/mixed-subplots/)
 
 - **Analysis of population and the number of car accidents**
-	- bar chart (population increase with LGA name) + line (num of accidents), [illustration](https://plotly.com/python/figurewidget/) (ing)
+
+  - bar chart (population increase with LGA name) + line (num of accidents), [illustration](https://plotly.com/python/figurewidget/) (ing)
 
 - **Analysis of rainfall & speed on the number of accidents**
 
 - **Pie chart analysis of the severity of the car accident**
-	- Full Severity Statistics for 2023
+
+  - Full Severity Statistics for 2023
 
 - **Analysis of road conditions and the number of car accidents**
 
+# Setup
 
-## ElasticSearch
+1. Connect to VPN
 
-### Accessing the ElasticSearch API and the Kibana User Interface
+2.
 
-- Prequisite:
-  - Before accessing Kubernetes services, an SSH tunnel to the bastion node has to be opened in a different shell and kept open. In addition, the `openrc` file has to be source and the kubeconfig file put under the `~/.kube` directory (see the READM in the `installation` folder for more details).
+```
+source <path/to/openrc.sh>
+```
 
-To access services on the cluster, one has to use the `port-forward` command of `kubectl` in a new terminal window.
+3. ssh
+
+```
+ssh -i <path/to/.pem> -L 6443:$(openstack coe cluster show elastic -f json | jq -r '.master_addresses[]'):6443 ubuntu@$(openstack server show bastion -c addresses -f json | jq -r '.addresses["qh2-uom-internal"][]')
+```
+
+4. ES
 
 ```
 kubectl port-forward service/elasticsearch-master -n elastic 9200:9200
@@ -375,9 +388,12 @@ fission route create --name searchweatherdate --method GET --url "/searchweather
 
 ```
 
-### crush 三件套
+### Deployment
 
-chmod +x build.sh
+#### Frequent Commands
+
+If something wrong with package creation, please run:
+`chmod +x build.sh`
 
 ```
 fission specs init
@@ -401,7 +417,7 @@ fission pkg delete --name addobservations
 
 - Create
 
-```
+```bash
 cd functions/getweather
 zip -r getweather.zip . -x "*.DS_Store"
 mv getweather.zip ../
