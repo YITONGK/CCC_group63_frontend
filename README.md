@@ -1,16 +1,16 @@
 # CCC-project
 
-# Report
+## Report
 
 [Analysis of Potential Factors-affected Car Accidents in Victoria](https://www.overleaf.com/4751181365djrvrfzzxqrt#c886a0)
 
-# Data
+## Data
 
 - geo VIC
 - Victoria Road Crash Data
   [Metadata](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
 
-# Scenarios and figs (main.ipynb)
+## Scenarios and figs (main.ipynb)
 
 - **Analysis of LGA areas and the number/severity of accidents**
 
@@ -31,7 +31,7 @@
 
 - **Analysis of road conditions and the number of car accidents**
 
-# Setup
+## Setup
 
 1. Connect to VPN
 
@@ -67,9 +67,7 @@ kubectl port-forward service/router -n fission 9090:80
 
 ## ElasticSearch
 
-### Operations
-
-#### Search
+### Search
 
 ```bash
 
@@ -88,7 +86,7 @@ curl -XGET -k "https://127.0.0.1:9200/${index_name}/_search"\
   --user 'elastic:elastic' | jq '.'
 ```
 
-#### Insert Doc
+### Insert Doc
 
 ```bash
 curl -XPOST -k "https://127.0.0.1:9200/${index_name}/_doc/"\
@@ -101,18 +99,7 @@ curl -XPOST -k "https://127.0.0.1:9200/${index_name}/_doc/"\
   --user 'elastic:elastic' | jq '.'
 ```
 
-```bash
-curl -XPUT -k "https://127.0.0.1:9200/${index_name}/_doc/"\
-  --header 'Content-Type: application/json'\
-  --data '{
-    "attr1": "value1",
-    "attr2": "value2",
-    "attr3": "value3"
-  }'\
-  --user 'elastic:elastic' | jq '.'
-```
-
-#### Create Index
+### Create Index
 
 ```bash
 curl -XPUT -k 'https://127.0.0.1:9200/${index_name}' \
@@ -138,7 +125,7 @@ curl -XPUT -k 'https://127.0.0.1:9200/${index_name}' \
 }' | jq '.'
 ```
 
-#### Delete Index
+### Delete Index
 
 ```
 curl -XDELETE -k 'https://127.0.0.1:9200/accidents' --user 'elastic:elastic' | jq '.'
@@ -149,26 +136,20 @@ curl -XDELETE -k 'https://127.0.0.1:9200/accidents' --user 'elastic:elastic' | j
 ### Function
 
 ```
-fission function create --name weather --env python --code /Users/clarec/Documents/GitHub/CCC_group63_frontend/functions/weather.py
+fission function create --name <function-name> --env python --code <path/to/py>
 
-fission function create --name weathertest --env python --code /Users/clarec/Documents/GitHub/CCC_group63_frontend/weathertest.py
+fission function update --name <function-name> --code <path/to/py>
 
-
-fission function update --name weather --code /Users/clarec/Documents/GitHub/CCC_group63_frontend/functions/weather.py
-
-fission fn update --name weather --env python --mincpu 100 --maxcpu 500 --minmemory 100 --maxmemory 500
-
-fission function test --name weather | jq '.'
-fission function test --name weathertest | jq '.'
+fission function test --name <function-name> | jq '.'
 
 ```
 
 ### Route
 
 ```
-fission route create --url /weather --function weather --name weather --createingress
+fission route create --url /<route-name> --function <function-name> --name <route-name> --createingress
 
-curl "http://127.0.0.1:9090/weather" | jq '.'
+curl "http://127.0.0.1:9090/<route-name>" | jq '.'
 ```
 
 ### Pkg
@@ -196,7 +177,7 @@ fission route create --url /addobservations --function addobservations --name ad
 curl "http://127.0.0.1:9090/addobservations" | jq '.'
 ```
 
-### Creation of a RestFUL API with YAML specifications
+### Create a RestFUL API with YAML specifications
 
 A ReSTful API may look like:
 
@@ -489,4 +470,11 @@ curl "http://127.0.0.1:9090/search/accidents"
 fission function delete --name search
 fission route delete --name search
 fission pkg delete --name search
+```
+
+## Testing
+
+```bash
+python -m unittest tests.test_api.TestAPIEndpoints.test_search_by_index
+
 ```
