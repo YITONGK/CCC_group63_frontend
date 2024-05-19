@@ -31,6 +31,17 @@
 
 - **Analysis of road conditions and the number of car accidents**
 
+## Restful API
+
+```
+'population': "http://127.0.0.1:9090/search/population",
+'accidents': "http://127.0.0.1:9090/search/accidents",
+'accident_locations': "http://127.0.0.1:9090/search/accident_locations",
+'geoinfo': "http://127.0.0.1:9090/search/geoinfo",
+'roadcondition': "http://127.0.0.1:9090/search/roadcondition",
+'searchweather': "http://127.0.0.1:9090/searchweather/{Startdate}/{Enddate}"
+```
+
 ## Setup
 
 1. Connect to VPN
