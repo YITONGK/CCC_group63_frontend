@@ -41,12 +41,52 @@
 ## Restful API
 
 ```
-'population': "http://127.0.0.1:9090/search/population",
-'accidents': "http://127.0.0.1:9090/search/accidents",
-'accident_locations': "http://127.0.0.1:9090/search/accident_locations",
-'geoinfo': "http://127.0.0.1:9090/search/geoinfo",
-'roadcondition': "http://127.0.0.1:9090/search/roadcondition",
-'searchweather': "http://127.0.0.1:9090/searchweather/{Startdate}/{Enddate}"
+To get the population for each local government area(LGA) in Victoria:
+  ”http://127.0.0.1:9090/search/population”
+
+To get all the accidents details from 2022 to 2023:
+  ”http://127.0.0.1:9090/search/accidents”
+
+To get all the coordinates and LGA name for all the accidents:
+  ”http://127.0.0.1:9090/search/accident locations”
+
+To get geographic information of Victoria to establish an interactive map
+  ”http://127.0.0.1:9090/search/geoinfo”
+
+To get the information of accident road surface:
+  ”http://127.0.0.1:9090/search/roadcondition”
+  
+To search the weather in a period of time, the date should be in format ”YYYYMMDD”:
+  ”http://127.0.0.1:9090/searchweather/Startdate/Enddate”
+```
+
+```Functions for uploading by data streaming from open API
+Scrape weather data of 2023 from BOM and insert into ES
+curl -X PUT "http://127.0.0.1:9090/put/accidents"
+inside the process, “extract“ function will be called to scrape accidents data
+URL: "http://router.fission.svc.cluster.local/extract/accidents"
+
+Scrape data of all the details about accidents happened in Victoria from 2022 to 2023 and upload
+curl -X PUT "http://127.0.0.1:9090/put/weather"
+inside the process, “extract“ function will be called to scrape weather data
+URL: "http://router.fission.svc.cluster.local/extract/weather"
+```
+
+```Functions for static data upload
+Insert accident locations, containing coordinates and LGA
+curl -X PUT "http://127.0.0.1:9090/put/accident_locations" -H "Content-Type: application/json" -d @data/upload_location.json 
+
+Insert geographic information of Victoria for making an interactive map
+curl -X PUT "http://127.0.0.1:9090/put/geoinfo" -H "Content-Type: application/json" -d @data/upload_geoinfo.json 
+
+Insert the population data for 80 LGA in Victoria 
+curl -X PUT "http://127.0.0.1:9090/put/population" -H "Content-Type: application/json" -d @data/upload_population.json
+
+Insert the condition of road surface when accidents happened
+curl -X PUT "http://127.0.0.1:9090/put/roadcondition" -H "Content-Type: application/json" -d @data/upload_road_condition.json 
+
+Insert the weather information for 2022, while weather for 2023 will be inserted by API streaming
+curl -X PUT "http://127.0.0.1:9090/put/weather2022" -H "Content-Type: application/json" -d @data/upload_weather.json 
 ```
 
 ## Setup

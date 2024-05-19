@@ -1,3 +1,7 @@
+"""
+Author: Kexin Chen
+"""
+
 import unittest
 import json
 from backend.extract.extract import get_accidents, get_weather, format_date, get_weather_data
