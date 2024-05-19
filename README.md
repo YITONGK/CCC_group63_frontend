@@ -60,7 +60,8 @@ To search the weather in a period of time, the date should be in format ”YYYYM
   ”http://127.0.0.1:9090/searchweather/Startdate/Enddate”
 ```
 
-```Functions for uploading by data streaming from open API
+## Functions for uploading by data streaming from open API
+```
 Scrape weather data of 2023 from BOM and insert into ES
 curl -X PUT "http://127.0.0.1:9090/put/accidents"
 inside the process, “extract“ function will be called to scrape accidents data
@@ -72,7 +73,8 @@ inside the process, “extract“ function will be called to scrape weather data
 URL: "http://router.fission.svc.cluster.local/extract/weather"
 ```
 
-```Functions for static data upload
+## Functions for static data upload
+```
 Insert accident locations, containing coordinates and LGA
 curl -X PUT "http://127.0.0.1:9090/put/accident_locations" -H "Content-Type: application/json" -d @data/upload_location.json 
 
