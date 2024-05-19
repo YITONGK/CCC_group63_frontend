@@ -213,41 +213,6 @@ fission route delete --name addobservations
 fission pkg delete --name addobservations
 ```
 
-#### getweather
-
-- Create
-
-```bash
-cd backend/getweather
-zip -r getweather.zip . -x "*.DS_Store"
-mv getweather.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive ./backend/getweather.zip\
-  --env python\
-  --name getweather\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name getweather\
-  --pkg getweather\
-  --env python\
-  --entrypoint "getweather.main"
-
-fission route create --spec --url /getweather --function getweather --name getweather --createingress
-
-fission spec apply --specdir specs --wait
-
-curl "http://127.0.0.1:9090/getweather" | jq '.'
-```
-
-- Delete
-
-```
-fission function delete --name getweather
-fission route delete --name getweather
-fission pkg delete --name getweather
-```
 
 #### searchweather
 
@@ -279,152 +244,12 @@ fission httptrigger create --spec --method GET \
 curl "http://127.0.0.1:9090/searchweather/2024-03-01/2024-03-11" | jq '.'
 ```
 
-fission route create --url /searchweather --function searchweather --name searchweather --createingress
-
-curl "http://127.0.0.1:9090/searchweather" | jq '.'
-
-fission route create --name searchweatherdate --method GET --url "/searchweather/{start_date}/{end_date}" --function searchweather
-
 - Delete
 
 ```
 fission function delete --name searchweather
 fission pkg delete --name searchweather
 fission route delete --name searchweather
-```
-
-#### getaccidents
-
-- Create
-
-```bash
-cd backend/getaccidents
-zip -r getaccidents.zip . -x "*.DS_Store"
-mv getaccidents.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive ./backend/getaccidents.zip\
-  --env python\
-  --name getaccidents\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name getaccidents\
-  --pkg getaccidents\
-  --env python\
-  --entrypoint "getaccidents.main"
-
-fission route create --spec --url /getaccidents --function getaccidents --name getaccidents --createingress
-
-curl "http://127.0.0.1:9090/getaccidents" | jq '.'
-```
-
-- Delete
-
-```bash
-fission function delete --name getaccidents
-fission route delete --name getaccidents
-fission pkg delete --name getaccidents
-```
-
-#### storeweather
-
-```bash
-cd backend/storeweather
-zip -r storeweather.zip . -x "*.DS_Store"
-mv storeweather.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive ./backend/storeweather.zip\
-  --env python\
-  --name storeweather\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name storeweather\
-  --pkg storeweather\
-  --env python\
-  --entrypoint "storeweather.main"
-
-fission route create --spec --url /storeweather --function storeweather --name storeweather --createingress
-
-
-curl "http://127.0.0.1:9090/storeweather"
-```
-
-- Delete
-
-```
-fission function delete --name storeweather
-fission route delete --name storeweather
-fission pkg delete --name storeweather
-```
-
-#### getlocations
-
-```
-cd functions/getlocations
-zip -r getlocations.zip . -x "*.DS_Store"
-mv getlocations.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive ./functions/getlocations.zip\
-  --env python\
-  --name getlocations\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name getlocations\
-  --pkg getlocations\
-  --env python\
-  --entrypoint "getlocations.main"\
-
-fission route create --spec --url /getlocations --function getlocations --name getlocations --createingress
-
-
-curl "http://127.0.0.1:9090/getlocations"
-```
-
-- Delete
-
-```
-fission function delete --name getlocations
-fission route delete --name getlocations
-fission pkg delete --name getlocations
-```
-
-#### getroadcondition
-
-```bash
-cd backend/getroadcondition
-zip -r getroadcondition.zip . -x "*.DS_Store"
-mv getroadcondition.zip ../
-
-cd ../..
-
-fission package create --spec --sourcearchive ./backend/getroadcondition.zip\
-  --env python\
-  --name getroadcondition\
-  --buildcmd './build.sh'
-
-fission fn create --spec --name getroadcondition\
-  --pkg getroadcondition\
-  --env python\
-  --entrypoint "getroadcondition.main"\
-
-fission route create --spec --url /getroadcondition --function getroadcondition --name getroadcondition --createingress
-
-fission spec apply --specdir specs --wait
-
-curl "http://127.0.0.1:9090/getroadcondition"
-```
-
-- Delete
-
-```
-fission function delete --name getroadcondition
-fission route delete --name getroadcondition
-fission pkg delete --name getroadcondition
 ```
 
 #### search
@@ -459,6 +284,68 @@ curl "http://127.0.0.1:9090/search/accidents"
 fission function delete --name search
 fission route delete --name search
 fission pkg delete --name search
+```
+
+#### extract
+```bash
+cd functions/extract
+zip -r extracta.zip . -x "*.DS_Store"
+mv extracta.zip ../
+
+cd ../..
+
+fission package create --spec --sourcearchive ./backend/extract.zip\
+  --env python\
+  --name extract\
+  --buildcmd './build.sh'
+
+fission fn create --spec --name extract\
+	--code ./backend/extract/extract.py\
+  --env python\
+  
+fission route create --spec --url /extract/{Indexname} --function extract --name extract --createingress
+
+fission spec apply --specdir specs --wait
+
+curl "http://127.0.0.1:9090/extract/weather" 
+```
+
+- Delete
+```
+fission function delete --name extract
+fission route delete --name extract
+fission pkg delete --name extract
+```
+
+#### put
+```bash
+cd backend/put
+zip -r put.zip . -x "*.DS_Store"
+mv put.zip ../
+
+cd ../..
+
+fission package create --spec --sourcearchive ./backend/put.zip\
+  --env python\
+  --name put\
+  --buildcmd './build.sh'
+  
+fission fn create --spec --name put\
+  --pkg put\
+  --env python\
+  --entrypoint "put.main"\
+
+fission route create --spec --method PUT --url /put/{Indexname} --function put --name put --createingress
+
+fission spec apply --specdir specs --wait
+
+curl -XPUT "http://127.0.0.1:9090/put/weather" 
+```
+- Delete
+```
+fission function delete --name put
+fission route delete --name put
+fission pkg delete --name put
 ```
 
 ## Testing
