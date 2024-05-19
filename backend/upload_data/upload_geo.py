@@ -17,6 +17,7 @@ for obs in records:
     ]
     action = {
         "_index": "geoinfo",
+        "_id": obs["LGA_NAME"],
         "_source": {"LGA_NAME": obs["LGA_NAME"], "coordinates": nested_coordinates},
     }
     actions.append(action)
