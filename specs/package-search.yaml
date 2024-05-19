@@ -1,7 +1,7 @@
 include:
 - ./backend/search.zip
 kind: ArchiveUploadSpec
-name: backend-search-zip-UFVu
+name: backend-search-zip-RXlr
 
 ---
 apiVersion: fission.io/v1
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://backend-search-zip-UFVu
+    url: archive://backend-search-zip-RXlr
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-15T06:02:19Z"
+  lastUpdateTimestamp: "2024-05-19T03:47:31Z"

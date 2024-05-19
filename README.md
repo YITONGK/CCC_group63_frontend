@@ -177,28 +177,6 @@ fission route create --url /addobservations --function addobservations --name ad
 curl "http://127.0.0.1:9090/addobservations" | jq '.'
 ```
 
-### Create a RestFUL API with YAML specifications
-
-A ReSTful API may look like:
-
-```
-/temperature/{date}
-```
-
-#### Route creation
-
-We start by using the fission commands to create the YAML files defining the routes/HTTPTriggers:
-
-```
-fission route create --name avgtempday --function avgtemp \
-    --method GET \
-    --url '/temperature/days/{date:[0-9][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]}'
-
-fission route create --name searchweatherdate --method GET --url "/searchweather/dates/{start_date}/{end_date}" --function searchweather
-
-
-```
-
 ### Deployment
 
 #### Frequent Commands
