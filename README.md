@@ -13,7 +13,7 @@
 - Geographical information of Victoria
   [SUDO](https://sudo.eresearch.unimelb.edu.au/)
 - Victoria Road Crash Data
-  [Victorian Government Data Directory](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
+  [Victorian Government Data Directory](https://discover.data.vic.gov.au/)
 - Weather Conditions in Last Two Years
   [BOM](http://www.bom.gov.au/)
 
@@ -168,26 +168,26 @@ curl "http://127.0.0.1:9090/<route-name>" | jq '.'
 ### Pkg
 
 ```
-cd functions/addobservations
-zip -r addobservations.zip .
-mv addobservations.zip ../
+cd functions/test
+zip -r test.zip .
+mv test.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/addobservations.zip\
+fission package create --sourcearchive ./functions/test.zip\
   --env python\
-  --name addobservations\
+  --name test\
   --buildcmd './build.sh'
 
-fission fn create --name addobservations\
-  --pkg addobservations\
+fission fn create --name test\
+  --pkg test\
   --env python\
-  --entrypoint "addobservations.main"
+  --entrypoint "test.main"
 
-fission route create --url /addobservations --function addobservations --name addobservations --createingress
+fission route create --url /test --function test --name test --createingress
 
 
-curl "http://127.0.0.1:9090/addobservations" | jq '.'
+curl "http://127.0.0.1:9090/test" | jq '.'
 ```
 
 ### Deployment
@@ -205,14 +205,9 @@ fission spec apply --specdir specs --wait
 ```
 
 ```
-fission function delete --name weather
-fission route delete --name weather
-fission pkg list
-fission pkg delete --name
-
-fission function delete --name addobservations
-fission route delete --name addobservations
-fission pkg delete --name addobservations
+fission function delete --name test
+fission route delete --name test
+fission pkg delete --name test
 ```
 
 
