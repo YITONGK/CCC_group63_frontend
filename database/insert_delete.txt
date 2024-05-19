@@ -1,14 +1,5 @@
 # to delete the index_name using XDELETE
-curl -XDELETE -k 'https://127.0.0.1:9200/${index_name}' --user 'elastic:elastic' | jq '.'
-
-# insert an entry to index_name using XPOST
-curl -XPOST -k "https://127.0.0.1:9200/${index_name}/_doc/"\
-  --header 'Content-Type: application/json'\
-  --data '{
-    "attr1": "value1",
-    "attr2": "value2",
-    "attr3": "value3"
-  }'\
+curl -XDELETE -k 'https://127.0.0.1:9200/${index_name}'
   --user 'elastic:elastic' | jq '.'
 
 # insert an entry to index_name using XPUT

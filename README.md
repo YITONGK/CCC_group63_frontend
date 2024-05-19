@@ -85,15 +85,10 @@ kubectl port-forward service/router -n fission 9090:80
 curl -XGET -k "https://127.0.0.1:9200/${index_name}/_search"\
   --header 'Content-Type: application/json'\
   --data '{
-  "query": {
-    "nested": {
-      "path": "nodes",
-      "query": {
-        "match_all": {}
-      }
-    }
-  }
-}'\
+    "query": {
+      "match_all": {}
+	}
+  }'\
   --user 'elastic:elastic' | jq '.'
 ```
 
