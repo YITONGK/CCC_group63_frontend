@@ -1,0 +1,4382 @@
+[
+    {
+        "Date": "2022-01-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "37.1",
+        "Minimum temperature (\u00b0C)": "20.5"
+    },
+    {
+        "Date": "2022-01-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.9",
+        "Minimum temperature (\u00b0C)": "20.9"
+    },
+    {
+        "Date": "2022-01-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "16.8"
+    },
+    {
+        "Date": "2022-01-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.1",
+        "Minimum temperature (\u00b0C)": "16.2"
+    },
+    {
+        "Date": "2022-01-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.3",
+        "Minimum temperature (\u00b0C)": "18.5"
+    },
+    {
+        "Date": "2022-01-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.2",
+        "Minimum temperature (\u00b0C)": "18.3"
+    },
+    {
+        "Date": "2022-01-07",
+        "Rainfall (mm)": "1.5",
+        "Maximum temperature (\u00b0C)": "25.8",
+        "Minimum temperature (\u00b0C)": "20.1"
+    },
+    {
+        "Date": "2022-01-08",
+        "Rainfall (mm)": "21.7",
+        "Maximum temperature (\u00b0C)": "19.7",
+        "Minimum temperature (\u00b0C)": "17.1"
+    },
+    {
+        "Date": "2022-01-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.9",
+        "Minimum temperature (\u00b0C)": "16.1"
+    },
+    {
+        "Date": "2022-01-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.4",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2022-01-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.7",
+        "Minimum temperature (\u00b0C)": "18.5"
+    },
+    {
+        "Date": "2022-01-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.4",
+        "Minimum temperature (\u00b0C)": "18.6"
+    },
+    {
+        "Date": "2022-01-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "34.6",
+        "Minimum temperature (\u00b0C)": "17.6"
+    },
+    {
+        "Date": "2022-01-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.8",
+        "Minimum temperature (\u00b0C)": "20.8"
+    },
+    {
+        "Date": "2022-01-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.2",
+        "Minimum temperature (\u00b0C)": "18.8"
+    },
+    {
+        "Date": "2022-01-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.9",
+        "Minimum temperature (\u00b0C)": "18.3"
+    },
+    {
+        "Date": "2022-01-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.2",
+        "Minimum temperature (\u00b0C)": "18.4"
+    },
+    {
+        "Date": "2022-01-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.3",
+        "Minimum temperature (\u00b0C)": "17.1"
+    },
+    {
+        "Date": "2022-01-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.7",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-01-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.4",
+        "Minimum temperature (\u00b0C)": "12.9"
+    },
+    {
+        "Date": "2022-01-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.6",
+        "Minimum temperature (\u00b0C)": "17.1"
+    },
+    {
+        "Date": "2022-01-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.3",
+        "Minimum temperature (\u00b0C)": "17.7"
+    },
+    {
+        "Date": "2022-01-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.6",
+        "Minimum temperature (\u00b0C)": "18.1"
+    },
+    {
+        "Date": "2022-01-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "33.7",
+        "Minimum temperature (\u00b0C)": "20.2"
+    },
+    {
+        "Date": "2022-01-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.4",
+        "Minimum temperature (\u00b0C)": "20.1"
+    },
+    {
+        "Date": "2022-01-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "36.0",
+        "Minimum temperature (\u00b0C)": "19.6"
+    },
+    {
+        "Date": "2022-01-27",
+        "Rainfall (mm)": "7.4",
+        "Maximum temperature (\u00b0C)": "32.8",
+        "Minimum temperature (\u00b0C)": "21.2"
+    },
+    {
+        "Date": "2022-01-28",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "32.8",
+        "Minimum temperature (\u00b0C)": "21.7"
+    },
+    {
+        "Date": "2022-01-29",
+        "Rainfall (mm)": "40.0",
+        "Maximum temperature (\u00b0C)": "21.8",
+        "Minimum temperature (\u00b0C)": "17.5"
+    },
+    {
+        "Date": "2022-01-30",
+        "Rainfall (mm)": "0.3",
+        "Maximum temperature (\u00b0C)": "29.2",
+        "Minimum temperature (\u00b0C)": "18.7"
+    },
+    {
+        "Date": "2022-01-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "34.0",
+        "Minimum temperature (\u00b0C)": "20.1"
+    },
+    {
+        "Date": "2022-02-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.6",
+        "Minimum temperature (\u00b0C)": "19.8"
+    },
+    {
+        "Date": "2022-02-02",
+        "Rainfall (mm)": "2.0",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2022-02-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2022-02-04",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "24.5",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-02-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.8",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2022-02-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.9",
+        "Minimum temperature (\u00b0C)": "14.1"
+    },
+    {
+        "Date": "2022-02-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.6",
+        "Minimum temperature (\u00b0C)": "14.7"
+    },
+    {
+        "Date": "2022-02-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.5",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-02-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.9",
+        "Minimum temperature (\u00b0C)": "19.1"
+    },
+    {
+        "Date": "2022-02-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.7",
+        "Minimum temperature (\u00b0C)": "17.3"
+    },
+    {
+        "Date": "2022-02-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.4",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2022-02-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.3",
+        "Minimum temperature (\u00b0C)": "15.7"
+    },
+    {
+        "Date": "2022-02-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.1",
+        "Minimum temperature (\u00b0C)": "17.1"
+    },
+    {
+        "Date": "2022-02-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.6",
+        "Minimum temperature (\u00b0C)": "17.8"
+    },
+    {
+        "Date": "2022-02-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.5",
+        "Minimum temperature (\u00b0C)": "17.9"
+    },
+    {
+        "Date": "2022-02-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.8",
+        "Minimum temperature (\u00b0C)": "16.4"
+    },
+    {
+        "Date": "2022-02-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.3",
+        "Minimum temperature (\u00b0C)": "17.1"
+    },
+    {
+        "Date": "2022-02-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.0",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-02-19",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "21.9",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2022-02-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.8",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2022-02-21",
+        "Rainfall (mm)": "1.9",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2022-02-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.5",
+        "Minimum temperature (\u00b0C)": "13.0"
+    },
+    {
+        "Date": "2022-02-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.0",
+        "Minimum temperature (\u00b0C)": "15.1"
+    },
+    {
+        "Date": "2022-02-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.7",
+        "Minimum temperature (\u00b0C)": "19.3"
+    },
+    {
+        "Date": "2022-02-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.7",
+        "Minimum temperature (\u00b0C)": "18.0"
+    },
+    {
+        "Date": "2022-02-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.1",
+        "Minimum temperature (\u00b0C)": "18.4"
+    },
+    {
+        "Date": "2022-02-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.6",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2022-02-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.9",
+        "Minimum temperature (\u00b0C)": "18.9"
+    },
+    {
+        "Date": "2022-03-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.8",
+        "Minimum temperature (\u00b0C)": "19.8"
+    },
+    {
+        "Date": "2022-03-02",
+        "Rainfall (mm)": "7.4",
+        "Maximum temperature (\u00b0C)": "29.6",
+        "Minimum temperature (\u00b0C)": "19.7"
+    },
+    {
+        "Date": "2022-03-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.5",
+        "Minimum temperature (\u00b0C)": "17.5"
+    },
+    {
+        "Date": "2022-03-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.5",
+        "Minimum temperature (\u00b0C)": "18.3"
+    },
+    {
+        "Date": "2022-03-05",
+        "Rainfall (mm)": "39.4",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "17.3"
+    },
+    {
+        "Date": "2022-03-06",
+        "Rainfall (mm)": "4.5",
+        "Maximum temperature (\u00b0C)": "21.8",
+        "Minimum temperature (\u00b0C)": "16.6"
+    },
+    {
+        "Date": "2022-03-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.1",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2022-03-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-03-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.0",
+        "Minimum temperature (\u00b0C)": "14.6"
+    },
+    {
+        "Date": "2022-03-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2022-03-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "12.0"
+    },
+    {
+        "Date": "2022-03-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.6",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2022-03-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.8",
+        "Minimum temperature (\u00b0C)": "14.0"
+    },
+    {
+        "Date": "2022-03-14",
+        "Rainfall (mm)": "3.1",
+        "Maximum temperature (\u00b0C)": "28.0",
+        "Minimum temperature (\u00b0C)": "16.4"
+    },
+    {
+        "Date": "2022-03-15",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "27.5",
+        "Minimum temperature (\u00b0C)": "18.3"
+    },
+    {
+        "Date": "2022-03-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.2",
+        "Minimum temperature (\u00b0C)": "18.9"
+    },
+    {
+        "Date": "2022-03-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.2",
+        "Minimum temperature (\u00b0C)": "17.7"
+    },
+    {
+        "Date": "2022-03-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.7",
+        "Minimum temperature (\u00b0C)": "19.1"
+    },
+    {
+        "Date": "2022-03-19",
+        "Rainfall (mm)": "0.3",
+        "Maximum temperature (\u00b0C)": "30.3",
+        "Minimum temperature (\u00b0C)": "13.5"
+    },
+    {
+        "Date": "2022-03-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.0",
+        "Minimum temperature (\u00b0C)": "15.7"
+    },
+    {
+        "Date": "2022-03-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.3",
+        "Minimum temperature (\u00b0C)": "17.7"
+    },
+    {
+        "Date": "2022-03-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "18.2"
+    },
+    {
+        "Date": "2022-03-23",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "19.5",
+        "Minimum temperature (\u00b0C)": "13.6"
+    },
+    {
+        "Date": "2022-03-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2022-03-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "14.0"
+    },
+    {
+        "Date": "2022-03-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.3",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2022-03-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.1",
+        "Minimum temperature (\u00b0C)": "12.4"
+    },
+    {
+        "Date": "2022-03-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.4",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2022-03-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.0",
+        "Minimum temperature (\u00b0C)": "15.6"
+    },
+    {
+        "Date": "2022-03-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2022-03-31",
+        "Rainfall (mm)": "",
+        "Maximum temperature (\u00b0C)": "21.7",
+        "Minimum temperature (\u00b0C)": "13.5"
+    },
+    {
+        "Date": "2022-04-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.1",
+        "Minimum temperature (\u00b0C)": "12.8"
+    },
+    {
+        "Date": "2022-04-02",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2022-04-03",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "17.8",
+        "Minimum temperature (\u00b0C)": "14.5"
+    },
+    {
+        "Date": "2022-04-04",
+        "Rainfall (mm)": "1.6",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2022-04-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "11.9"
+    },
+    {
+        "Date": "2022-04-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.3",
+        "Minimum temperature (\u00b0C)": "13.6"
+    },
+    {
+        "Date": "2022-04-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.8",
+        "Minimum temperature (\u00b0C)": "11.3"
+    },
+    {
+        "Date": "2022-04-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.4",
+        "Minimum temperature (\u00b0C)": "12.3"
+    },
+    {
+        "Date": "2022-04-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.1",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2022-04-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.7",
+        "Minimum temperature (\u00b0C)": "16.7"
+    },
+    {
+        "Date": "2022-04-11",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "14.2"
+    },
+    {
+        "Date": "2022-04-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.7",
+        "Minimum temperature (\u00b0C)": "13.0"
+    },
+    {
+        "Date": "2022-04-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.0",
+        "Minimum temperature (\u00b0C)": "11.4"
+    },
+    {
+        "Date": "2022-04-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.7",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2022-04-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.2",
+        "Minimum temperature (\u00b0C)": "13.9"
+    },
+    {
+        "Date": "2022-04-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.9",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2022-04-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.0",
+        "Minimum temperature (\u00b0C)": "15.7"
+    },
+    {
+        "Date": "2022-04-18",
+        "Rainfall (mm)": "13.2",
+        "Maximum temperature (\u00b0C)": "17.5",
+        "Minimum temperature (\u00b0C)": "16.1"
+    },
+    {
+        "Date": "2022-04-19",
+        "Rainfall (mm)": "12.4",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "15.0"
+    },
+    {
+        "Date": "2022-04-20",
+        "Rainfall (mm)": "8.6",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "9.0"
+    },
+    {
+        "Date": "2022-04-21",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "17.1",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2022-04-22",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "7.7"
+    },
+    {
+        "Date": "2022-04-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.8",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2022-04-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.6",
+        "Minimum temperature (\u00b0C)": "8.7"
+    },
+    {
+        "Date": "2022-04-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.2",
+        "Minimum temperature (\u00b0C)": "7.7"
+    },
+    {
+        "Date": "2022-04-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.1",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2022-04-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.0",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2022-04-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.4",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2022-04-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "17.7"
+    },
+    {
+        "Date": "2022-04-30",
+        "Rainfall (mm)": "34.0",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-05-01",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2022-05-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.1",
+        "Minimum temperature (\u00b0C)": "13.6"
+    },
+    {
+        "Date": "2022-05-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "11.9"
+    },
+    {
+        "Date": "2022-05-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2022-05-05",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "14.1",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2022-05-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "5.3"
+    },
+    {
+        "Date": "2022-05-07",
+        "Rainfall (mm)": "2.5",
+        "Maximum temperature (\u00b0C)": "15.3",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2022-05-08",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "16.3",
+        "Minimum temperature (\u00b0C)": "11.4"
+    },
+    {
+        "Date": "2022-05-09",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "16.6",
+        "Minimum temperature (\u00b0C)": "7.9"
+    },
+    {
+        "Date": "2022-05-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2022-05-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.5",
+        "Minimum temperature (\u00b0C)": "8.7"
+    },
+    {
+        "Date": "2022-05-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.1",
+        "Minimum temperature (\u00b0C)": "12.5"
+    },
+    {
+        "Date": "2022-05-13",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2022-05-14",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "18.5",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2022-05-15",
+        "Rainfall (mm)": "2.1",
+        "Maximum temperature (\u00b0C)": "21.8",
+        "Minimum temperature (\u00b0C)": "14.3"
+    },
+    {
+        "Date": "2022-05-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-05-17",
+        "Rainfall (mm)": "5.6",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2022-05-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.4",
+        "Minimum temperature (\u00b0C)": "10.8"
+    },
+    {
+        "Date": "2022-05-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2022-05-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "10.4"
+    },
+    {
+        "Date": "2022-05-21",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "4.6"
+    },
+    {
+        "Date": "2022-05-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.3",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2022-05-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.1",
+        "Minimum temperature (\u00b0C)": "6.3"
+    },
+    {
+        "Date": "2022-05-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "6.0"
+    },
+    {
+        "Date": "2022-05-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.6",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2022-05-26",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "16.3",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-05-27",
+        "Rainfall (mm)": "4.7",
+        "Maximum temperature (\u00b0C)": "16.6",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2022-05-28",
+        "Rainfall (mm)": "0.1",
+        "Maximum temperature (\u00b0C)": "14.6",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2022-05-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "6.3"
+    },
+    {
+        "Date": "2022-05-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "11.7",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2022-05-31",
+        "Rainfall (mm)": "10.4",
+        "Maximum temperature (\u00b0C)": "11.4",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2022-06-01",
+        "Rainfall (mm)": "4.2",
+        "Maximum temperature (\u00b0C)": "11.9",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2022-06-02",
+        "Rainfall (mm)": "10.2",
+        "Maximum temperature (\u00b0C)": "13.0",
+        "Minimum temperature (\u00b0C)": "4.7"
+    },
+    {
+        "Date": "2022-06-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.6",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2022-06-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2022-06-05",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "13.7",
+        "Minimum temperature (\u00b0C)": "10.6"
+    },
+    {
+        "Date": "2022-06-06",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "13.3",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2022-06-07",
+        "Rainfall (mm)": "6.0",
+        "Maximum temperature (\u00b0C)": "11.9",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-06-08",
+        "Rainfall (mm)": "3.8",
+        "Maximum temperature (\u00b0C)": "12.8",
+        "Minimum temperature (\u00b0C)": "7.1"
+    },
+    {
+        "Date": "2022-06-09",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "13.4",
+        "Minimum temperature (\u00b0C)": "9.0"
+    },
+    {
+        "Date": "2022-06-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.1",
+        "Minimum temperature (\u00b0C)": "10.1"
+    },
+    {
+        "Date": "2022-06-11",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "13.0",
+        "Minimum temperature (\u00b0C)": "9.2"
+    },
+    {
+        "Date": "2022-06-12",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "13.3",
+        "Minimum temperature (\u00b0C)": "9.8"
+    },
+    {
+        "Date": "2022-06-13",
+        "Rainfall (mm)": "5.0",
+        "Maximum temperature (\u00b0C)": "13.0",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2022-06-14",
+        "Rainfall (mm)": "0.1",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "6.4"
+    },
+    {
+        "Date": "2022-06-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.8",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-06-16",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "14.4",
+        "Minimum temperature (\u00b0C)": "10.6"
+    },
+    {
+        "Date": "2022-06-17",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "13.8",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2022-06-18",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "8.0"
+    },
+    {
+        "Date": "2022-06-19",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "16.2",
+        "Minimum temperature (\u00b0C)": "5.1"
+    },
+    {
+        "Date": "2022-06-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.7",
+        "Minimum temperature (\u00b0C)": "6.7"
+    },
+    {
+        "Date": "2022-06-21",
+        "Rainfall (mm)": "5.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2022-06-22",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2022-06-23",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2022-06-24",
+        "Rainfall (mm)": "4.9",
+        "Maximum temperature (\u00b0C)": "17.3",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2022-06-25",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "16.2",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-06-26",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "13.1",
+        "Minimum temperature (\u00b0C)": "10.7"
+    },
+    {
+        "Date": "2022-06-27",
+        "Rainfall (mm)": "5.2",
+        "Maximum temperature (\u00b0C)": "12.8",
+        "Minimum temperature (\u00b0C)": "6.2"
+    },
+    {
+        "Date": "2022-06-28",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "13.4",
+        "Minimum temperature (\u00b0C)": "6.0"
+    },
+    {
+        "Date": "2022-06-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "11.7",
+        "Minimum temperature (\u00b0C)": "6.6"
+    },
+    {
+        "Date": "2022-06-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.1",
+        "Minimum temperature (\u00b0C)": "4.3"
+    },
+    {
+        "Date": "2022-07-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.5",
+        "Minimum temperature (\u00b0C)": "5.9"
+    },
+    {
+        "Date": "2022-07-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.5",
+        "Minimum temperature (\u00b0C)": "7.0"
+    },
+    {
+        "Date": "2022-07-03",
+        "Rainfall (mm)": "0.1",
+        "Maximum temperature (\u00b0C)": "13.2",
+        "Minimum temperature (\u00b0C)": "3.7"
+    },
+    {
+        "Date": "2022-07-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.3",
+        "Minimum temperature (\u00b0C)": "4.6"
+    },
+    {
+        "Date": "2022-07-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.0",
+        "Minimum temperature (\u00b0C)": "7.5"
+    },
+    {
+        "Date": "2022-07-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.6",
+        "Minimum temperature (\u00b0C)": "3.1"
+    },
+    {
+        "Date": "2022-07-07",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "13.9",
+        "Minimum temperature (\u00b0C)": "4.9"
+    },
+    {
+        "Date": "2022-07-08",
+        "Rainfall (mm)": "3.6",
+        "Maximum temperature (\u00b0C)": "11.9",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2022-07-09",
+        "Rainfall (mm)": "8.0",
+        "Maximum temperature (\u00b0C)": "12.9",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2022-07-10",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "3.8"
+    },
+    {
+        "Date": "2022-07-11",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "14.0",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2022-07-12",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "11.0",
+        "Minimum temperature (\u00b0C)": "8.0"
+    },
+    {
+        "Date": "2022-07-13",
+        "Rainfall (mm)": "2.6",
+        "Maximum temperature (\u00b0C)": "12.4",
+        "Minimum temperature (\u00b0C)": "7.1"
+    },
+    {
+        "Date": "2022-07-14",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "12.6",
+        "Minimum temperature (\u00b0C)": "7.5"
+    },
+    {
+        "Date": "2022-07-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.5",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-07-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.8",
+        "Minimum temperature (\u00b0C)": "8.1"
+    },
+    {
+        "Date": "2022-07-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2022-07-18",
+        "Rainfall (mm)": "4.4",
+        "Maximum temperature (\u00b0C)": "11.4",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-07-19",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "12.8",
+        "Minimum temperature (\u00b0C)": "3.8"
+    },
+    {
+        "Date": "2022-07-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "11.2",
+        "Minimum temperature (\u00b0C)": "0.8"
+    },
+    {
+        "Date": "2022-07-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.8",
+        "Minimum temperature (\u00b0C)": "1.2"
+    },
+    {
+        "Date": "2022-07-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "3.4"
+    },
+    {
+        "Date": "2022-07-23",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "14.5",
+        "Minimum temperature (\u00b0C)": "8.1"
+    },
+    {
+        "Date": "2022-07-24",
+        "Rainfall (mm)": "8.6",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "10.4"
+    },
+    {
+        "Date": "2022-07-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.8",
+        "Minimum temperature (\u00b0C)": "8.1"
+    },
+    {
+        "Date": "2022-07-26",
+        "Rainfall (mm)": "5.7",
+        "Maximum temperature (\u00b0C)": "13.2",
+        "Minimum temperature (\u00b0C)": "8.8"
+    },
+    {
+        "Date": "2022-07-27",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "15.3",
+        "Minimum temperature (\u00b0C)": "9.3"
+    },
+    {
+        "Date": "2022-07-28",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "13.2",
+        "Minimum temperature (\u00b0C)": "9.3"
+    },
+    {
+        "Date": "2022-07-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.7",
+        "Minimum temperature (\u00b0C)": "6.5"
+    },
+    {
+        "Date": "2022-07-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.0",
+        "Minimum temperature (\u00b0C)": "2.1"
+    },
+    {
+        "Date": "2022-07-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "4.3"
+    },
+    {
+        "Date": "2022-08-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2022-08-02",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "9.8"
+    },
+    {
+        "Date": "2022-08-03",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "19.2",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2022-08-04",
+        "Rainfall (mm)": "1.6",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "12.0"
+    },
+    {
+        "Date": "2022-08-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.1",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2022-08-06",
+        "Rainfall (mm)": "5.0",
+        "Maximum temperature (\u00b0C)": "12.8",
+        "Minimum temperature (\u00b0C)": "7.9"
+    },
+    {
+        "Date": "2022-08-07",
+        "Rainfall (mm)": "1.6",
+        "Maximum temperature (\u00b0C)": "14.2",
+        "Minimum temperature (\u00b0C)": "8.0"
+    },
+    {
+        "Date": "2022-08-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "5.4"
+    },
+    {
+        "Date": "2022-08-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.4",
+        "Minimum temperature (\u00b0C)": "2.6"
+    },
+    {
+        "Date": "2022-08-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "3.6"
+    },
+    {
+        "Date": "2022-08-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "5.4"
+    },
+    {
+        "Date": "2022-08-12",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "15.3",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2022-08-13",
+        "Rainfall (mm)": "0.1",
+        "Maximum temperature (\u00b0C)": "16.2",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2022-08-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2022-08-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.7",
+        "Minimum temperature (\u00b0C)": "10.4"
+    },
+    {
+        "Date": "2022-08-16",
+        "Rainfall (mm)": "3.7",
+        "Maximum temperature (\u00b0C)": "13.6",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2022-08-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2022-08-18",
+        "Rainfall (mm)": "3.6",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-08-19",
+        "Rainfall (mm)": "12.8",
+        "Maximum temperature (\u00b0C)": "16.3",
+        "Minimum temperature (\u00b0C)": "8.6"
+    },
+    {
+        "Date": "2022-08-20",
+        "Rainfall (mm)": "5.6",
+        "Maximum temperature (\u00b0C)": "13.7",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2022-08-21",
+        "Rainfall (mm)": "0.1",
+        "Maximum temperature (\u00b0C)": "15.1",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2022-08-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.1",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2022-08-23",
+        "Rainfall (mm)": "9.2",
+        "Maximum temperature (\u00b0C)": "13.1",
+        "Minimum temperature (\u00b0C)": "6.2"
+    },
+    {
+        "Date": "2022-08-24",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "13.2",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2022-08-25",
+        "Rainfall (mm)": "6.2",
+        "Maximum temperature (\u00b0C)": "14.5",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2022-08-26",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "13.6",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2022-08-27",
+        "Rainfall (mm)": "0.1",
+        "Maximum temperature (\u00b0C)": "20.1",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2022-08-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "7.1"
+    },
+    {
+        "Date": "2022-08-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "12.1"
+    },
+    {
+        "Date": "2022-08-30",
+        "Rainfall (mm)": "12.0",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-08-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2022-09-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2022-09-02",
+        "Rainfall (mm)": "4.2",
+        "Maximum temperature (\u00b0C)": "12.8",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2022-09-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.8",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2022-09-04",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "12.7",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2022-09-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-09-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.0",
+        "Minimum temperature (\u00b0C)": "4.3"
+    },
+    {
+        "Date": "2022-09-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.6",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2022-09-08",
+        "Rainfall (mm)": "3.2",
+        "Maximum temperature (\u00b0C)": "17.3",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2022-09-09",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "21.0",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2022-09-10",
+        "Rainfall (mm)": "6.2",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2022-09-11",
+        "Rainfall (mm)": "1.6",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2022-09-12",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "13.6",
+        "Minimum temperature (\u00b0C)": "8.6"
+    },
+    {
+        "Date": "2022-09-13",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "12.7",
+        "Minimum temperature (\u00b0C)": "6.4"
+    },
+    {
+        "Date": "2022-09-14",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.1",
+        "Minimum temperature (\u00b0C)": "3.5"
+    },
+    {
+        "Date": "2022-09-15",
+        "Rainfall (mm)": "6.2",
+        "Maximum temperature (\u00b0C)": "17.4",
+        "Minimum temperature (\u00b0C)": "9.9"
+    },
+    {
+        "Date": "2022-09-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.2",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2022-09-17",
+        "Rainfall (mm)": "4.8",
+        "Maximum temperature (\u00b0C)": "14.0",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2022-09-18",
+        "Rainfall (mm)": "10.2",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2022-09-19",
+        "Rainfall (mm)": "3.4",
+        "Maximum temperature (\u00b0C)": "15.3",
+        "Minimum temperature (\u00b0C)": "9.0"
+    },
+    {
+        "Date": "2022-09-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.1",
+        "Minimum temperature (\u00b0C)": "7.0"
+    },
+    {
+        "Date": "2022-09-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.1",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-09-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.9",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-09-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2022-09-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2022-09-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "5.3"
+    },
+    {
+        "Date": "2022-09-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "11.5"
+    },
+    {
+        "Date": "2022-09-27",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2022-09-28",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2022-09-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2022-09-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.1",
+        "Minimum temperature (\u00b0C)": "8.8"
+    },
+    {
+        "Date": "2022-10-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.3",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2022-10-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.7",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-10-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.2",
+        "Minimum temperature (\u00b0C)": "7.0"
+    },
+    {
+        "Date": "2022-10-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2022-10-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.5",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2022-10-06",
+        "Rainfall (mm)": "8.4",
+        "Maximum temperature (\u00b0C)": "21.5",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-10-07",
+        "Rainfall (mm)": "15.4",
+        "Maximum temperature (\u00b0C)": "19.6",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2022-10-08",
+        "Rainfall (mm)": "24.4",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2022-10-09",
+        "Rainfall (mm)": "0.3",
+        "Maximum temperature (\u00b0C)": "15.1",
+        "Minimum temperature (\u00b0C)": "7.1"
+    },
+    {
+        "Date": "2022-10-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.0",
+        "Minimum temperature (\u00b0C)": "5.3"
+    },
+    {
+        "Date": "2022-10-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "8.4"
+    },
+    {
+        "Date": "2022-10-12",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "11.4"
+    },
+    {
+        "Date": "2022-10-13",
+        "Rainfall (mm)": "22.6",
+        "Maximum temperature (\u00b0C)": "17.5",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-10-14",
+        "Rainfall (mm)": "24.6",
+        "Maximum temperature (\u00b0C)": "18.3",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2022-10-15",
+        "Rainfall (mm)": "2.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2022-10-16",
+        "Rainfall (mm)": "2.6",
+        "Maximum temperature (\u00b0C)": "16.2",
+        "Minimum temperature (\u00b0C)": "11.4"
+    },
+    {
+        "Date": "2022-10-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "6.2"
+    },
+    {
+        "Date": "2022-10-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2022-10-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "7.8"
+    },
+    {
+        "Date": "2022-10-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.9",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2022-10-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.3",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2022-10-22",
+        "Rainfall (mm)": "27.4",
+        "Maximum temperature (\u00b0C)": "19.8",
+        "Minimum temperature (\u00b0C)": "16.1"
+    },
+    {
+        "Date": "2022-10-23",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "13.9"
+    },
+    {
+        "Date": "2022-10-24",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "20.6",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2022-10-25",
+        "Rainfall (mm)": "2.3",
+        "Maximum temperature (\u00b0C)": "23.7",
+        "Minimum temperature (\u00b0C)": "15.6"
+    },
+    {
+        "Date": "2022-10-26",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-10-27",
+        "Rainfall (mm)": "8.3",
+        "Maximum temperature (\u00b0C)": "18.6",
+        "Minimum temperature (\u00b0C)": "14.7"
+    },
+    {
+        "Date": "2022-10-28",
+        "Rainfall (mm)": "17.5",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2022-10-29",
+        "Rainfall (mm)": "4.8",
+        "Maximum temperature (\u00b0C)": "17.8",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2022-10-30",
+        "Rainfall (mm)": "2.7",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "8.5"
+    },
+    {
+        "Date": "2022-10-31",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "22.4",
+        "Minimum temperature (\u00b0C)": "12.2"
+    },
+    {
+        "Date": "2022-11-01",
+        "Rainfall (mm)": "5.5",
+        "Maximum temperature (\u00b0C)": "13.3",
+        "Minimum temperature (\u00b0C)": "8.5"
+    },
+    {
+        "Date": "2022-11-02",
+        "Rainfall (mm)": "3.4",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2022-11-03",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "15.4",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2022-11-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.8",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2022-11-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.7",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2022-11-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.1",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-11-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.9",
+        "Minimum temperature (\u00b0C)": "13.9"
+    },
+    {
+        "Date": "2022-11-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.6",
+        "Minimum temperature (\u00b0C)": "14.6"
+    },
+    {
+        "Date": "2022-11-09",
+        "Rainfall (mm)": "3.4",
+        "Maximum temperature (\u00b0C)": "29.3",
+        "Minimum temperature (\u00b0C)": "15.6"
+    },
+    {
+        "Date": "2022-11-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.4",
+        "Minimum temperature (\u00b0C)": "19.8"
+    },
+    {
+        "Date": "2022-11-11",
+        "Rainfall (mm)": "3.8",
+        "Maximum temperature (\u00b0C)": "20.2",
+        "Minimum temperature (\u00b0C)": "18.7"
+    },
+    {
+        "Date": "2022-11-12",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "14.2"
+    },
+    {
+        "Date": "2022-11-13",
+        "Rainfall (mm)": "6.8",
+        "Maximum temperature (\u00b0C)": "24.8",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2022-11-14",
+        "Rainfall (mm)": "16.7",
+        "Maximum temperature (\u00b0C)": "17.4",
+        "Minimum temperature (\u00b0C)": "13.0"
+    },
+    {
+        "Date": "2022-11-15",
+        "Rainfall (mm)": "15.4",
+        "Maximum temperature (\u00b0C)": "13.1",
+        "Minimum temperature (\u00b0C)": "8.0"
+    },
+    {
+        "Date": "2022-11-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.8",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-11-17",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "16.3",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2022-11-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.5",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2022-11-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.3",
+        "Minimum temperature (\u00b0C)": "12.5"
+    },
+    {
+        "Date": "2022-11-20",
+        "Rainfall (mm)": "16.8",
+        "Maximum temperature (\u00b0C)": "20.6",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2022-11-21",
+        "Rainfall (mm)": "1.6",
+        "Maximum temperature (\u00b0C)": "13.8",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-11-22",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "8.7"
+    },
+    {
+        "Date": "2022-11-23",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "17.7",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-11-24",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "19.2",
+        "Minimum temperature (\u00b0C)": "12.4"
+    },
+    {
+        "Date": "2022-11-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.6",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-11-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.3",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2022-11-27",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "20.5",
+        "Minimum temperature (\u00b0C)": "14.7"
+    },
+    {
+        "Date": "2022-11-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "9.7"
+    },
+    {
+        "Date": "2022-11-29",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "12.2"
+    },
+    {
+        "Date": "2022-11-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-12-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "12.1"
+    },
+    {
+        "Date": "2022-12-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.4",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-12-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.0",
+        "Minimum temperature (\u00b0C)": "13.6"
+    },
+    {
+        "Date": "2022-12-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "34.5",
+        "Minimum temperature (\u00b0C)": "17.3"
+    },
+    {
+        "Date": "2022-12-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.1",
+        "Minimum temperature (\u00b0C)": "16.2"
+    },
+    {
+        "Date": "2022-12-06",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "20.0",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2022-12-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "13.1"
+    },
+    {
+        "Date": "2022-12-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2022-12-09",
+        "Rainfall (mm)": "3.4",
+        "Maximum temperature (\u00b0C)": "17.6",
+        "Minimum temperature (\u00b0C)": "9.9"
+    },
+    {
+        "Date": "2022-12-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.9",
+        "Minimum temperature (\u00b0C)": "8.1"
+    },
+    {
+        "Date": "2022-12-11",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "28.6",
+        "Minimum temperature (\u00b0C)": "14.0"
+    },
+    {
+        "Date": "2022-12-12",
+        "Rainfall (mm)": "18.4",
+        "Maximum temperature (\u00b0C)": "17.3",
+        "Minimum temperature (\u00b0C)": "11.5"
+    },
+    {
+        "Date": "2022-12-13",
+        "Rainfall (mm)": "3.4",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2022-12-14",
+        "Rainfall (mm)": "6.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "9.0"
+    },
+    {
+        "Date": "2022-12-15",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "16.6",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2022-12-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "10.8"
+    },
+    {
+        "Date": "2022-12-17",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "22.3",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2022-12-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.7",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2022-12-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.0",
+        "Minimum temperature (\u00b0C)": "9.8"
+    },
+    {
+        "Date": "2022-12-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.3",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2022-12-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.4",
+        "Minimum temperature (\u00b0C)": "12.9"
+    },
+    {
+        "Date": "2022-12-22",
+        "Rainfall (mm)": "6.0",
+        "Maximum temperature (\u00b0C)": "25.2",
+        "Minimum temperature (\u00b0C)": "16.8"
+    },
+    {
+        "Date": "2022-12-23",
+        "Rainfall (mm)": "2.0",
+        "Maximum temperature (\u00b0C)": "23.1",
+        "Minimum temperature (\u00b0C)": "15.7"
+    },
+    {
+        "Date": "2022-12-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.5",
+        "Minimum temperature (\u00b0C)": "16.7"
+    },
+    {
+        "Date": "2022-12-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.9",
+        "Minimum temperature (\u00b0C)": "12.9"
+    },
+    {
+        "Date": "2022-12-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.5",
+        "Minimum temperature (\u00b0C)": "17.0"
+    },
+    {
+        "Date": "2022-12-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "37.3",
+        "Minimum temperature (\u00b0C)": "17.7"
+    },
+    {
+        "Date": "2022-12-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.6",
+        "Minimum temperature (\u00b0C)": "25.0"
+    },
+    {
+        "Date": "2022-12-29",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "14.0"
+    },
+    {
+        "Date": "2022-12-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.2",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2022-12-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.3",
+        "Minimum temperature (\u00b0C)": "17.9"
+    },
+    {
+        "Date": "2023-01-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "35.9",
+        "Minimum temperature (\u00b0C)": "18.4"
+    },
+    {
+        "Date": "2023-01-02",
+        "Rainfall (mm)": "6.4",
+        "Maximum temperature (\u00b0C)": "32.0",
+        "Minimum temperature (\u00b0C)": "22.1"
+    },
+    {
+        "Date": "2023-01-03",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "21.1",
+        "Minimum temperature (\u00b0C)": "15.2"
+    },
+    {
+        "Date": "2023-01-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.7",
+        "Minimum temperature (\u00b0C)": "15.0"
+    },
+    {
+        "Date": "2023-01-05",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "14.1"
+    },
+    {
+        "Date": "2023-01-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.6",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2023-01-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.2",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2023-01-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.9",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-01-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.2",
+        "Minimum temperature (\u00b0C)": "18.4"
+    },
+    {
+        "Date": "2023-01-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "16.9"
+    },
+    {
+        "Date": "2023-01-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.9",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2023-01-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.0",
+        "Minimum temperature (\u00b0C)": "18.7"
+    },
+    {
+        "Date": "2023-01-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.2",
+        "Minimum temperature (\u00b0C)": "18.0"
+    },
+    {
+        "Date": "2023-01-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "37.6",
+        "Minimum temperature (\u00b0C)": "20.2"
+    },
+    {
+        "Date": "2023-01-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.6",
+        "Minimum temperature (\u00b0C)": "18.0"
+    },
+    {
+        "Date": "2023-01-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.0",
+        "Minimum temperature (\u00b0C)": "15.1"
+    },
+    {
+        "Date": "2023-01-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "37.2",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2023-01-18",
+        "Rainfall (mm)": "6.0",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "19.8"
+    },
+    {
+        "Date": "2023-01-19",
+        "Rainfall (mm)": "4.6",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "14.7"
+    },
+    {
+        "Date": "2023-01-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.0",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-01-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.0",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-01-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.4",
+        "Minimum temperature (\u00b0C)": "17.2"
+    },
+    {
+        "Date": "2023-01-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.0",
+        "Minimum temperature (\u00b0C)": "18.2"
+    },
+    {
+        "Date": "2023-01-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.6",
+        "Minimum temperature (\u00b0C)": "17.6"
+    },
+    {
+        "Date": "2023-01-25",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "30.0",
+        "Minimum temperature (\u00b0C)": "17.2"
+    },
+    {
+        "Date": "2023-01-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2023-01-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.8",
+        "Minimum temperature (\u00b0C)": "13.5"
+    },
+    {
+        "Date": "2023-01-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "34.2",
+        "Minimum temperature (\u00b0C)": "15.2"
+    },
+    {
+        "Date": "2023-01-29",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "23.8",
+        "Minimum temperature (\u00b0C)": "19.5"
+    },
+    {
+        "Date": "2023-01-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.7",
+        "Minimum temperature (\u00b0C)": "17.9"
+    },
+    {
+        "Date": "2023-01-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "15.6"
+    },
+    {
+        "Date": "2023-02-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.0",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-02-02",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "21.3",
+        "Minimum temperature (\u00b0C)": "14.2"
+    },
+    {
+        "Date": "2023-02-03",
+        "Rainfall (mm)": "11.2",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "11.4"
+    },
+    {
+        "Date": "2023-02-04",
+        "Rainfall (mm)": "6.6",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2023-02-05",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "19.8",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-02-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.9",
+        "Minimum temperature (\u00b0C)": "16.0"
+    },
+    {
+        "Date": "2023-02-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "16.6"
+    },
+    {
+        "Date": "2023-02-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "15.0"
+    },
+    {
+        "Date": "2023-02-09",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "26.4",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2023-02-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.7",
+        "Minimum temperature (\u00b0C)": "16.2"
+    },
+    {
+        "Date": "2023-02-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.7",
+        "Minimum temperature (\u00b0C)": "15.8"
+    },
+    {
+        "Date": "2023-02-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "17.3"
+    },
+    {
+        "Date": "2023-02-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.9",
+        "Minimum temperature (\u00b0C)": "15.8"
+    },
+    {
+        "Date": "2023-02-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "12.0"
+    },
+    {
+        "Date": "2023-02-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.4",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2023-02-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "37.2",
+        "Minimum temperature (\u00b0C)": "17.1"
+    },
+    {
+        "Date": "2023-02-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "40.5",
+        "Minimum temperature (\u00b0C)": "22.8"
+    },
+    {
+        "Date": "2023-02-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.9",
+        "Minimum temperature (\u00b0C)": "17.4"
+    },
+    {
+        "Date": "2023-02-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.9",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-02-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.0",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-02-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.2",
+        "Minimum temperature (\u00b0C)": "17.7"
+    },
+    {
+        "Date": "2023-02-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.6",
+        "Minimum temperature (\u00b0C)": "14.6"
+    },
+    {
+        "Date": "2023-02-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.4",
+        "Minimum temperature (\u00b0C)": "17.5"
+    },
+    {
+        "Date": "2023-02-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.3",
+        "Minimum temperature (\u00b0C)": "19.6"
+    },
+    {
+        "Date": "2023-02-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.7",
+        "Minimum temperature (\u00b0C)": "22.2"
+    },
+    {
+        "Date": "2023-02-26",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "23.4",
+        "Minimum temperature (\u00b0C)": "15.7"
+    },
+    {
+        "Date": "2023-02-27",
+        "Rainfall (mm)": "2.6",
+        "Maximum temperature (\u00b0C)": "20.2",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2023-02-28",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "17.6",
+        "Minimum temperature (\u00b0C)": "16.5"
+    },
+    {
+        "Date": "2023-03-01",
+        "Rainfall (mm)": "3.2",
+        "Maximum temperature (\u00b0C)": "21.1",
+        "Minimum temperature (\u00b0C)": "14.3"
+    },
+    {
+        "Date": "2023-03-02",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "21.7",
+        "Minimum temperature (\u00b0C)": "14.5"
+    },
+    {
+        "Date": "2023-03-03",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "19.8",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-03-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "31.4",
+        "Minimum temperature (\u00b0C)": "14.1"
+    },
+    {
+        "Date": "2023-03-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.9",
+        "Minimum temperature (\u00b0C)": "16.5"
+    },
+    {
+        "Date": "2023-03-06",
+        "Rainfall (mm)": "5.6",
+        "Maximum temperature (\u00b0C)": "25.3",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-03-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.2",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2023-03-08",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "19.4",
+        "Minimum temperature (\u00b0C)": "12.3"
+    },
+    {
+        "Date": "2023-03-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.1",
+        "Minimum temperature (\u00b0C)": "12.9"
+    },
+    {
+        "Date": "2023-03-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.0",
+        "Minimum temperature (\u00b0C)": "14.5"
+    },
+    {
+        "Date": "2023-03-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.7",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2023-03-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-03-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.4",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2023-03-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.5",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2023-03-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.9",
+        "Minimum temperature (\u00b0C)": "17.6"
+    },
+    {
+        "Date": "2023-03-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.5",
+        "Minimum temperature (\u00b0C)": "17.3"
+    },
+    {
+        "Date": "2023-03-17",
+        "Rainfall (mm)": "2.6",
+        "Maximum temperature (\u00b0C)": "24.6",
+        "Minimum temperature (\u00b0C)": "15.8"
+    },
+    {
+        "Date": "2023-03-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "36.2",
+        "Minimum temperature (\u00b0C)": "14.6"
+    },
+    {
+        "Date": "2023-03-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "17.3"
+    },
+    {
+        "Date": "2023-03-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-03-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.4",
+        "Minimum temperature (\u00b0C)": "11.7"
+    },
+    {
+        "Date": "2023-03-22",
+        "Rainfall (mm)": "1.6",
+        "Maximum temperature (\u00b0C)": "22.8",
+        "Minimum temperature (\u00b0C)": "13.5"
+    },
+    {
+        "Date": "2023-03-23",
+        "Rainfall (mm)": "10.2",
+        "Maximum temperature (\u00b0C)": "22.6",
+        "Minimum temperature (\u00b0C)": "15.3"
+    },
+    {
+        "Date": "2023-03-24",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "16.1"
+    },
+    {
+        "Date": "2023-03-25",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "19.6",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2023-03-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "10.7"
+    },
+    {
+        "Date": "2023-03-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.3",
+        "Minimum temperature (\u00b0C)": "13.9"
+    },
+    {
+        "Date": "2023-03-28",
+        "Rainfall (mm)": "8.0",
+        "Maximum temperature (\u00b0C)": "20.9",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-03-29",
+        "Rainfall (mm)": "5.8",
+        "Maximum temperature (\u00b0C)": "18.5",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-03-30",
+        "Rainfall (mm)": "8.2",
+        "Maximum temperature (\u00b0C)": "19.1",
+        "Minimum temperature (\u00b0C)": "12.4"
+    },
+    {
+        "Date": "2023-03-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.4",
+        "Minimum temperature (\u00b0C)": "14.1"
+    },
+    {
+        "Date": "2023-04-01",
+        "Rainfall (mm)": "4.6",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "11.3"
+    },
+    {
+        "Date": "2023-04-02",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.3",
+        "Minimum temperature (\u00b0C)": "8.7"
+    },
+    {
+        "Date": "2023-04-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.6",
+        "Minimum temperature (\u00b0C)": "8.8"
+    },
+    {
+        "Date": "2023-04-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.7",
+        "Minimum temperature (\u00b0C)": "12.0"
+    },
+    {
+        "Date": "2023-04-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-04-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.3",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2023-04-07",
+        "Rainfall (mm)": "4.4",
+        "Maximum temperature (\u00b0C)": "19.9",
+        "Minimum temperature (\u00b0C)": "16.1"
+    },
+    {
+        "Date": "2023-04-08",
+        "Rainfall (mm)": "11.2",
+        "Maximum temperature (\u00b0C)": "18.0",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2023-04-09",
+        "Rainfall (mm)": "7.8",
+        "Maximum temperature (\u00b0C)": "15.5",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2023-04-10",
+        "Rainfall (mm)": "14.8",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "10.1"
+    },
+    {
+        "Date": "2023-04-11",
+        "Rainfall (mm)": "6.0",
+        "Maximum temperature (\u00b0C)": "19.1",
+        "Minimum temperature (\u00b0C)": "11.9"
+    },
+    {
+        "Date": "2023-04-12",
+        "Rainfall (mm)": "7.0",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2023-04-13",
+        "Rainfall (mm)": "4.4",
+        "Maximum temperature (\u00b0C)": "22.8",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2023-04-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.4",
+        "Minimum temperature (\u00b0C)": "10.8"
+    },
+    {
+        "Date": "2023-04-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.2",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-04-16",
+        "Rainfall (mm)": "38.4",
+        "Maximum temperature (\u00b0C)": "17.2",
+        "Minimum temperature (\u00b0C)": "12.1"
+    },
+    {
+        "Date": "2023-04-17",
+        "Rainfall (mm)": "2.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "8.7"
+    },
+    {
+        "Date": "2023-04-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.8",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2023-04-19",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "17.5",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2023-04-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.5",
+        "Minimum temperature (\u00b0C)": "7.8"
+    },
+    {
+        "Date": "2023-04-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "11.3"
+    },
+    {
+        "Date": "2023-04-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.2",
+        "Minimum temperature (\u00b0C)": "14.6"
+    },
+    {
+        "Date": "2023-04-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "14.8"
+    },
+    {
+        "Date": "2023-04-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.9",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2023-04-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.9",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2023-04-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.6",
+        "Minimum temperature (\u00b0C)": "12.0"
+    },
+    {
+        "Date": "2023-04-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.6",
+        "Minimum temperature (\u00b0C)": "16.0"
+    },
+    {
+        "Date": "2023-04-28",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2023-04-29",
+        "Rainfall (mm)": "5.2",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "9.0"
+    },
+    {
+        "Date": "2023-04-30",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "16.3",
+        "Minimum temperature (\u00b0C)": "5.0"
+    },
+    {
+        "Date": "2023-05-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.1",
+        "Minimum temperature (\u00b0C)": "7.3"
+    },
+    {
+        "Date": "2023-05-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.3",
+        "Minimum temperature (\u00b0C)": "11.3"
+    },
+    {
+        "Date": "2023-05-03",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2023-05-04",
+        "Rainfall (mm)": "2.0",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "8.1"
+    },
+    {
+        "Date": "2023-05-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "10.4"
+    },
+    {
+        "Date": "2023-05-06",
+        "Rainfall (mm)": "14.8",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "9.8"
+    },
+    {
+        "Date": "2023-05-07",
+        "Rainfall (mm)": "22.6",
+        "Maximum temperature (\u00b0C)": "13.4",
+        "Minimum temperature (\u00b0C)": "6.6"
+    },
+    {
+        "Date": "2023-05-08",
+        "Rainfall (mm)": "5.8",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2023-05-09",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2023-05-10",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "15.3",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2023-05-11",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2023-05-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "7.7"
+    },
+    {
+        "Date": "2023-05-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.8",
+        "Minimum temperature (\u00b0C)": "9.3"
+    },
+    {
+        "Date": "2023-05-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.7",
+        "Minimum temperature (\u00b0C)": "7.0"
+    },
+    {
+        "Date": "2023-05-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.1",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2023-05-16",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "13.7",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2023-05-17",
+        "Rainfall (mm)": "2.6",
+        "Maximum temperature (\u00b0C)": "14.8",
+        "Minimum temperature (\u00b0C)": "4.7"
+    },
+    {
+        "Date": "2023-05-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.7",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2023-05-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.6",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2023-05-20",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "15.0",
+        "Minimum temperature (\u00b0C)": "8.7"
+    },
+    {
+        "Date": "2023-05-21",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "9.2"
+    },
+    {
+        "Date": "2023-05-22",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "7.7"
+    },
+    {
+        "Date": "2023-05-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.8",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2023-05-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2023-05-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.0",
+        "Minimum temperature (\u00b0C)": "10.8"
+    },
+    {
+        "Date": "2023-05-26",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "14.4",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2023-05-27",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "9.8"
+    },
+    {
+        "Date": "2023-05-28",
+        "Rainfall (mm)": "6.8",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2023-05-29",
+        "Rainfall (mm)": "5.4",
+        "Maximum temperature (\u00b0C)": "17.0",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2023-05-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.7",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2023-05-31",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.7",
+        "Minimum temperature (\u00b0C)": "14.0"
+    },
+    {
+        "Date": "2023-06-01",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "12.5"
+    },
+    {
+        "Date": "2023-06-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2023-06-03",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "7.1"
+    },
+    {
+        "Date": "2023-06-04",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "8.0"
+    },
+    {
+        "Date": "2023-06-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.1",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2023-06-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.4",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2023-06-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2023-06-08",
+        "Rainfall (mm)": "10.6",
+        "Maximum temperature (\u00b0C)": "16.9",
+        "Minimum temperature (\u00b0C)": "13.9"
+    },
+    {
+        "Date": "2023-06-09",
+        "Rainfall (mm)": "6.2",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2023-06-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.5",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2023-06-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.0",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2023-06-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.3",
+        "Minimum temperature (\u00b0C)": "10.7"
+    },
+    {
+        "Date": "2023-06-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.6",
+        "Minimum temperature (\u00b0C)": "9.9"
+    },
+    {
+        "Date": "2023-06-14",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "16.2",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2023-06-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.6",
+        "Minimum temperature (\u00b0C)": "9.7"
+    },
+    {
+        "Date": "2023-06-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.6",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2023-06-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "10.1"
+    },
+    {
+        "Date": "2023-06-18",
+        "Rainfall (mm)": "7.0",
+        "Maximum temperature (\u00b0C)": "14.6",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2023-06-19",
+        "Rainfall (mm)": "10.0",
+        "Maximum temperature (\u00b0C)": "11.9",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2023-06-20",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "12.1",
+        "Minimum temperature (\u00b0C)": "5.0"
+    },
+    {
+        "Date": "2023-06-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "11.8",
+        "Minimum temperature (\u00b0C)": "4.2"
+    },
+    {
+        "Date": "2023-06-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.7",
+        "Minimum temperature (\u00b0C)": "6.6"
+    },
+    {
+        "Date": "2023-06-23",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "11.3",
+        "Minimum temperature (\u00b0C)": "7.8"
+    },
+    {
+        "Date": "2023-06-24",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "15.1",
+        "Minimum temperature (\u00b0C)": "8.8"
+    },
+    {
+        "Date": "2023-06-25",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "13.2",
+        "Minimum temperature (\u00b0C)": "8.5"
+    },
+    {
+        "Date": "2023-06-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2023-06-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "6.6"
+    },
+    {
+        "Date": "2023-06-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.7",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2023-06-29",
+        "Rainfall (mm)": "3.6",
+        "Maximum temperature (\u00b0C)": "12.9",
+        "Minimum temperature (\u00b0C)": "6.2"
+    },
+    {
+        "Date": "2023-06-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "8.4"
+    },
+    {
+        "Date": "2023-07-01",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "9.7"
+    },
+    {
+        "Date": "2023-07-02",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "12.8",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2023-07-03",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "14.5",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2023-07-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.6",
+        "Minimum temperature (\u00b0C)": "8.3"
+    },
+    {
+        "Date": "2023-07-05",
+        "Rainfall (mm)": "2.4",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "10.8"
+    },
+    {
+        "Date": "2023-07-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2023-07-07",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "15.5",
+        "Minimum temperature (\u00b0C)": "9.9"
+    },
+    {
+        "Date": "2023-07-08",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2023-07-09",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "16.9",
+        "Minimum temperature (\u00b0C)": "10.9"
+    },
+    {
+        "Date": "2023-07-10",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "17.1",
+        "Minimum temperature (\u00b0C)": "11.9"
+    },
+    {
+        "Date": "2023-07-11",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "17.6",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2023-07-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.7",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2023-07-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2023-07-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2023-07-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.5",
+        "Minimum temperature (\u00b0C)": "10.1"
+    },
+    {
+        "Date": "2023-07-16",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "14.8",
+        "Minimum temperature (\u00b0C)": "4.8"
+    },
+    {
+        "Date": "2023-07-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "4.0"
+    },
+    {
+        "Date": "2023-07-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.6",
+        "Minimum temperature (\u00b0C)": "7.6"
+    },
+    {
+        "Date": "2023-07-19",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "14.3",
+        "Minimum temperature (\u00b0C)": "4.7"
+    },
+    {
+        "Date": "2023-07-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.4",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2023-07-21",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "13.9",
+        "Minimum temperature (\u00b0C)": "6.7"
+    },
+    {
+        "Date": "2023-07-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "5.7"
+    },
+    {
+        "Date": "2023-07-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.1",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2023-07-24",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2023-07-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.8",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2023-07-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "4.9"
+    },
+    {
+        "Date": "2023-07-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.2",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2023-07-28",
+        "Rainfall (mm)": "7.2",
+        "Maximum temperature (\u00b0C)": "18.9",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2023-07-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2023-07-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "10.1"
+    },
+    {
+        "Date": "2023-07-31",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "16.9",
+        "Minimum temperature (\u00b0C)": "10.6"
+    },
+    {
+        "Date": "2023-08-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "11.5"
+    },
+    {
+        "Date": "2023-08-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.1",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2023-08-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.8",
+        "Minimum temperature (\u00b0C)": "7.8"
+    },
+    {
+        "Date": "2023-08-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2023-08-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.6",
+        "Minimum temperature (\u00b0C)": "9.3"
+    },
+    {
+        "Date": "2023-08-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.4",
+        "Minimum temperature (\u00b0C)": "8.6"
+    },
+    {
+        "Date": "2023-08-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.7",
+        "Minimum temperature (\u00b0C)": "9.0"
+    },
+    {
+        "Date": "2023-08-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.2",
+        "Minimum temperature (\u00b0C)": "4.7"
+    },
+    {
+        "Date": "2023-08-09",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "5.5"
+    },
+    {
+        "Date": "2023-08-10",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "14.5",
+        "Minimum temperature (\u00b0C)": "10.6"
+    },
+    {
+        "Date": "2023-08-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "8.2"
+    },
+    {
+        "Date": "2023-08-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2023-08-13",
+        "Rainfall (mm)": "3.4",
+        "Maximum temperature (\u00b0C)": "12.9",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2023-08-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.7",
+        "Minimum temperature (\u00b0C)": "3.4"
+    },
+    {
+        "Date": "2023-08-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.1",
+        "Minimum temperature (\u00b0C)": "3.4"
+    },
+    {
+        "Date": "2023-08-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "1.6"
+    },
+    {
+        "Date": "2023-08-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "12.5",
+        "Minimum temperature (\u00b0C)": "5.3"
+    },
+    {
+        "Date": "2023-08-18",
+        "Rainfall (mm)": "5.4",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2023-08-19",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "9.4"
+    },
+    {
+        "Date": "2023-08-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.2",
+        "Minimum temperature (\u00b0C)": "12.9"
+    },
+    {
+        "Date": "2023-08-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.8",
+        "Minimum temperature (\u00b0C)": "11.5"
+    },
+    {
+        "Date": "2023-08-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.3",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2023-08-23",
+        "Rainfall (mm)": "3.6",
+        "Maximum temperature (\u00b0C)": "17.0",
+        "Minimum temperature (\u00b0C)": "5.6"
+    },
+    {
+        "Date": "2023-08-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "8.6"
+    },
+    {
+        "Date": "2023-08-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.8",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2023-08-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.5",
+        "Minimum temperature (\u00b0C)": "11.1"
+    },
+    {
+        "Date": "2023-08-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.7",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2023-08-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.6",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2023-08-29",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.4",
+        "Minimum temperature (\u00b0C)": "10.8"
+    },
+    {
+        "Date": "2023-08-30",
+        "Rainfall (mm)": "3.8",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2023-08-31",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2023-09-01",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "14.8",
+        "Minimum temperature (\u00b0C)": "9.8"
+    },
+    {
+        "Date": "2023-09-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "3.9"
+    },
+    {
+        "Date": "2023-09-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "6.0"
+    },
+    {
+        "Date": "2023-09-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "9.7"
+    },
+    {
+        "Date": "2023-09-05",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "15.1",
+        "Minimum temperature (\u00b0C)": "6.7"
+    },
+    {
+        "Date": "2023-09-06",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "19.4",
+        "Minimum temperature (\u00b0C)": "6.1"
+    },
+    {
+        "Date": "2023-09-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.1",
+        "Minimum temperature (\u00b0C)": "10.7"
+    },
+    {
+        "Date": "2023-09-08",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "11.7",
+        "Minimum temperature (\u00b0C)": "8.4"
+    },
+    {
+        "Date": "2023-09-09",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "13.9",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2023-09-10",
+        "Rainfall (mm)": "1.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2023-09-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.2",
+        "Minimum temperature (\u00b0C)": "8.3"
+    },
+    {
+        "Date": "2023-09-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.3",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2023-09-13",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.1",
+        "Minimum temperature (\u00b0C)": "9.2"
+    },
+    {
+        "Date": "2023-09-14",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.9",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2023-09-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.4",
+        "Minimum temperature (\u00b0C)": "15.1"
+    },
+    {
+        "Date": "2023-09-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.0",
+        "Minimum temperature (\u00b0C)": "9.6"
+    },
+    {
+        "Date": "2023-09-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.1",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2023-09-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.9",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2023-09-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.0",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2023-09-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2023-09-21",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "9.2"
+    },
+    {
+        "Date": "2023-09-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "14.9",
+        "Minimum temperature (\u00b0C)": "6.8"
+    },
+    {
+        "Date": "2023-09-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "5.2"
+    },
+    {
+        "Date": "2023-09-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.8",
+        "Minimum temperature (\u00b0C)": "7.2"
+    },
+    {
+        "Date": "2023-09-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.4",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2023-09-26",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.4",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2023-09-27",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.3",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2023-09-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.1",
+        "Minimum temperature (\u00b0C)": "10.2"
+    },
+    {
+        "Date": "2023-09-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.8",
+        "Minimum temperature (\u00b0C)": "8.0"
+    },
+    {
+        "Date": "2023-09-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.7",
+        "Minimum temperature (\u00b0C)": "15.4"
+    },
+    {
+        "Date": "2023-10-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.5",
+        "Minimum temperature (\u00b0C)": "19.0"
+    },
+    {
+        "Date": "2023-10-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.5",
+        "Minimum temperature (\u00b0C)": "7.4"
+    },
+    {
+        "Date": "2023-10-03",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "19.2",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2023-10-04",
+        "Rainfall (mm)": "22.8",
+        "Maximum temperature (\u00b0C)": "13.5",
+        "Minimum temperature (\u00b0C)": "10.5"
+    },
+    {
+        "Date": "2023-10-05",
+        "Rainfall (mm)": "6.8",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "8.8"
+    },
+    {
+        "Date": "2023-10-06",
+        "Rainfall (mm)": "7.2",
+        "Maximum temperature (\u00b0C)": "15.2",
+        "Minimum temperature (\u00b0C)": "10.0"
+    },
+    {
+        "Date": "2023-10-07",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "14.3",
+        "Minimum temperature (\u00b0C)": "7.7"
+    },
+    {
+        "Date": "2023-10-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "5.8"
+    },
+    {
+        "Date": "2023-10-09",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.8",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2023-10-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.5",
+        "Minimum temperature (\u00b0C)": "11.0"
+    },
+    {
+        "Date": "2023-10-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.2",
+        "Minimum temperature (\u00b0C)": "6.9"
+    },
+    {
+        "Date": "2023-10-12",
+        "Rainfall (mm)": "1.2",
+        "Maximum temperature (\u00b0C)": "16.1",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2023-10-13",
+        "Rainfall (mm)": "13.4",
+        "Maximum temperature (\u00b0C)": "17.5",
+        "Minimum temperature (\u00b0C)": "10.6"
+    },
+    {
+        "Date": "2023-10-14",
+        "Rainfall (mm)": "2.2",
+        "Maximum temperature (\u00b0C)": "19.6",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2023-10-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.2",
+        "Minimum temperature (\u00b0C)": "11.5"
+    },
+    {
+        "Date": "2023-10-16",
+        "Rainfall (mm)": "5.0",
+        "Maximum temperature (\u00b0C)": "14.7",
+        "Minimum temperature (\u00b0C)": "10.1"
+    },
+    {
+        "Date": "2023-10-17",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "16.1",
+        "Minimum temperature (\u00b0C)": "10.3"
+    },
+    {
+        "Date": "2023-10-18",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "24.2",
+        "Minimum temperature (\u00b0C)": "7.9"
+    },
+    {
+        "Date": "2023-10-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "27.1",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2023-10-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.5",
+        "Minimum temperature (\u00b0C)": "14.3"
+    },
+    {
+        "Date": "2023-10-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.1",
+        "Minimum temperature (\u00b0C)": "18.8"
+    },
+    {
+        "Date": "2023-10-22",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "15.5",
+        "Minimum temperature (\u00b0C)": "11.6"
+    },
+    {
+        "Date": "2023-10-23",
+        "Rainfall (mm)": "2.4",
+        "Maximum temperature (\u00b0C)": "18.1",
+        "Minimum temperature (\u00b0C)": "10.6"
+    },
+    {
+        "Date": "2023-10-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.3",
+        "Minimum temperature (\u00b0C)": "12.3"
+    },
+    {
+        "Date": "2023-10-25",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "13.4",
+        "Minimum temperature (\u00b0C)": "8.9"
+    },
+    {
+        "Date": "2023-10-26",
+        "Rainfall (mm)": "8.2",
+        "Maximum temperature (\u00b0C)": "15.1",
+        "Minimum temperature (\u00b0C)": "7.3"
+    },
+    {
+        "Date": "2023-10-27",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "19.4",
+        "Minimum temperature (\u00b0C)": "8.3"
+    },
+    {
+        "Date": "2023-10-28",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.3",
+        "Minimum temperature (\u00b0C)": "9.5"
+    },
+    {
+        "Date": "2023-10-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.3",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2023-10-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.2",
+        "Minimum temperature (\u00b0C)": "12.4"
+    },
+    {
+        "Date": "2023-10-31",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "9.1"
+    },
+    {
+        "Date": "2023-11-01",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.0",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2023-11-02",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "16.7",
+        "Minimum temperature (\u00b0C)": "12.1"
+    },
+    {
+        "Date": "2023-11-03",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "15.9",
+        "Minimum temperature (\u00b0C)": "12.1"
+    },
+    {
+        "Date": "2023-11-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.9",
+        "Minimum temperature (\u00b0C)": "11.2"
+    },
+    {
+        "Date": "2023-11-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.9",
+        "Minimum temperature (\u00b0C)": "9.3"
+    },
+    {
+        "Date": "2023-11-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "29.8",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2023-11-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "30.6",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-11-08",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "30.8",
+        "Minimum temperature (\u00b0C)": "16.3"
+    },
+    {
+        "Date": "2023-11-09",
+        "Rainfall (mm)": "8.8",
+        "Maximum temperature (\u00b0C)": "23.2",
+        "Minimum temperature (\u00b0C)": "15.0"
+    },
+    {
+        "Date": "2023-11-10",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "33.1",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2023-11-11",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.1",
+        "Minimum temperature (\u00b0C)": "18.7"
+    },
+    {
+        "Date": "2023-11-12",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "12.1"
+    },
+    {
+        "Date": "2023-11-13",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "20.6",
+        "Minimum temperature (\u00b0C)": "11.8"
+    },
+    {
+        "Date": "2023-11-14",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "16.8",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2023-11-15",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "18.2",
+        "Minimum temperature (\u00b0C)": "12.7"
+    },
+    {
+        "Date": "2023-11-16",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "17.4",
+        "Minimum temperature (\u00b0C)": "12.3"
+    },
+    {
+        "Date": "2023-11-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "17.8",
+        "Minimum temperature (\u00b0C)": "12.4"
+    },
+    {
+        "Date": "2023-11-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-11-19",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "21.6",
+        "Minimum temperature (\u00b0C)": "11.5"
+    },
+    {
+        "Date": "2023-11-20",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.3",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2023-11-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "15.1"
+    },
+    {
+        "Date": "2023-11-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "18.6",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-11-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.5",
+        "Minimum temperature (\u00b0C)": "15.2"
+    },
+    {
+        "Date": "2023-11-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "28.7",
+        "Minimum temperature (\u00b0C)": "16.9"
+    },
+    {
+        "Date": "2023-11-25",
+        "Rainfall (mm)": "8.8",
+        "Maximum temperature (\u00b0C)": "26.5",
+        "Minimum temperature (\u00b0C)": "17.2"
+    },
+    {
+        "Date": "2023-11-26",
+        "Rainfall (mm)": "3.8",
+        "Maximum temperature (\u00b0C)": "19.8",
+        "Minimum temperature (\u00b0C)": "15.1"
+    },
+    {
+        "Date": "2023-11-27",
+        "Rainfall (mm)": "7.2",
+        "Maximum temperature (\u00b0C)": "18.5",
+        "Minimum temperature (\u00b0C)": "13.7"
+    },
+    {
+        "Date": "2023-11-28",
+        "Rainfall (mm)": "1.8",
+        "Maximum temperature (\u00b0C)": "23.2",
+        "Minimum temperature (\u00b0C)": "13.8"
+    },
+    {
+        "Date": "2023-11-29",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "19.1",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2023-11-30",
+        "Rainfall (mm)": "6.8",
+        "Maximum temperature (\u00b0C)": "18.8",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2023-12-01",
+        "Rainfall (mm)": "4.6",
+        "Maximum temperature (\u00b0C)": "23.8",
+        "Minimum temperature (\u00b0C)": "13.9"
+    },
+    {
+        "Date": "2023-12-02",
+        "Rainfall (mm)": "2.8",
+        "Maximum temperature (\u00b0C)": "16.7",
+        "Minimum temperature (\u00b0C)": "15.5"
+    },
+    {
+        "Date": "2023-12-03",
+        "Rainfall (mm)": "7.0",
+        "Maximum temperature (\u00b0C)": "24.3",
+        "Minimum temperature (\u00b0C)": "14.1"
+    },
+    {
+        "Date": "2023-12-04",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "32.6",
+        "Minimum temperature (\u00b0C)": "13.1"
+    },
+    {
+        "Date": "2023-12-05",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.5",
+        "Minimum temperature (\u00b0C)": "15.6"
+    },
+    {
+        "Date": "2023-12-06",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.7",
+        "Minimum temperature (\u00b0C)": "15.0"
+    },
+    {
+        "Date": "2023-12-07",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.8",
+        "Minimum temperature (\u00b0C)": "13.3"
+    },
+    {
+        "Date": "2023-12-08",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "33.0",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2023-12-09",
+        "Rainfall (mm)": "2.6",
+        "Maximum temperature (\u00b0C)": "17.9",
+        "Minimum temperature (\u00b0C)": "16.9"
+    },
+    {
+        "Date": "2023-12-10",
+        "Rainfall (mm)": "11.8",
+        "Maximum temperature (\u00b0C)": "19.5",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2023-12-11",
+        "Rainfall (mm)": "0.4",
+        "Maximum temperature (\u00b0C)": "20.2",
+        "Minimum temperature (\u00b0C)": "16.1"
+    },
+    {
+        "Date": "2023-12-12",
+        "Rainfall (mm)": "0.2",
+        "Maximum temperature (\u00b0C)": "33.2",
+        "Minimum temperature (\u00b0C)": "17.8"
+    },
+    {
+        "Date": "2023-12-13",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "34.0",
+        "Minimum temperature (\u00b0C)": "19.7"
+    },
+    {
+        "Date": "2023-12-14",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "25.5",
+        "Minimum temperature (\u00b0C)": "16.5"
+    },
+    {
+        "Date": "2023-12-15",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "23.4",
+        "Minimum temperature (\u00b0C)": "14.4"
+    },
+    {
+        "Date": "2023-12-16",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.7",
+        "Minimum temperature (\u00b0C)": "13.4"
+    },
+    {
+        "Date": "2023-12-17",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.2",
+        "Minimum temperature (\u00b0C)": "12.2"
+    },
+    {
+        "Date": "2023-12-18",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "26.2",
+        "Minimum temperature (\u00b0C)": "15.9"
+    },
+    {
+        "Date": "2023-12-19",
+        "Rainfall (mm)": "4.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-12-20",
+        "Rainfall (mm)": "1.4",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "12.8"
+    },
+    {
+        "Date": "2023-12-21",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "25.7",
+        "Minimum temperature (\u00b0C)": "14.9"
+    },
+    {
+        "Date": "2023-12-22",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.4",
+        "Minimum temperature (\u00b0C)": "14.3"
+    },
+    {
+        "Date": "2023-12-23",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "22.8",
+        "Minimum temperature (\u00b0C)": "12.6"
+    },
+    {
+        "Date": "2023-12-24",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "24.2",
+        "Minimum temperature (\u00b0C)": "13.2"
+    },
+    {
+        "Date": "2023-12-25",
+        "Rainfall (mm)": "14.2",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "16.0"
+    },
+    {
+        "Date": "2023-12-26",
+        "Rainfall (mm)": "16.0",
+        "Maximum temperature (\u00b0C)": "24.1",
+        "Minimum temperature (\u00b0C)": "16.7"
+    },
+    {
+        "Date": "2023-12-27",
+        "Rainfall (mm)": "3.0",
+        "Maximum temperature (\u00b0C)": "24.0",
+        "Minimum temperature (\u00b0C)": "16.9"
+    },
+    {
+        "Date": "2023-12-28",
+        "Rainfall (mm)": "0.8",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "17.2"
+    },
+    {
+        "Date": "2023-12-29",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "20.4",
+        "Minimum temperature (\u00b0C)": "15.2"
+    },
+    {
+        "Date": "2023-12-30",
+        "Rainfall (mm)": "0.0",
+        "Maximum temperature (\u00b0C)": "19.0",
+        "Minimum temperature (\u00b0C)": "14.2"
+    },
+    {
+        "Date": "2023-12-31",
+        "Rainfall (mm)": "0.6",
+        "Maximum temperature (\u00b0C)": "20.8",
+        "Minimum temperature (\u00b0C)": "14.1"
+    }
+]
