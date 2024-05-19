@@ -4,11 +4,18 @@
 
 [Analysis of Potential Factors-affected Car Accidents in Victoria](https://www.overleaf.com/4751181365djrvrfzzxqrt#c886a0)
 
-## Data
+## Confluence Page
+[CCC_A2](https://felikskong.atlassian.net/wiki/spaces/CCCA2/overview?homepageId=295444)
 
-- geo VIC
+## Data
+- Population in Victoria
+  [SUDO](https://sudo.eresearch.unimelb.edu.au/)
+- Geographical information of Victoria
+  [SUDO](https://sudo.eresearch.unimelb.edu.au/)
 - Victoria Road Crash Data
-  [Metadata](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
+  [Victorian Government Data Directory](https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/RCIS%20Documents/Metadata%20-%20Victoria%20Road%20Crash%20data.pdf)
+- Weather Conditions in Last Two Years
+  [BOM](http://www.bom.gov.au/)
 
 ## Scenarios and figs (main.ipynb)
 
