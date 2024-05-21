@@ -21,8 +21,17 @@ query_template = Template("""{
 }""")
 
 
+def config(k):
+    with open(f"/configs/default/shared-data/{k}", "r") as f:
+        return f.read()
+
+
 def main():
     try:
+        if request.method != "GET":
+            return json.dumps(
+                {"status": 400, "message": "The method is not supported. "}
+            )
         start_date = request.headers["X-Fission-Params-Startdate"]
         end_date = request.headers["X-Fission-Params-Enddate"]
     except KeyError as e:
@@ -35,7 +44,8 @@ def main():
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
         # "https://127.0.0.1:9200",
         verify_certs=False,
-        basic_auth=("elastic", "elastic"),
+        basic_auth=(config("ES_USERNAME"), config("ES_PASSWORD")),
+        # basic_auth=("elastic", "elastic"),
     )
 
     # query = query_template.substitute(date=date)

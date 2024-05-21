@@ -7,10 +7,17 @@ from elasticsearch8 import Elasticsearch, helpers
 from flask import request
 from datetime import datetime
 
+
+def config(k):
+    with open(f"/configs/default/shared-data/{k}", "r") as f:
+        return f.read()
+
+
 client = Elasticsearch(
     "https://elasticsearch-master.elastic.svc.cluster.local:9200",
     verify_certs=False,
-    basic_auth=("elastic", "elastic"),
+    # basic_auth=("elastic", "elastic"),
+    basic_auth=(config("ES_USERNAME"), config("ES_PASSWORD")),
 )
 
 
@@ -124,6 +131,8 @@ def upload_data(index_name, actions):
 
 
 def main():
+    if request.method != "PUT":
+        return json.dumps({"status": 400, "message": "The method is not supported. "})
     try:
         index_name, data = get_index_name_and_validate()
         if data is None:

@@ -7,6 +7,11 @@ from elasticsearch8 import Elasticsearch
 from flask import request
 
 
+def config(k):
+    with open(f"/configs/default/shared-data/{k}", "r") as f:
+        return f.read()
+
+
 def get_index_name_and_query():
     index_name = request.headers["X-Fission-Params-Indexname"]
     query = {
@@ -29,7 +34,8 @@ def fetch_all_documents(index_name, query):
     client = Elasticsearch(
         "https://elasticsearch-master.elastic.svc.cluster.local:9200",
         verify_certs=False,
-        basic_auth=("elastic", "elastic"),
+        # basic_auth=("elastic", "elastic"),
+        basic_auth=(config("ES_USERNAME"), config("ES_PASSWORD")),
     )
     page = client.search(index=index_name, scroll="2m", size=5000, body=query)
     sid = page["_scroll_id"]
@@ -46,6 +52,10 @@ def fetch_all_documents(index_name, query):
 
 def main():
     try:
+        if request.method != "GET":
+            return json.dumps(
+                {"status": 400, "message": "The method is not supported. "}
+            )
         index_name, query = get_index_name_and_query()
         documents = fetch_all_documents(index_name, query)
         response = {"status": 200, "response": documents}

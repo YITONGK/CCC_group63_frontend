@@ -1,7 +1,7 @@
 include:
 - ./backend/searchweather.zip
 kind: ArchiveUploadSpec
-name: backend-searchweather-zip-f63U
+name: backend-searchweather-zip-9qYH
 
 ---
 apiVersion: fission.io/v1
@@ -19,7 +19,7 @@ spec:
   source:
     checksum: {}
     type: url
-    url: archive://backend-searchweather-zip-f63U
+    url: archive://backend-searchweather-zip-9qYH
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2024-05-19T04:12:42Z"
+  lastUpdateTimestamp: "2024-05-21T08:33:40Z"
