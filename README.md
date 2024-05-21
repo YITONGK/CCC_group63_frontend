@@ -21,24 +21,15 @@
 
 ## Scenarios and figs (main.ipynb)
 
-- **Analysis of LGA areas and the number/severity of accidents**
+- **The number and severity of accidents in VIC LGA areas​**
 
-  - LGA & number of accidents & population (done)
-  - LGA & number of accidents dot map (done)
-    - Cluster of num accidents in geo
-    - Subplot of LGA & number of accidents & population, [illustration](https://plotly.com/python/mixed-subplots/)
+- **The population VS. the number of car accidents**
 
-- **Analysis of population and the number of car accidents**
+- **The rainfall and speed on the number of accidents​**
 
-  - bar chart (population increase with LGA name) + line (num of accidents), [illustration](https://plotly.com/python/figurewidget/) (ing)
+- **The severity of the car accidents​**
 
-- **Analysis of rainfall & speed on the number of accidents**
-
-- **Pie chart analysis of the severity of the car accident**
-
-  - Full Severity Statistics for 2023
-
-- **Analysis of road conditions and the number of car accidents**
+- **The road conditions VS. the number of car accidents​**
 
 ## Restful API
 
