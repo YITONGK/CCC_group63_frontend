@@ -5,9 +5,11 @@
 [Analysis of Potential Factors-affected Car Accidents in Victoria](https://www.overleaf.com/4751181365djrvrfzzxqrt#c886a0)
 
 ## Confluence Page
+
 [CCC_A2](https://felikskong.atlassian.net/wiki/spaces/CCCA2/overview?homepageId=295444)
 
 ## Data
+
 - Population in Victoria
   [SUDO](https://sudo.eresearch.unimelb.edu.au/)
 - Geographical information of Victoria
@@ -48,19 +50,20 @@ To get all the accidents details from 2022 to 2023:
   ”http://127.0.0.1:9090/search/accidents”
 
 To get all the coordinates and LGA name for all the accidents:
-  ”http://127.0.0.1:9090/search/accident locations”
+  ”http://127.0.0.1:9090/search/accident_locations”
 
 To get geographic information of Victoria to establish an interactive map
   ”http://127.0.0.1:9090/search/geoinfo”
 
 To get the information of accident road surface:
   ”http://127.0.0.1:9090/search/roadcondition”
-  
+
 To search the weather in a period of time, the date should be in format ”YYYYMMDD”:
   ”http://127.0.0.1:9090/searchweather/Startdate/Enddate”
 ```
 
 ## Functions for uploading by data streaming from open API
+
 ```
 Scrape weather data of 2023 from BOM and insert into ES
 curl -X PUT "http://127.0.0.1:9090/put/accidents"
@@ -74,21 +77,22 @@ URL: "http://router.fission.svc.cluster.local/extract/weather"
 ```
 
 ## Functions for static data upload
+
 ```
 Insert accident locations, containing coordinates and LGA
-curl -X PUT "http://127.0.0.1:9090/put/accident_locations" -H "Content-Type: application/json" -d @data/upload_location.json 
+curl -X PUT "http://127.0.0.1:9090/put/accident_locations" -H "Content-Type: application/json" -d @data/upload_location.json
 
 Insert geographic information of Victoria for making an interactive map
-curl -X PUT "http://127.0.0.1:9090/put/geoinfo" -H "Content-Type: application/json" -d @data/upload_geoinfo.json 
+curl -X PUT "http://127.0.0.1:9090/put/geoinfo" -H "Content-Type: application/json" -d @data/upload_geoinfo.json
 
-Insert the population data for 80 LGA in Victoria 
+Insert the population data for 80 LGA in Victoria
 curl -X PUT "http://127.0.0.1:9090/put/population" -H "Content-Type: application/json" -d @data/upload_population.json
 
 Insert the condition of road surface when accidents happened
-curl -X PUT "http://127.0.0.1:9090/put/roadcondition" -H "Content-Type: application/json" -d @data/upload_road_condition.json 
+curl -X PUT "http://127.0.0.1:9090/put/roadcondition" -H "Content-Type: application/json" -d @data/upload_road_condition.json
 
 Insert the weather information for 2022, while weather for 2023 will be inserted by API streaming
-curl -X PUT "http://127.0.0.1:9090/put/weather2022" -H "Content-Type: application/json" -d @data/upload_weather.json 
+curl -X PUT "http://127.0.0.1:9090/put/weather2022" -H "Content-Type: application/json" -d @data/upload_weather.json
 ```
 
 ## Setup
@@ -183,7 +187,7 @@ curl -XPUT -k 'https://127.0.0.1:9200/${index_name}' \
 ### Delete Index
 
 ```
-curl -XDELETE -k 'https://127.0.0.1:9200/accidents' --user 'elastic:elastic' | jq '.'
+curl -XDELETE -k 'https://127.0.0.1:9200/<index-name>' --user 'elastic:elastic' | jq '.'
 ```
 
 ## Fission
@@ -210,26 +214,26 @@ curl "http://127.0.0.1:9090/<route-name>" | jq '.'
 ### Pkg
 
 ```
-cd functions/addobservations
-zip -r addobservations.zip .
-mv addobservations.zip ../
+cd functions/<name>
+zip -r <name>.zip .
+mv <name>.zip ../
 
 cd ../..
 
-fission package create --sourcearchive ./functions/addobservations.zip\
+fission package create --sourcearchive ./functions/<name>.zip\
   --env python\
-  --name addobservations\
+  --name <name>\
   --buildcmd './build.sh'
 
-fission fn create --name addobservations\
-  --pkg addobservations\
+fission fn create --name <name>\
+  --pkg <name>\
   --env python\
-  --entrypoint "addobservations.main"
+  --entrypoint "<name>.main"
 
-fission route create --url /addobservations --function addobservations --name addobservations --createingress
+fission route create --url /<name> --function <name> --name <name> --createingress
 
 
-curl "http://127.0.0.1:9090/addobservations" | jq '.'
+curl "http://127.0.0.1:9090/<name>" | jq '.'
 ```
 
 ### Deployment
@@ -247,16 +251,15 @@ fission spec apply --specdir specs --wait
 ```
 
 ```
-fission function delete --name weather
-fission route delete --name weather
+fission function delete --name <name>
+fission route delete --name <name>
 fission pkg list
-fission pkg delete --name
+fission pkg delete --name <name>
 
-fission function delete --name addobservations
-fission route delete --name addobservations
-fission pkg delete --name addobservations
+fission function delete --name <name>
+fission route delete --name <name>
+fission pkg delete --name <name>
 ```
-
 
 #### searchweather
 
@@ -277,15 +280,13 @@ fission package create --spec --sourcearchive ./backend/searchweather.zip\
 fission fn create --spec --name searchweather\
   --pkg searchweather\
   --env python\
-  --entrypoint "searchweather.main"
+  --configmap shared-data\
+  --entrypoint "searchweather.main"\
 
 fission httptrigger create --spec --method GET \
     --url "/searchweather/{StartDate}/{EndDate}" --function searchweather --name searchweather
 
-fission httptrigger create --spec --method GET \
-    --url "/searchweather?sdate={StartDate}&edate={EndDate}" --function searchweather --name searchweather
-
-curl "http://127.0.0.1:9090/searchweather/2024-03-01/2024-03-11" | jq '.'
+curl "http://127.0.0.1:9090/searchweather/2024-03-01/2024-03-11"
 ```
 
 - Delete
@@ -313,6 +314,7 @@ fission package create --spec --sourcearchive ./backend/search.zip\
 fission fn create --spec --name search\
   --pkg search\
   --env python\
+  --configmap shared-data\
   --entrypoint "search.main"\
 
 fission route create --spec --url /search/{Indexname} --function search --name search --createingress
@@ -331,6 +333,7 @@ fission pkg delete --name search
 ```
 
 #### extract
+
 ```bash
 cd functions/extract
 zip -r extracta.zip . -x "*.DS_Store"
@@ -346,15 +349,16 @@ fission package create --spec --sourcearchive ./backend/extract.zip\
 fission fn create --spec --name extract\
 	--code ./backend/extract/extract.py\
   --env python\
-  
+
 fission route create --spec --url /extract/{Indexname} --function extract --name extract --createingress
 
 fission spec apply --specdir specs --wait
 
-curl "http://127.0.0.1:9090/extract/weather" 
+curl "http://127.0.0.1:9090/extract/weather"
 ```
 
 - Delete
+
 ```
 fission function delete --name extract
 fission route delete --name extract
@@ -362,6 +366,7 @@ fission pkg delete --name extract
 ```
 
 #### put
+
 ```bash
 cd backend/put
 zip -r put.zip . -x "*.DS_Store"
@@ -373,19 +378,22 @@ fission package create --spec --sourcearchive ./backend/put.zip\
   --env python\
   --name put\
   --buildcmd './build.sh'
-  
+
 fission fn create --spec --name put\
   --pkg put\
   --env python\
+  --configmap shared-data\
   --entrypoint "put.main"\
 
 fission route create --spec --method PUT --url /put/{Indexname} --function put --name put --createingress
 
 fission spec apply --specdir specs --wait
 
-curl -XPUT "http://127.0.0.1:9090/put/weather" 
+curl -XPUT "http://127.0.0.1:9090/put/weather"
 ```
+
 - Delete
+
 ```
 fission function delete --name put
 fission route delete --name put
@@ -396,5 +404,4 @@ fission pkg delete --name put
 
 ```bash
 python -m unittest tests.test_api.TestAPIEndpoints.test_search_by_index
-
 ```
